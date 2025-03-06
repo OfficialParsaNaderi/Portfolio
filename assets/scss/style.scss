@@ -1149,19 +1149,14 @@ body {
                         color: $t-mediumdark;
                         font-weight: 500;
                         font-size: 23px !important;
-                        border-bottom: 2px solid #333;
+                        border-bottom: 2px solid $stroke-controlsdark;
                         outline: none;
+                        resize: none;
                         font-size: 16px;
                         margin-top: 5%;
-                        background: linear-gradient(to right,
-                                rgb(225, 186, 197),
-                                rgb(233, 233, 241),
-                                rgb(206, 196, 239));
-                        -webkit-background-clip: text;
-                        -webkit-text-fill-color: transparent;
 
                         &:focus {
-                            border-bottom: 2px solid $secondarydark;
+                            border-bottom: 2px solid $t-accentdark;
                         }
                     }
                 }
@@ -1175,13 +1170,13 @@ body {
                     color: #ddd;
                     font-size: 23px !important;
                     font-weight: 500;
-                    border-bottom: 2px solid #333;
+                    border-bottom: 2px solid $stroke-controlsdark;
                     outline: none;
                     resize: none;
                     margin-top: 7%;
 
                     &:focus {
-                        border-bottom: 2px solid $secondarydark;
+                        border-bottom: 2px solid $t-accentdark;
                     }
                 }
 
@@ -1190,6 +1185,20 @@ body {
             .row-2 {
                 input {
                     margin-top: 10% !important;
+                    width: 120%;
+                    height: 100%;
+                    padding: 6px;
+                    border: none;
+                    background-color: $basedark;
+                    color: $t-mediumdark;
+                    font-weight: 500;
+                    font-size: 23px !important;
+                    border-bottom: 2px solid $stroke-controlsdark;
+                    outline: none;
+                    outline: none;
+                    resize: none;
+                    font-size: 16px;
+                    margin-top: 5%;
                 }
             }
 

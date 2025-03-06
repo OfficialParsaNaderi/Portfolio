@@ -864,16 +864,14 @@ body {
   color: rgb(199, 198, 211);
   font-weight: 500;
   font-size: 23px !important;
-  border-bottom: 2px solid #333;
+  border-bottom: 2px solid rgb(75, 75, 81);
   outline: none;
+  resize: none;
   font-size: 16px;
   margin-top: 5%;
-  background: linear-gradient(to right, rgb(225, 186, 197), rgb(233, 233, 241), rgb(206, 196, 239));
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
 }
 .Main .Container-Eight .Input-Container .Inputs .Input input:focus {
-  border-bottom: 2px solid rgb(206, 196, 239);
+  border-bottom: 2px solid rgb(225, 186, 197);
 }
 .Main .Container-Eight .Input-Container .Inputs textarea {
   width: 90%;
@@ -884,16 +882,30 @@ body {
   color: #ddd;
   font-size: 23px !important;
   font-weight: 500;
-  border-bottom: 2px solid #333;
+  border-bottom: 2px solid rgb(75, 75, 81);
   outline: none;
   resize: none;
   margin-top: 7%;
 }
 .Main .Container-Eight .Input-Container .Inputs textarea:focus {
-  border-bottom: 2px solid rgb(206, 196, 239);
+  border-bottom: 2px solid rgb(225, 186, 197);
 }
 .Main .Container-Eight .Input-Container .row-2 input {
   margin-top: 10% !important;
+  width: 120%;
+  height: 100%;
+  padding: 6px;
+  border: none;
+  background-color: rgb(17, 17, 17);
+  color: rgb(199, 198, 211);
+  font-weight: 500;
+  font-size: 23px !important;
+  border-bottom: 2px solid rgb(75, 75, 81);
+  outline: none;
+  outline: none;
+  resize: none;
+  font-size: 16px;
+  margin-top: 5%;
 }
 .Main .Container-Eight .Input-Container .Button {
   margin-top: 5%;
