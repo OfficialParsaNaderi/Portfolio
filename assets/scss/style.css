@@ -1,0 +1,961 @@
+@import url("https://fonts.googleapis.com/css2?family=Syne:wght@400..800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Vazirmatn:wght@100..900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+}
+
+body {
+  font-family: "Syne", sans-serif;
+  cursor: pointer;
+  background-color: rgb(17, 17, 17);
+}
+
+.Header .Container .Background {
+  background-image: url("../images/Backgrounds/Main-Background.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+.Header .Container .Background .Portfolio-Box {
+  position: fixed;
+  top: 7%;
+  left: 5%;
+  background-color: rgb(22, 22, 22);
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 20px 50px 5px 50px;
+  border: 2px solid rgb(48, 48, 51);
+  border-radius: 2.2rem;
+}
+.Header .Container .Background .Portfolio-Box .Title {
+  margin-bottom: 10px;
+}
+.Header .Container .Background .Portfolio-Box .Title .Title-Logo img {
+  width: auto;
+  height: 85px;
+}
+.Header .Container .Background .Portfolio-Box .Title .Text h1 {
+  color: rgb(233, 233, 241);
+  font-weight: 600;
+  font-size: 35px;
+  background: linear-gradient(to right, rgb(225, 186, 197), rgb(233, 233, 241), rgb(206, 196, 239));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.Header .Container .Background .Portfolio-Box .Image {
+  margin-bottom: 8px;
+}
+.Header .Container .Background .Portfolio-Box .Image img {
+  width: auto;
+  height: 280px;
+}
+.Header .Container .Background .Portfolio-Box .Content {
+  margin-bottom: 5px;
+}
+.Header .Container .Background .Portfolio-Box .Content span {
+  color: rgb(161, 161, 175);
+}
+.Header .Container .Background .Portfolio-Box .Content h5 {
+  color: rgb(233, 233, 241);
+}
+.Header .Container .Background .Portfolio-Box .SocialMedia {
+  margin-bottom: 10px;
+}
+.Header .Container .Background .Portfolio-Box .SocialMedia i {
+  border: 1px solid rgb(48, 48, 51);
+  border-radius: 40%;
+  padding: 15px;
+  color: rgb(233, 233, 241);
+  font-size: 18px;
+}
+.Header .Container .Background .Portfolio-Box .Button {
+  background-color: rgb(206, 196, 239);
+  padding: 15px;
+  background: linear-gradient(to right, rgb(225, 186, 197), rgb(206, 196, 239));
+  transition: all 0.3s;
+}
+.Header .Container .Background .Portfolio-Box .Button a {
+  color: rgb(0, 0, 0);
+  font-size: 18px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.3s;
+}
+.Header .Container .Background .Portfolio-Box .Button:hover {
+  transform: scale(1.03);
+}
+.Header .Container .Background .Header-Content {
+  position: fixed;
+  top: 7%;
+  left: 34%;
+  z-index: 3;
+}
+.Header .Container .Background .Header-Content .Content .Head .Menu li a {
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+  color: rgba(255, 255, 255, 0.3);
+  font-size: 17px;
+  font-weight: 600;
+  border: rgb(75, 75, 81);
+  border-radius: 20px;
+  padding: 10px 16px;
+  transition: all 0.6s;
+}
+.Header .Container .Background .Header-Content .Content .Head .Menu li a:hover {
+  color: rgb(233, 233, 241);
+}
+.Header .Container .Background .Header-Content .Content .Head .Menu .Normal-Menu a i {
+  transition: all 0.6s;
+}
+.Header .Container .Background .Header-Content .Content .Head .Menu .Normal-Menu ul {
+  top: 70%;
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+  border: rgb(75, 75, 81);
+  border-radius: 20px;
+  padding: 10px 16px;
+  border: 2px solid rgb(48, 48, 51);
+  opacity: 0;
+  visibility: hidden;
+}
+.Header .Container .Background .Header-Content .Content .Head .Menu .Normal-Menu ul li a {
+  -webkit-backdrop-filter: blur(0px);
+          backdrop-filter: blur(0px);
+  color: rgba(255, 255, 255, 0.3);
+  font-size: 17px;
+  font-weight: 600;
+  transition: all 0.6s;
+}
+.Header .Container .Background .Header-Content .Content .Head .Menu .Normal-Menu ul li a:hover {
+  color: rgb(233, 233, 241);
+}
+.Header .Container .Background .Header-Content .Content .Head .Menu .Normal-Menu:hover > ul {
+  visibility: visible;
+  opacity: 1;
+}
+.Header .Container .Background .Header-Content .Content .Head .Menu .Normal-Menu:hover > ul > a > i {
+  rotate: 180deg;
+}
+.Header .Container .Background .Header-Content .Content .Head .Menu .Normal-Menu:hover > a > i {
+  rotate: 180deg;
+}
+.Header .Container .Background .Header-Content .Content .Head .Menu .Mega-Menu a i {
+  transition: all 0.6s;
+}
+.Header .Container .Background .Header-Content .Content .Head .Menu .Mega-Menu ul {
+  left: 0;
+  top: 70%;
+  width: 83%;
+  height: 720%;
+  top: 70%;
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+  border: rgb(75, 75, 81);
+  border-radius: 2.2rem;
+  padding: 10px 20px;
+  border: 2px solid rgb(48, 48, 51);
+  opacity: 0;
+  visibility: hidden;
+}
+.Header .Container .Background .Header-Content .Content .Head .Menu .Mega-Menu ul li {
+  color: rgba(255, 255, 255, 0.3);
+  font-size: 17px;
+  font-weight: 600;
+  padding-right: 2rem;
+}
+.Header .Container .Background .Header-Content .Content .Head .Menu .Mega-Menu ul li:first-child {
+  padding-right: 0;
+}
+.Header .Container .Background .Header-Content .Content .Head .Menu .Mega-Menu ul li .Title {
+  font-weight: bold;
+  color: rgba(255, 255, 255, 0.3);
+  display: inline-block;
+  border-left: 5px solid rgb(48, 48, 51);
+  border-radius: 5px;
+  padding-left: 0.5rem;
+  margin-bottom: -24%;
+}
+.Header .Container .Background .Header-Content .Content .Head .Menu .Mega-Menu ul li a {
+  color: rgb(233, 233, 241);
+  -webkit-backdrop-filter: blur(0px);
+          backdrop-filter: blur(0px);
+}
+.Header .Container .Background .Header-Content .Content .Head .Menu .Mega-Menu ul .L2 .Title {
+  margin-bottom: -22%;
+}
+.Header .Container .Background .Header-Content .Content .Head .Menu .Mega-Menu img {
+  border-radius: 2.2rem;
+  position: absolute;
+  top: 80%;
+  left: 54%;
+  width: 28%;
+  height: auto;
+  opacity: 0;
+  visibility: hidden;
+}
+.Header .Container .Background .Header-Content .Content .Head .Menu .Mega-Menu:hover > ul {
+  opacity: 1;
+  visibility: visible;
+}
+.Header .Container .Background .Header-Content .Content .Head .Menu .Mega-Menu:hover > img {
+  opacity: 1;
+  visibility: visible;
+}
+.Header .Container .Background .Header-Content .Content .Head .Menu .Mega-Menu:hover > a > i {
+  rotate: 180deg;
+}
+.Header .Container .Background .Header-Content .Button {
+  margin-bottom: 5px;
+  margin-right: -5%;
+}
+.Header .Container .Background .Header-Content .Button a:first-child {
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+  color: rgb(75, 75, 81);
+  padding: 10px 15px;
+  margin-bottom: 7px;
+  font-size: 20px;
+  transition: all 0.6s;
+}
+.Header .Container .Background .Header-Content .Button a:first-child:hover {
+  color: rgb(233, 233, 241);
+}
+.Header .Container .Background .Header-Content .Button a:last-child {
+  background-color: rgb(206, 196, 239);
+  color: rgb(17, 17, 17);
+  padding: 15px 25px;
+  border-radius: 25px;
+  font-size: 15px;
+  font-weight: 700;
+  background: linear-gradient(to right, rgb(225, 186, 197), rgb(206, 196, 239));
+  transition: all 0.3s;
+}
+.Header .Container .Background .Header-Content .Button a:last-child:hover {
+  transform: scale(1.03);
+}
+.Header .Container .Background .Content .Top-Button {
+  position: absolute;
+  top: 33%;
+  left: 34%;
+}
+.Header .Container .Background .Content .Top-Button a {
+  color: rgb(233, 233, 241);
+  font-size: 13px;
+  font-weight: 600;
+  border: 1px solid rgb(48, 48, 51);
+  border-radius: 15px;
+  padding: 10px 15px;
+}
+.Header .Container .Background .Content .Content {
+  position: absolute;
+  top: 40%;
+  left: 34%;
+}
+.Header .Container .Background .Content .Content h1 {
+  color: rgb(228, 184, 191);
+  font-size: 65px;
+  font-weight: 700;
+  background: linear-gradient(to right, rgb(225, 186, 197), rgb(233, 233, 241), rgb(206, 196, 239));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.Header .Container .Background .Content .Button {
+  position: absolute;
+  top: 80%;
+  left: 34%;
+}
+.Header .Container .Background .Content .Button a:first-child {
+  color: rgb(233, 233, 241);
+  font-size: 18px;
+  font-weight: 500;
+  border: 1px solid rgb(48, 48, 51);
+  border-radius: 20px;
+  padding: 10px 20px;
+  transition: all 0.3s;
+}
+.Header .Container .Background .Content .Button a:first-child:hover {
+  transform: scale(1.03);
+}
+.Header .Container .Background .Content .Button a:last-child {
+  font-size: 16px;
+  font-weight: 700;
+  color: rgb(75, 75, 81);
+  transition: all 0.3s;
+}
+.Header .Container .Background .Content .Button a:last-child:hover {
+  color: rgb(233, 233, 241);
+}
+.Header .Container .Background .Content .Logo {
+  position: absolute;
+  top: 72.5%;
+  left: 85%;
+}
+.Header .Container .Background .Content .Logo img {
+  width: auto;
+  height: 120px;
+  filter: invert(100%) brightness(100%);
+}
+.Header .Container .Background .Content .Logo i {
+  position: relative;
+  right: 50%;
+  font-size: 24px;
+  color: rgb(233, 233, 241);
+}
+
+.Main .Container-One {
+  margin-top: 2%;
+  margin-left: 34%;
+  margin-bottom: 12%;
+}
+.Main .Container-One .Content .Top-Button a {
+  color: rgb(233, 233, 241);
+  font-size: 13px;
+  font-weight: 600;
+  border: 1px solid rgb(48, 48, 51);
+  border-radius: 15px;
+  padding: 10px 15px;
+}
+.Main .Container-One .Content .Text {
+  margin-top: 3%;
+  margin-bottom: 5%;
+}
+.Main .Container-One .Content .Text h1 {
+  color: rgb(228, 184, 191);
+  font-size: 55px;
+  font-weight: 700;
+  background: linear-gradient(to right, rgb(225, 186, 197), rgb(233, 233, 241), rgb(206, 196, 239));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.Main .Container-One .Cards {
+  grid-template-columns: repeat(2, 1fr);
+}
+.Main .Container-One .Cards .Card {
+  position: relative;
+}
+.Main .Container-One .Cards .Card figure {
+  position: relative;
+}
+.Main .Container-One .Cards .Card figure img {
+  width: 87%;
+  border-radius: 30px;
+  transition: all 0.3s;
+}
+.Main .Container-One .Cards .Card figure img:hover {
+  transform: scale(1.03);
+}
+.Main .Container-One .Cards .Card figure figcaption .White {
+  z-index: 2;
+  background-color: rgb(233, 233, 241);
+  color: rgb(17, 17, 17);
+  padding: 5px 10px;
+  border-radius: 15px;
+  margin-top: -20%;
+}
+.Main .Container-One .Cards .Card figure figcaption .Black {
+  z-index: 2;
+  background-color: rgb(17, 17, 17);
+  color: rgb(233, 233, 241);
+  padding: 5px 10px;
+  border-radius: 15px;
+  margin-top: -20%;
+}
+.Main .Container-One .Cards .Card figure figcaption span:first-child {
+  margin-left: 5%;
+}
+.Main .Container-One .Cards .Space {
+  margin-left: -8%;
+}
+.Main .Container-One .Cards .Space figure {
+  position: relative;
+}
+.Main .Container-One .Cards .Space figure img {
+  width: 82%;
+}
+.Main .Container-Two {
+  margin-left: 34%;
+  margin-bottom: 12%;
+}
+.Main .Container-Two .Content {
+  margin-bottom: 5%;
+}
+.Main .Container-Two .Content .Top-Button a {
+  color: rgb(233, 233, 241);
+  font-size: 13px;
+  font-weight: 600;
+  border: 1px solid rgb(48, 48, 51);
+  border-radius: 15px;
+  padding: 10px 15px;
+}
+.Main .Container-Two .Content .Text {
+  margin-top: 3%;
+  margin-bottom: 5%;
+}
+.Main .Container-Two .Content .Text h1 {
+  color: rgb(228, 184, 191);
+  font-size: 55px;
+  font-weight: 700;
+  background: linear-gradient(to right, rgb(225, 186, 197), rgb(233, 233, 241), rgb(206, 196, 239));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.Main .Container-Two .Boxes {
+  gap: 50px;
+}
+.Main .Container-Two .Boxes .Box {
+  border: 1px solid rgb(48, 48, 51);
+  border-radius: 2.2rem;
+  padding: 25px 55px;
+}
+.Main .Container-Two .Boxes .Box h2 {
+  font-family: Poppins, sans-serif;
+  text-align: center;
+  font-size: 65px;
+  font-weight: 600;
+  color: rgb(206, 196, 239);
+}
+.Main .Container-Two .Boxes .Box span {
+  font-size: 20px;
+  font-weight: 600;
+  color: rgb(233, 233, 241);
+}
+.Main .Container-Two .Text .Content-One {
+  margin-top: 5%;
+}
+.Main .Container-Two .Text .Content-One p {
+  font-size: 21px;
+  color: rgb(233, 233, 241);
+}
+.Main .Container-Two .Text .Content-One span {
+  position: relative;
+  text-decoration: underline;
+  text-decoration-color: rgb(75, 75, 81);
+  text-decoration-thickness: 1px;
+}
+.Main .Container-Two .Text .Content-One span::after {
+  content: "";
+  position: absolute;
+  bottom: 1.5px;
+  left: 0;
+  width: 0;
+  height: 1px;
+  background-color: rgb(206, 196, 239);
+  transition: width 0.4s ease-in-out;
+}
+.Main .Container-Two .Text .Content-One span:hover::after {
+  width: 100%;
+}
+.Main .Container-Two .Text .Content-One .Button {
+  margin-top: 5%;
+}
+.Main .Container-Two .Text .Content-One .Button a {
+  background-color: rgb(206, 196, 239);
+  color: rgb(17, 17, 17);
+  padding: 15px 25px;
+  width: -moz-fit-content;
+  width: fit-content;
+  border-radius: 25px;
+  font-size: 15px;
+  font-weight: 700;
+  background: linear-gradient(to right, rgb(225, 186, 197), rgb(206, 196, 239));
+  transition: all 0.3s;
+}
+.Main .Container-Two .Text .Content-One .Button:hover {
+  transform: scale(1.02);
+}
+.Main .Container-Two .Text .Content-Two {
+  margin-top: 5%;
+  margin-right: 16%;
+  font-family: Poppins, sans-serif;
+}
+.Main .Container-Two .Text .Content-Two span {
+  color: rgb(75, 75, 81);
+  font-size: 17px;
+}
+.Main .Container-Two .Text .Content-Two h6 {
+  color: rgb(233, 233, 241);
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 15%;
+}
+.Main .Container-Three {
+  margin-left: 34%;
+  margin-bottom: 13%;
+}
+.Main .Container-Three .Mega-Card {
+  grid-template-columns: repeat(2, 1fr);
+}
+.Main .Container-Three .Mega-Card .Cards {
+  border: 1px solid rgb(48, 48, 51);
+  width: -moz-fit-content;
+  width: fit-content;
+  border-radius: 2.2rem;
+  overflow: hidden;
+}
+.Main .Container-Three .Mega-Card .Cards .Title {
+  margin-left: 8%;
+  margin-bottom: 2%;
+  margin-top: 6%;
+}
+.Main .Container-Three .Mega-Card .Cards .Title h3 {
+  color: rgb(233, 233, 241);
+  font-size: 35px;
+  font-weight: 600;
+}
+.Main .Container-Three .Mega-Card .Cards .Button {
+  margin-left: 8%;
+}
+.Main .Container-Three .Mega-Card .Cards .Button a {
+  color: rgb(233, 233, 241);
+  border: 1px solid rgb(48, 48, 51);
+  padding: 10px 20px;
+  width: -moz-fit-content;
+  width: fit-content;
+  border-radius: 15px;
+  font-size: 12px;
+  font-weight: 700;
+}
+.Main .Container-Three .Mega-Card .Cards .Description {
+  margin-top: 4%;
+  margin-bottom: 5%;
+  margin-left: 8%;
+}
+.Main .Container-Three .Mega-Card .Cards .Description p {
+  color: rgb(233, 233, 241);
+  font-size: 18px;
+}
+.Main .Container-Three .Mega-Card .Cards .Image img {
+  width: auto;
+  height: 400px;
+  padding-top: 70px;
+}
+.Main .Container-Three .Mega-Card .Space {
+  margin-left: -5%;
+}
+.Main .Container-Four {
+  margin-left: 34%;
+  margin-bottom: 10%;
+}
+.Main .Container-Four .Content {
+  margin-bottom: 5%;
+}
+.Main .Container-Four .Content .Top-Button a {
+  color: rgb(233, 233, 241);
+  font-size: 13px;
+  font-weight: 600;
+  border: 1px solid rgb(48, 48, 51);
+  border-radius: 15px;
+  padding: 10px 15px;
+}
+.Main .Container-Four .Content .Text {
+  margin-top: 3%;
+  margin-bottom: 5%;
+}
+.Main .Container-Four .Content .Text h1 {
+  color: rgb(228, 184, 191);
+  font-size: 55px;
+  font-weight: 700;
+  background: linear-gradient(to right, rgb(225, 186, 197), rgb(233, 233, 241), rgb(206, 196, 239));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.Main .Container-Four .Content .Text .Text {
+  margin-top: 5%;
+  margin-bottom: 10%;
+}
+.Main .Container-Four .Content .Text .Text p {
+  font-size: 21px;
+  color: rgb(233, 233, 241);
+}
+.Main .Container-Four .Content .Text .Text span {
+  position: relative;
+  text-decoration: underline;
+  text-decoration-color: rgb(75, 75, 81);
+  text-decoration-thickness: 1px;
+}
+.Main .Container-Four .Content .Text .Text span::after {
+  content: "";
+  position: absolute;
+  bottom: 1.5px;
+  left: 0;
+  width: 0;
+  height: 1px;
+  background-color: rgb(206, 196, 239);
+  transition: width 0.4s ease-in-out;
+}
+.Main .Container-Four .Content .Text .Text span:hover::after {
+  width: 100%;
+}
+.Main .Container-Four .Education h3 {
+  font-size: 35px;
+  font-weight: 700;
+  color: rgb(233, 233, 241);
+  margin-bottom: 5%;
+}
+.Main .Container-Four .Education hr {
+  width: 88%;
+  height: 2px;
+  color: rgba(255, 255, 255, 0.3);
+  margin-bottom: 3%;
+  margin-top: 3%;
+}
+.Main .Container-Four .Education .Info {
+  color: rgb(233, 233, 241);
+  gap: 40px;
+  font-family: Poppins, sans-serif;
+}
+.Main .Container-Four .Education .Info span {
+  font-size: 14px;
+  color: rgb(199, 198, 211);
+}
+.Main .Container-Four .Education .Info span:last-child {
+  color: rgb(233, 233, 241);
+  font-weight: 700;
+}
+.Main .Container-Four .Education .Info h4 {
+  font-family: "Syne", sans-serif;
+  font-size: 30px;
+  line-height: 30px;
+}
+.Main .Container-Four .Education .Info p {
+  margin-right: 130px;
+  font-size: 16px;
+}
+.Main .Container-Four .Education .Space h4 {
+  margin-right: 38px;
+}
+.Main .Container-Five {
+  margin-left: 34%;
+  margin-bottom: 8%;
+}
+.Main .Container-Five .Experience h3 {
+  font-size: 35px;
+  font-weight: 700;
+  color: rgb(233, 233, 241);
+  margin-bottom: 5%;
+}
+.Main .Container-Five .Experience hr {
+  width: 88%;
+  height: 2px;
+  color: rgba(255, 255, 255, 0.3);
+  margin-bottom: 3%;
+  margin-top: 3%;
+}
+.Main .Container-Five .Experience .Info {
+  color: rgb(233, 233, 241);
+  gap: 40px;
+  font-family: Poppins, sans-serif;
+}
+.Main .Container-Five .Experience .Info span {
+  font-size: 13px;
+  color: rgb(199, 198, 211);
+  position: relative;
+  text-decoration: underline;
+  text-decoration: none;
+  text-decoration-thickness: 1px;
+}
+.Main .Container-Five .Experience .Info span:last-child {
+  color: rgb(199, 198, 211);
+  font-weight: 700;
+}
+.Main .Container-Five .Experience .Info span span::after {
+  content: "";
+  position: absolute;
+  bottom: 1.5px;
+  left: 0;
+  width: 0;
+  height: 1px;
+  background-color: rgb(206, 196, 239);
+  transition: width 0.4s ease-in-out;
+}
+.Main .Container-Five .Experience .Info span span:hover::after {
+  width: 100%;
+}
+.Main .Container-Five .Experience .Info h4 {
+  font-family: "Syne", sans-serif;
+  font-size: 30px;
+  line-height: 30px;
+}
+.Main .Container-Five .Experience .Info h4 .Text {
+  color: rgb(233, 233, 241);
+  font-size: 14px;
+  font-weight: 700;
+}
+.Main .Container-Five .Experience .Info p {
+  margin-right: 130px;
+  font-size: 16px;
+}
+.Main .Container-Five .Experience .Space h4 {
+  margin-right: 50px;
+}
+.Main .Container-Five .Experience .Space p {
+  margin-right: 175px;
+}
+.Main .Container-Five .Experience .Paragraph h4 {
+  margin-right: 30px;
+}
+.Main .Container-Six {
+  margin-left: 34%;
+  margin-bottom: 12%;
+}
+.Main .Container-Six h3 {
+  color: rgb(233, 233, 241);
+  font-size: 35px;
+  font-weight: 700;
+  margin-bottom: 4%;
+}
+.Main .Container-Six img {
+  width: auto;
+  height: 70px;
+  border-radius: 20px;
+  margin-bottom: 15%;
+}
+.Main .Container-Six h6 {
+  color: rgb(233, 233, 241);
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+}
+.Main .Container-Six .Card {
+  border: 1px solid rgb(48, 48, 51);
+  border-radius: 2.2rem;
+  padding: 25px 30px;
+}
+.Main .Container-Six .HTML5,
+.Main .Container-Six .CSS3 {
+  padding: 25px 32px;
+}
+.Main .Container-Seven {
+  margin-left: 34%;
+  margin-bottom: 12%;
+}
+.Main .Container-Seven .Content {
+  margin-bottom: 6%;
+}
+.Main .Container-Seven .Content .Top-Button a {
+  color: rgb(233, 233, 241);
+  font-size: 13px;
+  font-weight: 600;
+  border: 1px solid rgb(48, 48, 51);
+  border-radius: 15px;
+  padding: 10px 15px;
+}
+.Main .Container-Seven .Content .Text {
+  margin-top: 3%;
+  margin-bottom: 5%;
+}
+.Main .Container-Seven .Content .Text h1 {
+  color: rgb(228, 184, 191);
+  font-size: 55px;
+  font-weight: 700;
+  background: linear-gradient(to right, rgb(225, 186, 197), rgb(233, 233, 241), rgb(206, 196, 239));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.Main .Container-Seven .Swiper-Slides .swiper {
+  border: 1px solid rgb(48, 48, 51);
+  border-radius: 2.2rem;
+  width: 93%;
+  margin-right: 80px;
+}
+.Main .Container-Seven .Swiper-Slides .swiper .swiper-wrapper {
+  padding: 50px 50px;
+}
+.Main .Container-Seven .Swiper-Slides .swiper .swiper-wrapper .Title .Image img {
+  width: auto;
+  height: 100px;
+  border-radius: 2.2rem;
+  margin-bottom: 20px;
+  margin-right: 20px;
+}
+.Main .Container-Seven .Swiper-Slides .swiper .swiper-wrapper .Title .Content h2 {
+  color: rgb(233, 233, 241);
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 20px;
+}
+.Main .Container-Seven .Swiper-Slides .swiper .swiper-wrapper .Title .Content span {
+  color: rgb(199, 198, 211);
+}
+.Main .Container-Seven .Swiper-Slides .swiper .swiper-wrapper .Title .Content span:last-child {
+  color: rgb(233, 233, 241);
+  font-weight: 600;
+}
+.Main .Container-Seven .Swiper-Slides .swiper .swiper-wrapper .Title .Content i {
+  color: rgb(206, 196, 239);
+  margin-top: 10px;
+  background: linear-gradient(to right, rgb(225, 186, 197), rgb(206, 196, 239));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.Main .Container-Seven .Swiper-Slides .swiper .swiper-wrapper .Command p {
+  font-size: 22px;
+  font-weight: 400;
+  color: rgb(233, 233, 241);
+  margin-bottom: 10px;
+}
+.Main .Container-Seven .Swiper-Slides .swiper .swiper-wrapper .Text {
+  margin-top: 4%;
+}
+.Main .Container-Seven .Swiper-Slides .swiper .swiper-wrapper .Text span {
+  color: rgb(233, 233, 241);
+  font-size: 18px;
+  font-weight: 600;
+}
+.Main .Container-Seven .Swiper-Slides .swiper .swiper-wrapper .Text span i {
+  font-size: 17px;
+  margin-left: 5px;
+}
+.Main .Container-Seven .Swiper-Slides .Button-Next,
+.Main .Container-Seven .Swiper-Slides .Button-Prev {
+  color: aliceblue;
+  border: 1px solid rgb(48, 48, 51);
+  padding: 15px 20px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 700;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin-top: 2%;
+}
+.Main .Container-Eight {
+  margin-left: 34%;
+  margin-bottom: 12%;
+}
+.Main .Container-Eight .Content {
+  margin-bottom: 5%;
+}
+.Main .Container-Eight .Content .Top-Button a {
+  color: rgb(233, 233, 241);
+  font-size: 13px;
+  font-weight: 600;
+  border: 1px solid rgb(48, 48, 51);
+  border-radius: 15px;
+  padding: 10px 15px;
+}
+.Main .Container-Eight .Content .Text {
+  margin-top: 3%;
+  margin-bottom: 5%;
+}
+.Main .Container-Eight .Content .Text h1 {
+  color: rgb(228, 184, 191);
+  font-size: 55px;
+  font-weight: 700;
+  background: linear-gradient(to right, rgb(225, 186, 197), rgb(233, 233, 241), rgb(206, 196, 239));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.Main .Container-Eight .Input-Container .Inputs {
+  gap: 150px;
+}
+.Main .Container-Eight .Input-Container .Inputs .Input input {
+  width: 130%;
+  height: 100%;
+  padding: 6px;
+  border: none;
+  background-color: rgb(17, 17, 17);
+  color: rgb(199, 198, 211);
+  font-weight: 500;
+  font-size: 23px !important;
+  border-bottom: 2px solid #333;
+  outline: none;
+  font-size: 16px;
+  margin-top: 5%;
+  background: linear-gradient(to right, rgb(225, 186, 197), rgb(233, 233, 241), rgb(206, 196, 239));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.Main .Container-Eight .Input-Container .Inputs .Input input:focus {
+  border-bottom: 2px solid rgb(206, 196, 239);
+}
+.Main .Container-Eight .Input-Container .Inputs textarea {
+  width: 90%;
+  height: 150px;
+  padding: 10px;
+  border: none;
+  background-color: rgb(17, 17, 17);
+  color: #ddd;
+  font-size: 23px !important;
+  font-weight: 500;
+  border-bottom: 2px solid #333;
+  outline: none;
+  resize: none;
+  margin-top: 7%;
+}
+.Main .Container-Eight .Input-Container .Inputs textarea:focus {
+  border-bottom: 2px solid rgb(206, 196, 239);
+}
+.Main .Container-Eight .Input-Container .row-2 input {
+  margin-top: 10% !important;
+}
+.Main .Container-Eight .Input-Container .Button {
+  margin-top: 5%;
+}
+.Main .Container-Eight .Input-Container .Button a {
+  background-color: rgb(206, 196, 239);
+  color: rgb(17, 17, 17);
+  padding: 15px 25px;
+  width: -moz-fit-content;
+  width: fit-content;
+  border-radius: 25px;
+  font-size: 15px;
+  font-weight: 700;
+  background: linear-gradient(to right, rgb(225, 186, 197), rgb(206, 196, 239));
+}
+
+.Footer .Container {
+  margin-left: 34%;
+  margin-bottom: 10%;
+}
+.Footer .Container .SocialMedia {
+  margin-bottom: 10px;
+}
+.Footer .Container .SocialMedia i {
+  border: 1px solid rgb(48, 48, 51);
+  border-radius: 2.2rem;
+  padding: 40px 58px;
+  color: rgb(75, 75, 81);
+  font-size: 50px;
+  transition: all 0.3s ease-in-out;
+}
+.Footer .Container .SocialMedia i:hover {
+  transform: scale(1.05);
+  color: rgb(233, 233, 241);
+}
+.Footer .Container .Content .Text {
+  margin-top: 5%;
+}
+.Footer .Container .Content .Text p {
+  color: rgb(228, 184, 191);
+  font-size: 35px;
+  font-weight: 700;
+  margin-bottom: 4%;
+  background: linear-gradient(to right, rgb(225, 186, 197), rgb(233, 233, 241), rgb(206, 196, 239));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.Footer .Container .Content .Text hr {
+  width: 90%;
+  height: 3px;
+  color: rgb(199, 198, 211);
+  margin-bottom: 3%;
+}
+.Footer .Container .Content .Info {
+  gap: 200px;
+  font-family: "Poppins", sans-serif;
+}
+.Footer .Container .Content .Info span {
+  color: rgb(233, 233, 241);
+  font-weight: 700;
+}
+.Footer .Container .Content .Info h6 {
+  font-weight: 400;
+  color: rgb(161, 161, 175);
+}/*# sourceMappingURL=style.css.map */

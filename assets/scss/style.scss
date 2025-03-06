@@ -1,0 +1,1280 @@
+@import url("https://fonts.googleapis.com/css2?family=Syne:wght@400..800&display=swap");
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Vazirmatn:wght@100..900&display=swap');
+
+$_radius-s: 1.5rem;
+$_radius-m: 2.2rem;
+$_radius-l: 3rem;
+$_radius-xl: 3.6rem;
+$_animspeed-medium: 0.3s;
+$_animspeed-slow: 0.6s;
+$_font-default: "Syne", sans-serif;
+$_font-secondary: "Poppins", sans-serif;
+
+$basedark: rgb(17, 17, 17);
+$base-tintdark: rgb(22, 22, 22);
+$base-shadedark: rgb(0, 0, 0);
+$accentdark: rgb(228, 184, 191);
+$secondarydark: rgb(206, 196, 239);
+$stroke-controlsdark: rgb(75, 75, 81);
+$stroke-controls-neutraldark: rgba(255, 255, 255, 0.3);
+$stroke-elementsdark: rgb(48, 48, 51);
+$t-mediumdark: rgb(199, 198, 211);
+$t-muteddark: rgb(161, 161, 175);
+$t-accentdark: rgb(225, 186, 197);
+$t-brightdark: rgb(233, 233, 241);
+$t-secondarydark: rgb(206, 196, 239);
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+}
+
+body {
+    font-family: $_font-default;
+    cursor: pointer;
+    background-color: $basedark;
+}
+
+.Header {
+    .Container {
+        .Background {
+            background-image: url('../images/Backgrounds/Main-Background.png');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            height: 100vh;
+
+            .Portfolio-Box {
+                position: fixed;
+                top: 7%;
+                left: 5%;
+                background-color: $base-tintdark;
+                width: fit-content;
+                padding: 20px 50px 5px 50px;
+                border: 2px solid $stroke-elementsdark;
+                border-radius: $_radius-m;
+
+                .Title {
+                    margin-bottom: 10px;
+
+                    .Title-Logo {
+                        img {
+                            width: auto;
+                            height: 85px;
+                        }
+                    }
+
+                    .Text {
+                        h1 {
+                            color: $t-brightdark;
+                            font-weight: 600;
+                            font-size: 35px;
+                            background: linear-gradient(to right,
+                                    rgb(225, 186, 197),
+                                    rgb(233, 233, 241),
+                                    rgb(206, 196, 239));
+                            -webkit-background-clip: text;
+                            -webkit-text-fill-color: transparent;
+                        }
+                    }
+                }
+
+                .Image {
+                    margin-bottom: 8px;
+
+                    img {
+                        width: auto;
+                        height: 280px;
+                    }
+                }
+
+                .Content {
+                    margin-bottom: 5px;
+
+                    span {
+                        color: $t-muteddark;
+                    }
+
+                    h5 {
+                        color: $t-brightdark;
+                    }
+                }
+
+                .SocialMedia {
+                    margin-bottom: 10px;
+
+                    i {
+                        border: 1px solid $stroke-elementsdark;
+                        border-radius: 40%;
+                        padding: 15px;
+                        color: $t-brightdark;
+                        font-size: 18px;
+                    }
+                }
+
+                .Button {
+                    background-color: $t-secondarydark;
+                    padding: 15px;
+                    background: linear-gradient(to right,
+                            rgb(225, 186, 197),
+                            rgb(206, 196, 239));
+                    transition: all $_animspeed-medium;
+
+                    a {
+                        color: $base-shadedark;
+                        font-size: 18px;
+                        font-weight: 600;
+                        text-decoration: none;
+                        transition: all $_animspeed-medium;
+                    }
+
+                    &:hover {
+                        transform: scale(1.03);
+                    }
+                }
+            }
+
+            .Header-Content {
+                position: fixed;
+                top: 7%;
+                left: 34%;
+                z-index: 3;
+
+                .Content {
+                    .Head {
+                        .Menu {
+
+                            li {
+                                a {
+                                    backdrop-filter: blur(10px);
+                                    color: $stroke-controls-neutraldark;
+                                    font-size: 17px;
+                                    font-weight: 600;
+                                    border: $stroke-controlsdark;
+                                    border-radius: 20px;
+                                    padding: 10px 16px;
+                                    transition: all $_animspeed-slow;
+
+                                    &:hover {
+                                        color: $t-brightdark;
+                                    }
+                                }
+                            }
+
+                            .Normal-Menu {
+                                a {
+                                    i {
+                                        transition: all $_animspeed-slow;
+                                    }
+                                }
+
+                                ul {
+                                    top: 70%;
+                                    backdrop-filter: blur(10px);
+                                    border: $stroke-controlsdark;
+                                    border-radius: 20px;
+                                    padding: 10px 16px;
+                                    border: 2px solid $stroke-elementsdark;
+                                    opacity: 0;
+                                    visibility: hidden;
+
+                                    li {
+                                        a {
+                                            backdrop-filter: blur(0px);
+                                            color: $stroke-controls-neutraldark;
+                                            font-size: 17px;
+                                            font-weight: 600;
+                                            transition: all $_animspeed-slow;
+
+                                            &:hover {
+                                                color: $t-brightdark;
+                                            }
+                                        }
+                                    }
+                                }
+
+                                &:hover {
+                                    &>ul {
+                                        visibility: visible;
+                                        opacity: 1;
+
+                                        &>a>i {
+                                            rotate: 180deg;
+                                        }
+                                    }
+
+                                    &>a>i {
+                                        rotate: 180deg;
+                                    }
+                                }
+                            }
+
+                            .Mega-Menu {
+                                a {
+                                    i {
+                                        transition: all $_animspeed-slow;
+                                    }
+                                }
+
+                                ul {
+                                    left: 0;
+                                    top: 70%;
+                                    width: 83%;
+                                    height: 720%;
+                                    top: 70%;
+                                    backdrop-filter: blur(10px);
+                                    border: $stroke-controlsdark;
+                                    border-radius: $_radius-m;
+                                    padding: 10px 20px;
+                                    border: 2px solid $stroke-elementsdark;
+                                    opacity: 0;
+                                    visibility: hidden;
+
+                                    li {
+                                        color: $stroke-controls-neutraldark;
+                                        font-size: 17px;
+                                        font-weight: 600;
+                                        padding-right: 2rem;
+
+                                        &:first-child {
+                                            padding-right: 0;
+                                        }
+
+                                        .Title {
+                                            font-weight: bold;
+                                            color: $stroke-controls-neutraldark;
+                                            display: inline-block;
+                                            border-left: 5px solid $stroke-elementsdark;
+                                            border-radius: 5px;
+                                            padding-left: 0.5rem;
+                                            margin-bottom: -24%;
+                                        }
+
+                                        a {
+                                            color: $t-brightdark;
+                                            backdrop-filter: blur(0px);
+                                        }
+                                    }
+
+                                    .L2 {
+                                        .Title {
+                                            margin-bottom: -22%;
+                                        }
+                                    }
+                                }
+
+                                img {
+                                    border-radius: $_radius-m;
+                                    position: absolute;
+                                    top: 80%;
+                                    left: 54%;
+                                    width: 28%;
+                                    height: auto;
+                                    opacity: 0;
+                                    visibility: hidden;
+                                }
+
+                                &:hover {
+                                    &>ul {
+                                        opacity: 1;
+                                        visibility: visible;
+                                    }
+
+                                    &>img {
+                                        opacity: 1;
+                                        visibility: visible;
+                                    }
+
+                                    &>a>i {
+                                        rotate: 180deg;
+                                    }
+                                }
+                            }
+
+                        }
+                    }
+                }
+
+                .Button {
+                    margin-bottom: 5px;
+                    margin-right: -5%;
+
+                    a:first-child {
+                        backdrop-filter: blur(10px);
+                        color: $stroke-controlsdark;
+                        padding: 10px 15px;
+                        margin-bottom: 7px;
+                        font-size: 20px;
+                        transition: all $_animspeed-slow;
+
+                        &:hover {
+                            color: $t-brightdark;
+                        }
+                    }
+
+                    a:last-child {
+                        background-color: $t-secondarydark;
+                        color: $basedark;
+                        padding: 15px 25px;
+                        border-radius: 25px;
+                        font-size: 15px;
+                        font-weight: 700;
+                        background: linear-gradient(to right,
+                                rgb(225, 186, 197),
+                                rgb(206, 196, 239));
+                        transition: all $_animspeed-medium;
+
+                        &:hover {
+                            transform: scale(1.03);
+                        }
+                    }
+                }
+            }
+
+            .Content {
+                .Top-Button {
+                    position: absolute;
+                    top: 33%;
+                    left: 34%;
+
+                    a {
+                        color: $t-brightdark;
+                        font-size: 13px;
+                        font-weight: 600;
+                        border: 1px solid $stroke-elementsdark;
+                        border-radius: 15px;
+                        padding: 10px 15px;
+                    }
+                }
+
+                .Content {
+                    position: absolute;
+                    top: 40%;
+                    left: 34%;
+
+                    h1 {
+                        color: $accentdark;
+                        font-size: 65px;
+                        font-weight: 700;
+                        background: linear-gradient(to right,
+                                rgb(225, 186, 197),
+                                rgb(233, 233, 241),
+                                rgb(206, 196, 239));
+                        -webkit-background-clip: text;
+                        -webkit-text-fill-color: transparent;
+                    }
+
+                }
+
+                .Button {
+                    position: absolute;
+                    top: 80%;
+                    left: 34%;
+
+                    a:first-child {
+                        color: $t-brightdark;
+                        font-size: 18px;
+                        font-weight: 500;
+                        border: 1px solid $stroke-elementsdark;
+                        border-radius: 20px;
+                        padding: 10px 20px;
+                        transition: all $_animspeed-medium;
+
+                        &:hover {
+                            transform: scale(1.03);
+                        }
+                    }
+
+                    a:last-child {
+                        font-size: 16px;
+                        font-weight: 700;
+                        color: $stroke-controlsdark;
+                        transition: all $_animspeed-medium;
+
+                        &:hover {
+                            color: $t-brightdark;
+                        }
+                    }
+                }
+
+                .Logo {
+                    position: absolute;
+                    top: 72.5%;
+                    left: 85%;
+
+                    img {
+                        width: auto;
+                        height: 120px;
+                        filter: invert(100%) brightness(100%);
+                    }
+
+                    i {
+                        position: relative;
+                        right: 50%;
+                        font-size: 24px;
+                        color: $t-brightdark;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.Main {
+    .Container-One {
+        margin-top: 2%;
+        margin-left: 34%;
+        margin-bottom: 12%;
+
+        .Content {
+            .Top-Button {
+                a {
+                    color: $t-brightdark;
+                    font-size: 13px;
+                    font-weight: 600;
+                    border: 1px solid $stroke-elementsdark;
+                    border-radius: 15px;
+                    padding: 10px 15px;
+                }
+            }
+
+            .Text {
+                margin-top: 3%;
+                margin-bottom: 5%;
+
+                h1 {
+                    color: $accentdark;
+                    font-size: 55px;
+                    font-weight: 700;
+                    background: linear-gradient(to right,
+                            rgb(225, 186, 197),
+                            rgb(233, 233, 241),
+                            rgb(206, 196, 239));
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                }
+
+            }
+        }
+
+        .Cards {
+            grid-template-columns: repeat(2, 1fr);
+
+            .Card {
+                position: relative;
+
+                figure {
+                    position: relative;
+
+                    img {
+                        width: 87%;
+                        border-radius: 30px;
+                        transition: all $_animspeed-medium;
+
+                        &:hover {
+                            transform: scale(1.03);
+                        }
+                    }
+
+                    figcaption {
+                        .White {
+                            z-index: 2;
+                            background-color: $t-brightdark;
+                            color: $basedark;
+                            padding: 5px 10px;
+                            border-radius: 15px;
+                            margin-top: -20%;
+                        }
+
+                        .Black {
+                            z-index: 2;
+                            background-color: $basedark;
+                            color: $t-brightdark;
+                            padding: 5px 10px;
+                            border-radius: 15px;
+                            margin-top: -20%;
+                        }
+
+                        span:first-child {
+                            margin-left: 5%;
+                        }
+                    }
+                }
+            }
+
+            .Space {
+                margin-left: -8%;
+
+                figure {
+                    position: relative;
+
+                    img {
+                        width: 82%;
+                    }
+                }
+            }
+        }
+    }
+
+    .Container-Two {
+        margin-left: 34%;
+        margin-bottom: 12%;
+
+        .Content {
+            margin-bottom: 5%;
+
+            .Top-Button {
+                a {
+                    color: $t-brightdark;
+                    font-size: 13px;
+                    font-weight: 600;
+                    border: 1px solid $stroke-elementsdark;
+                    border-radius: 15px;
+                    padding: 10px 15px;
+                }
+            }
+
+            .Text {
+                margin-top: 3%;
+                margin-bottom: 5%;
+
+                h1 {
+                    color: $accentdark;
+                    font-size: 55px;
+                    font-weight: 700;
+                    background: linear-gradient(to right,
+                            rgb(225, 186, 197),
+                            rgb(233, 233, 241),
+                            rgb(206, 196, 239));
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                }
+
+            }
+        }
+
+        .Boxes {
+            gap: 50px;
+
+            .Box {
+                border: 1px solid $stroke-elementsdark;
+                border-radius: $_radius-m;
+                padding: 25px 55px;
+
+                h2 {
+                    font-family: Poppins, sans-serif;
+                    text-align: center;
+                    font-size: 65px;
+                    font-weight: 600;
+                    color: $secondarydark;
+                }
+
+                span {
+                    font-size: 20px;
+                    font-weight: 600;
+                    color: $t-brightdark;
+                }
+            }
+        }
+
+        .Text {
+            .Content-One {
+                margin-top: 5%;
+
+                p {
+                    font-size: 21px;
+                    color: $t-brightdark;
+                }
+
+                span {
+                    position: relative;
+                    text-decoration: underline;
+                    text-decoration-color: $stroke-controlsdark;
+                    text-decoration-thickness: 1px;
+                }
+
+                span::after {
+                    content: "";
+                    position: absolute;
+                    bottom: 1.5px;
+                    left: 0;
+                    width: 0;
+                    height: 1px;
+                    background-color: $secondarydark;
+                    transition: width 0.4s ease-in-out;
+                }
+
+                span:hover::after {
+                    width: 100%;
+                }
+
+                .Button {
+                    margin-top: 5%;
+
+                    a {
+                        background-color: $t-secondarydark;
+                        color: $basedark;
+                        padding: 15px 25px;
+                        width: fit-content;
+                        border-radius: 25px;
+                        font-size: 15px;
+                        font-weight: 700;
+                        background: linear-gradient(to right,
+                                rgb(225, 186, 197),
+                                rgb(206, 196, 239));
+                        transition: all $_animspeed-medium;
+                    }
+
+
+                    &:hover {
+                        transform: scale(1.02);
+                    }
+                }
+
+            }
+
+            .Content-Two {
+                margin-top: 5%;
+                margin-right: 16%;
+                font-family: Poppins, sans-serif;
+
+                span {
+                    color: $stroke-controlsdark;
+                    font-size: 17px;
+                }
+
+                h6 {
+                    color: $t-brightdark;
+                    font-size: 18px;
+                    font-weight: 700;
+                    margin-bottom: 15%;
+                }
+            }
+        }
+    }
+
+    .Container-Three {
+        margin-left: 34%;
+        margin-bottom: 13%;
+
+        .Mega-Card {
+            grid-template-columns: repeat(2, 1fr);
+
+            .Cards {
+                border: 1px solid $stroke-elementsdark;
+                width: fit-content;
+                border-radius: $_radius-m;
+                overflow: hidden;
+
+                .Title {
+                    margin-left: 8%;
+                    margin-bottom: 2%;
+                    margin-top: 6%;
+
+                    h3 {
+                        color: $t-brightdark;
+                        font-size: 35px;
+                        font-weight: 600;
+                    }
+                }
+
+                .Button {
+                    margin-left: 8%;
+
+                    a {
+                        color: $t-brightdark;
+                        border: 1px solid $stroke-elementsdark;
+                        padding: 10px 20px;
+                        width: fit-content;
+                        border-radius: 15px;
+                        font-size: 12px;
+                        font-weight: 700;
+                    }
+                }
+
+                .Description {
+                    margin-top: 4%;
+                    margin-bottom: 5%;
+                    margin-left: 8%;
+
+                    p {
+                        color: $t-brightdark;
+                        font-size: 18px;
+                    }
+                }
+
+                .Image {
+                    img {
+                        width: auto;
+                        height: 400px;
+                        padding-top: 70px;
+                    }
+                }
+            }
+
+            .Space {
+                margin-left: -5%;
+            }
+        }
+    }
+
+    .Container-Four {
+        margin-left: 34%;
+        margin-bottom: 10%;
+
+        .Content {
+            margin-bottom: 5%;
+
+            .Top-Button {
+                a {
+                    color: $t-brightdark;
+                    font-size: 13px;
+                    font-weight: 600;
+                    border: 1px solid $stroke-elementsdark;
+                    border-radius: 15px;
+                    padding: 10px 15px;
+                }
+            }
+
+            .Text {
+                margin-top: 3%;
+                margin-bottom: 5%;
+
+                h1 {
+                    color: $accentdark;
+                    font-size: 55px;
+                    font-weight: 700;
+                    background: linear-gradient(to right,
+                            rgb(225, 186, 197),
+                            rgb(233, 233, 241),
+                            rgb(206, 196, 239));
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                }
+
+                .Text {
+                    margin-top: 5%;
+                    margin-bottom: 10%;
+
+                    p {
+                        font-size: 21px;
+                        color: $t-brightdark;
+                    }
+
+                    span {
+                        position: relative;
+                        text-decoration: underline;
+                        text-decoration-color: $stroke-controlsdark;
+                        text-decoration-thickness: 1px;
+                    }
+
+                    span::after {
+                        content: "";
+                        position: absolute;
+                        bottom: 1.5px;
+                        left: 0;
+                        width: 0;
+                        height: 1px;
+                        background-color: $secondarydark;
+                        transition: width 0.4s ease-in-out;
+                    }
+
+                    span:hover::after {
+                        width: 100%;
+                    }
+                }
+
+            }
+        }
+
+        .Education {
+            h3 {
+                font-size: 35px;
+                font-weight: 700;
+                color: $t-brightdark;
+                margin-bottom: 5%;
+            }
+
+            hr {
+                width: 88%;
+                height: 2px;
+                color: $stroke-controls-neutraldark;
+                margin-bottom: 3%;
+                margin-top: 3%;
+            }
+
+            .Info {
+                color: $t-brightdark;
+                gap: 40px;
+                font-family: Poppins, sans-serif;
+
+                span {
+                    font-size: 14px;
+                    color: $t-mediumdark;
+
+                    &:last-child {
+                        color: $t-brightdark;
+                        font-weight: 700;
+                    }
+                }
+
+                h4 {
+                    font-family: $_font-default;
+                    font-size: 30px;
+                    line-height: 30px;
+                }
+
+                p {
+                    margin-right: 130px;
+                    font-size: 16px;
+                }
+            }
+
+            .Space {
+                h4 {
+                    margin-right: 38px;
+                }
+            }
+        }
+    }
+
+    .Container-Five {
+        margin-left: 34%;
+        margin-bottom: 8%;
+
+        .Experience {
+            h3 {
+                font-size: 35px;
+                font-weight: 700;
+                color: $t-brightdark;
+                margin-bottom: 5%;
+            }
+
+            hr {
+                width: 88%;
+                height: 2px;
+                color: $stroke-controls-neutraldark;
+                margin-bottom: 3%;
+                margin-top: 3%;
+            }
+
+            .Info {
+                color: $t-brightdark;
+                gap: 40px;
+                font-family: Poppins, sans-serif;
+
+                span {
+                    font-size: 13px;
+                    color: $t-mediumdark;
+                    position: relative;
+                    text-decoration: underline;
+                    text-decoration: none;
+                    text-decoration-thickness: 1px;
+
+                    &:last-child {
+                        color: $t-mediumdark;
+                        font-weight: 700;
+                    }
+
+                    span::after {
+                        content: "";
+                        position: absolute;
+                        bottom: 1.5px;
+                        left: 0;
+                        width: 0;
+                        height: 1px;
+                        background-color: $secondarydark;
+                        transition: width 0.4s ease-in-out;
+                    }
+
+                    span:hover::after {
+                        width: 100%;
+                    }
+                }
+
+                h4 {
+                    font-family: $_font-default;
+                    font-size: 30px;
+                    line-height: 30px;
+
+                    .Text {
+                        color: $t-brightdark;
+                        font-size: 14px;
+                        font-weight: 700;
+                    }
+                }
+
+                p {
+                    margin-right: 130px;
+                    font-size: 16px;
+                }
+            }
+
+            .Space {
+                h4 {
+                    margin-right: 50px;
+                }
+
+                p {
+                    margin-right: 175px;
+                }
+            }
+
+            .Paragraph {
+                h4 {
+                    margin-right: 30px;
+                }
+            }
+        }
+    }
+
+    .Container-Six {
+        margin-left: 34%;
+        margin-bottom: 12%;
+
+        h3 {
+            color: $t-brightdark;
+            font-size: 35px;
+            font-weight: 700;
+            margin-bottom: 4%;
+        }
+
+        img {
+            width: auto;
+            height: 70px;
+            border-radius: 20px;
+            margin-bottom: 15%;
+        }
+
+        h6 {
+            color: $t-brightdark;
+            font-family: $_font-secondary;
+            font-size: 18px;
+            font-weight: 700;
+        }
+
+        .Card {
+            border: 1px solid $stroke-elementsdark;
+            border-radius: $_radius-m;
+            padding: 25px 30px;
+        }
+
+        .HTML5,
+        .CSS3 {
+            padding: 25px 32px;
+        }
+    }
+
+    .Container-Seven {
+        margin-left: 34%;
+        margin-bottom: 12%;
+
+        .Content {
+            margin-bottom: 6%;
+
+            .Top-Button {
+                a {
+                    color: $t-brightdark;
+                    font-size: 13px;
+                    font-weight: 600;
+                    border: 1px solid $stroke-elementsdark;
+                    border-radius: 15px;
+                    padding: 10px 15px;
+                }
+            }
+
+            .Text {
+                margin-top: 3%;
+                margin-bottom: 5%;
+
+                h1 {
+                    color: $accentdark;
+                    font-size: 55px;
+                    font-weight: 700;
+                    background: linear-gradient(to right,
+                            rgb(225, 186, 197),
+                            rgb(233, 233, 241),
+                            rgb(206, 196, 239));
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                }
+
+            }
+        }
+
+        .Swiper-Slides {
+            .swiper {
+                border: 1px solid $stroke-elementsdark;
+                border-radius: $_radius-m;
+                width: 93%;
+                margin-right: 80px;
+
+                .swiper-wrapper {
+                    padding: 50px 50px;
+
+                    .Title {
+                        .Image {
+                            img {
+                                width: auto;
+                                height: 100px;
+                                border-radius: $_radius-m;
+                                margin-bottom: 20px;
+                                margin-right: 20px;
+                            }
+                        }
+
+                        .Content {
+                            h2 {
+                                color: $t-brightdark;
+                                font-size: 30px;
+                                font-weight: 700;
+                                line-height: 20px;
+                            }
+
+                            span {
+                                color: $t-mediumdark;
+
+                                &:last-child {
+                                    color: $t-brightdark;
+                                    font-weight: 600;
+                                }
+                            }
+
+                            i {
+                                color: $secondarydark;
+                                margin-top: 10px;
+                                background: linear-gradient(to right,
+                                        rgb(225, 186, 197),
+                                        rgb(206, 196, 239));
+                                -webkit-background-clip: text;
+                                -webkit-text-fill-color: transparent;
+                            }
+                        }
+                    }
+
+                    .Command {
+                        p {
+                            font-size: 22px;
+                            font-weight: 400;
+                            color: $t-brightdark;
+                            margin-bottom: 10px;
+                        }
+                    }
+
+                    .Text {
+                        margin-top: 4%;
+
+                        span {
+                            color: $t-brightdark;
+                            font-size: 18px;
+                            font-weight: 600;
+
+                            i {
+                                font-size: 17px;
+                                margin-left: 5px;
+                            }
+                        }
+                    }
+                }
+
+            }
+
+            .Button-Next,
+            .Button-Prev {
+                color: aliceblue;
+                border: 1px solid $stroke-elementsdark;
+                padding: 15px 20px;
+                border-radius: 20px;
+                font-size: 12px;
+                font-weight: 700;
+                width: fit-content;
+                margin-top: 2%;
+            }
+        }
+    }
+
+    .Container-Eight {
+        margin-left: 34%;
+        margin-bottom: 12%;
+
+        .Content {
+            margin-bottom: 5%;
+
+            .Top-Button {
+                a {
+                    color: $t-brightdark;
+                    font-size: 13px;
+                    font-weight: 600;
+                    border: 1px solid $stroke-elementsdark;
+                    border-radius: 15px;
+                    padding: 10px 15px;
+                }
+            }
+
+            .Text {
+                margin-top: 3%;
+                margin-bottom: 5%;
+
+                h1 {
+                    color: $accentdark;
+                    font-size: 55px;
+                    font-weight: 700;
+                    background: linear-gradient(to right,
+                            rgb(225, 186, 197),
+                            rgb(233, 233, 241),
+                            rgb(206, 196, 239));
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                }
+            }
+        }
+
+        .Input-Container {
+            .Inputs {
+                gap: 150px;
+
+                .Input {
+                    input {
+                        width: 130%;
+                        height: 100%;
+                        padding: 6px;
+                        border: none;
+                        background-color: $basedark;
+                        color: $t-mediumdark;
+                        font-weight: 500;
+                        font-size: 23px !important;
+                        border-bottom: 2px solid #333;
+                        outline: none;
+                        font-size: 16px;
+                        margin-top: 5%;
+                        background: linear-gradient(to right,
+                                rgb(225, 186, 197),
+                                rgb(233, 233, 241),
+                                rgb(206, 196, 239));
+                        -webkit-background-clip: text;
+                        -webkit-text-fill-color: transparent;
+
+                        &:focus {
+                            border-bottom: 2px solid $secondarydark;
+                        }
+                    }
+                }
+
+                textarea {
+                    width: 90%;
+                    height: 150px;
+                    padding: 10px;
+                    border: none;
+                    background-color: $basedark;
+                    color: #ddd;
+                    font-size: 23px !important;
+                    font-weight: 500;
+                    border-bottom: 2px solid #333;
+                    outline: none;
+                    resize: none;
+                    margin-top: 7%;
+
+                    &:focus {
+                        border-bottom: 2px solid $secondarydark;
+                    }
+                }
+
+            }
+
+            .row-2 {
+                input {
+                    margin-top: 10% !important;
+                }
+            }
+
+            .Button {
+                margin-top: 5%;
+
+                a {
+                    background-color: $t-secondarydark;
+                    color: $basedark;
+                    padding: 15px 25px;
+                    width: fit-content;
+                    border-radius: 25px;
+                    font-size: 15px;
+                    font-weight: 700;
+                    background: linear-gradient(to right,
+                            rgb(225, 186, 197),
+                            rgb(206, 196, 239));
+                }
+            }
+        }
+    }
+}
+
+.Footer {
+    .Container {
+        margin-left: 34%;
+        margin-bottom: 10%;
+
+        .SocialMedia {
+            margin-bottom: 10px;
+
+            i {
+                border: 1px solid $stroke-elementsdark;
+                border-radius: $_radius-m;
+                padding: 40px 58px;
+                color: $stroke-controlsdark;
+                font-size: 50px;
+                transition: all 0.3s ease-in-out;
+
+                &:hover {
+                    transform: scale(1.05);
+                    color: $t-brightdark;
+                }
+            }
+        }
+
+        .Content {
+            .Text {
+                margin-top: 5%;
+
+                p {
+                    color: $accentdark;
+                    font-size: 35px;
+                    font-weight: 700;
+                    margin-bottom: 4%;
+                    background: linear-gradient(to right,
+                            rgb(225, 186, 197),
+                            rgb(233, 233, 241),
+                            rgb(206, 196, 239));
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                }
+
+                hr {
+                    width: 90%;
+                    height: 3px;
+                    color: $t-mediumdark;
+                    margin-bottom: 3%;
+                }
+            }
+
+            .Info {
+                gap: 200px;
+                font-family: $_font-secondary;
+
+                span {
+                    color: $t-brightdark;
+                    font-weight: 700;
+                }
+
+                h6 {
+                    font-weight: 400;
+                    color: $t-muteddark;
+                }
+            }
+        }
+    }
+}
