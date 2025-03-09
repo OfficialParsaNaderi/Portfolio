@@ -16,6 +16,40 @@ body {
   background-color: rgb(17, 17, 17);
 }
 
+/*
+
+Make WebPage Scalable for small Phones .!
+@media (max-width: 576px)
+
+--------------------------------------------------------
+
+Make WebPage Scalable for Phones .!
+@media (min-width: 577px) and (max-width: 767px)
+
+--------------------------------------------------------
+
+Make WebPage Scalable for Tablets .!
+@media (min-width: 768px) and (max-width: 991px)
+
+--------------------------------------------------------
+
+Make WebPage Scalable for Small Desktops .!
+@media (min-width: 1000px) and (max-width: 1200px)
+
+--------------------------------------------------------
+
+Make WebPage Scalable for Desktops .!
+@media (min-width : 1400px)
+
+*/
+.Header .Container {
+  /* Center content and apply margin for screens smaller than 1600px */
+  max-width: 1600px;
+  max-height: 800px;
+  margin: 0 auto;
+  position: relative;
+  height: 100vh;
+}
 .Header .Container .Background {
   background-image: url("../../images/Backgrounds/Main-Background.webp");
   background-size: cover;
@@ -26,7 +60,7 @@ body {
 .Header .Container .Background .Portfolio-Box {
   position: fixed;
   top: 6%;
-  left: 5%;
+  left: calc((100% - 1500px) / 2 + 50px);
   background-color: rgb(22, 22, 22);
   width: -moz-fit-content;
   width: fit-content;
@@ -97,8 +131,13 @@ body {
 .Header .Container .Background .Header-Content {
   position: fixed;
   top: 7%;
-  left: 34%;
+  left: 35%;
   z-index: 3;
+}
+@media (min-width: 1400px) {
+  .Header .Container .Background .Header-Content {
+    left: calc((100% - 1430px) / 2 + 490px);
+  }
 }
 .Header .Container .Background .Header-Content .Content .Head .Menu li a {
   -webkit-backdrop-filter: blur(10px);
@@ -197,8 +236,8 @@ body {
   border-radius: 2.2rem;
   position: absolute;
   top: 80%;
-  left: 54%;
-  width: 28%;
+  left: 57%;
+  width: 25%;
   height: auto;
   opacity: 0;
   visibility: hidden;
@@ -218,7 +257,6 @@ body {
   display: none;
   -webkit-backdrop-filter: blur(10px);
           backdrop-filter: blur(10px);
-  display: inline-block;
   padding: 15px 10px 0px 15px;
   border-radius: 2.2rem;
 }
@@ -270,6 +308,10 @@ body {
 .Header .Container .Background .Header-Content .Button a:last-child:hover {
   transform: scale(1.03);
 }
+.Header .Container .Background .Content {
+  max-width: 1400px;
+  margin: 0 auto;
+}
 .Header .Container .Background .Content .Top-Button {
   position: absolute;
   top: 33%;
@@ -302,6 +344,7 @@ body {
   top: 80%;
   left: 34%;
   display: flex;
+  align-items: center;
 }
 .Header .Container .Background .Content .Button a:first-child {
   color: rgb(233, 233, 241);
@@ -330,13 +373,11 @@ body {
   left: 85%;
 }
 .Header .Container .Background .Content .Logo img {
-  width: auto;
-  height: 120px;
   filter: invert(100%) brightness(100%);
 }
 .Header .Container .Background .Content .Logo img {
-  width: 50px;
-  height: 50px;
+  width: auto;
+  height: 125px;
   animation: rotate 2s linear infinite;
 }
 @keyframes rotate {
@@ -553,6 +594,13 @@ body {
   }
 }
 @media (min-width: 1400px) {
+  .Header .Container {
+    max-width: 1600px;
+    max-height: 800px;
+    margin: 0 auto;
+    position: relative;
+    height: 100vh;
+  }
   .Header .Container .Background {
     background-image: url("../../images/Backgrounds/Main-Background.webp");
     background-size: cover;
@@ -563,7 +611,7 @@ body {
   .Header .Container .Background .Portfolio-Box {
     position: fixed;
     top: 6%;
-    left: 5%;
+    left: calc((100% - 1500px) / 2 + 50px);
     background-color: rgb(22, 22, 22);
     width: -moz-fit-content;
     width: fit-content;
@@ -637,6 +685,13 @@ body {
     left: 35%;
     z-index: 3;
   }
+}
+@media (min-width: 1400px) and (min-width: 1400px) {
+  .Header .Container .Background .Header-Content {
+    left: calc((100% - 1430px) / 2 + 490px);
+  }
+}
+@media (min-width: 1400px) {
   .Header .Container .Background .Header-Content .Content .Head .Menu li a {
     -webkit-backdrop-filter: blur(10px);
             backdrop-filter: blur(10px);
@@ -806,6 +861,10 @@ body {
   .Header .Container .Background .Header-Content .Button a:last-child:hover {
     transform: scale(1.03);
   }
+  .Header .Container .Background .Content {
+    max-width: 1400px;
+    margin: 0 auto;
+  }
   .Header .Container .Background .Content .Top-Button {
     position: absolute;
     top: 33%;
@@ -891,6 +950,7 @@ body {
 }
 
 .Main-Container {
+  /* Center content and apply margin for screens smaller than 1400px */
   max-width: 1400px;
   margin: 0 auto;
 }
@@ -2597,6 +2657,7 @@ body {
 }
 
 .Footer {
+  /* Center content and apply margin for screens smaller than 1500px */
   max-width: 1500px;
   margin: 0 auto;
 }

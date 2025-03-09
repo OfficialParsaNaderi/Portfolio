@@ -16,6 +16,7 @@ Welcome to the portfolio website of Parsa Naderi, a UI/UX Designer and FullStack
 
 ## Overview
 This is a single-page portfolio website designed to highlight Parsa Naderi's skills, projects, education, experience, and contact information. The site features a dark-mode aesthetic with gradient text effects, smooth animations powered by AOS (Animate On Scroll), and a responsive layout using Bootstrap. It also integrates Swiper.js for testimonials and Font Awesome for icons.
+I hope you enjoy the site and please feel free to reach out with any feedback or suggestions into the Inputs Part 🫡🌹 .!
 
 ## Features
 - **Responsive Design:** Adapts seamlessly across mobile, tablet, and desktop devices.

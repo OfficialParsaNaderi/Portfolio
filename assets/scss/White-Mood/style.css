@@ -16,6 +16,39 @@ body {
   background-color: rgb(233, 233, 241);
 }
 
+/*
+
+Make WebPage Scalable for small Phones .!
+@media (max-width: 576px)
+
+--------------------------------------------------------
+
+Make WebPage Scalable for Phones .!
+@media (min-width: 577px) and (max-width: 767px)
+
+--------------------------------------------------------
+
+Make WebPage Scalable for Tablets .!
+@media (min-width: 768px) and (max-width: 991px)
+
+--------------------------------------------------------
+
+Make WebPage Scalable for Small Desktops .!
+@media (min-width: 1000px) and (max-width: 1200px)
+
+--------------------------------------------------------
+
+Make WebPage Scalable for Desktops .!
+@media (min-width : 1400px)
+
+*/
+.Header .Container {
+  max-width: 1600px;
+  max-height: 800px;
+  margin: 0 auto;
+  position: relative;
+  height: 100vh;
+}
 .Header .Container .Background {
   background-image: url("../../images/Backgrounds/Main-White-Background.png");
   background-size: cover;
@@ -26,7 +59,7 @@ body {
 .Header .Container .Background .Portfolio-Box {
   position: fixed;
   top: 6%;
-  left: 5%;
+  left: calc((100% - 1500px) / 2 + 50px);
   background-color: #ebf0f7;
   width: -moz-fit-content;
   width: fit-content;
@@ -99,6 +132,11 @@ body {
   top: 7%;
   left: 35%;
   z-index: 3;
+}
+@media (min-width: 1400px) {
+  .Header .Container .Background .Header-Content {
+    left: calc((100% - 1430px) / 2 + 490px);
+  }
 }
 .Header .Container .Background .Header-Content .Content .Head .Menu li a {
   -webkit-backdrop-filter: blur(10px);
@@ -247,7 +285,7 @@ body {
 .Header .Container .Background .Header-Content .Button a:first-child {
   -webkit-backdrop-filter: blur(10px);
           backdrop-filter: blur(10px);
-  color: rgb(22, 22, 22);
+  color: rgb(75, 75, 81);
   padding: 10px 15px;
   margin-bottom: 7px;
   font-size: 20px;
@@ -268,6 +306,10 @@ body {
 }
 .Header .Container .Background .Header-Content .Button a:last-child:hover {
   transform: scale(1.03);
+}
+.Header .Container .Background .Content {
+  max-width: 1400px;
+  margin: 0 auto;
 }
 .Header .Container .Background .Content .Top-Button {
   position: absolute;
@@ -551,6 +593,13 @@ body {
   }
 }
 @media (min-width: 1400px) {
+  .Header .Container {
+    max-width: 1600px;
+    max-height: 800px;
+    margin: 0 auto;
+    position: relative;
+    height: 100vh;
+  }
   .Header .Container .Background {
     background-image: url("../../images/Backgrounds/Main-White-Background.png");
     background-size: cover;
@@ -561,7 +610,7 @@ body {
   .Header .Container .Background .Portfolio-Box {
     position: fixed;
     top: 6%;
-    left: 5%;
+    left: calc((100% - 1500px) / 2 + 50px);
     background-color: #ebf0f7;
     width: -moz-fit-content;
     width: fit-content;
@@ -635,6 +684,13 @@ body {
     left: 35%;
     z-index: 3;
   }
+}
+@media (min-width: 1400px) and (min-width: 1400px) {
+  .Header .Container .Background .Header-Content {
+    left: calc((100% - 1430px) / 2 + 490px);
+  }
+}
+@media (min-width: 1400px) {
   .Header .Container .Background .Header-Content .Content .Head .Menu li a {
     -webkit-backdrop-filter: blur(10px);
             backdrop-filter: blur(10px);
@@ -782,7 +838,7 @@ body {
   .Header .Container .Background .Header-Content .Button a:first-child {
     -webkit-backdrop-filter: blur(10px);
             backdrop-filter: blur(10px);
-    color: rgb(22, 22, 22);
+    color: rgb(75, 75, 81);
     padding: 10px 15px;
     margin-bottom: 7px;
     font-size: 20px;
@@ -803,6 +859,10 @@ body {
   }
   .Header .Container .Background .Header-Content .Button a:last-child:hover {
     transform: scale(1.03);
+  }
+  .Header .Container .Background .Content {
+    max-width: 1400px;
+    margin: 0 auto;
   }
   .Header .Container .Background .Content .Top-Button {
     position: absolute;
@@ -889,6 +949,7 @@ body {
 }
 
 .Main-Container {
+  /* Center content and apply margin for screens smaller than 1400px */
   max-width: 1400px;
   margin: 0 auto;
 }
@@ -2585,6 +2646,7 @@ body {
 }
 
 .Footer {
+  /* Center content and apply margin for screens smaller than 1500px */
   max-width: 1500px;
   margin: 0 auto;
 }
