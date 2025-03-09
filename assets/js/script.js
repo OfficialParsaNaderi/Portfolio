@@ -1,3 +1,5 @@
+AOS.init();
+
 var swiper = new Swiper(".mySwiper", {
     spaceBetween: 30,
     centeredSlides: true,
@@ -12,14 +14,15 @@ var swiper = new Swiper(".mySwiper", {
         prevEl: ".Button-Prev",
     },
 });
-const loader = document.querySelector('.Logo');
 
-function rotateOnScroll() {
-    const scrollPosition = window.scrollY;
-    const rotation = scrollPosition * 0;
-    loader.style.transform = `rotate(${rotation}deg)`;
-}
-
-window.addEventListener('scroll', rotateOnScroll);
-
-AOS.init();
+links.forEach(link => {
+    link.addEventListener('click', function (e) {
+        e.preventDefault();
+        const TargetId = this.getAttribute('href');
+        const TargetElement = document.querySelector(TargetId);
+        TargetElement.scrollIntoView({
+            behavior: 'smooth',
+            block: 'start'
+        });
+    });
+});

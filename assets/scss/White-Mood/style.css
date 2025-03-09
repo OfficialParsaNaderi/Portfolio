@@ -13,11 +13,11 @@ img {
 body {
   font-family: "Syne", sans-serif;
   cursor: pointer;
-  background-color: rgb(17, 17, 17);
+  background-color: rgb(233, 233, 241);
 }
 
 .Header .Container .Background {
-  background-image: url("../images/Backgrounds/Main-Background.png");
+  background-image: url("../../images/Backgrounds/Main-White-Background.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -27,11 +27,11 @@ body {
   position: fixed;
   top: 6%;
   left: 5%;
-  background-color: rgb(22, 22, 22);
+  background-color: #ebf0f7;
   width: -moz-fit-content;
   width: fit-content;
   padding: 20px 50px 5px 50px;
-  border: 2px solid rgb(48, 48, 51);
+  border: 2px solid rgb(199, 198, 211);
   border-radius: 2.2rem;
 }
 .Header .Container .Background .Portfolio-Box .Title {
@@ -42,12 +42,13 @@ body {
   height: 85px;
 }
 .Header .Container .Background .Portfolio-Box .Title .Text h1 {
-  color: rgb(233, 233, 241);
+  color: rgb(199, 198, 211);
   font-weight: 600;
   font-size: 35px;
-  background: linear-gradient(to right, rgb(225, 186, 197), rgb(233, 233, 241), rgb(206, 196, 239));
+  background: linear-gradient(to right, rgb(170, 112, 224), rgb(112, 89, 226));
   -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+          background-clip: text;
+  color: transparent;
 }
 .Header .Container .Background .Portfolio-Box .Image {
   margin-bottom: 8px;
@@ -64,27 +65,27 @@ body {
   color: rgb(161, 161, 175);
 }
 .Header .Container .Background .Portfolio-Box .Content h5 {
-  color: rgb(233, 233, 241);
+  color: rgb(22, 22, 22);
 }
 .Header .Container .Background .Portfolio-Box .SocialMedia {
   margin-bottom: 10px;
   gap: 10px;
 }
 .Header .Container .Background .Portfolio-Box .SocialMedia i {
-  border: 1px solid rgb(48, 48, 51);
+  border: 1px solid rgb(199, 198, 211);
   border-radius: 40%;
   padding: 15px;
-  color: rgb(233, 233, 241);
+  color: rgb(22, 22, 22);
   font-size: 18px;
 }
 .Header .Container .Background .Portfolio-Box .Button {
-  background-color: rgb(206, 196, 239);
+  background-color: rgb(22, 22, 22);
   padding: 15px;
-  background: linear-gradient(to right, rgb(225, 186, 197), rgb(206, 196, 239));
+  background: linear-gradient(to right, rgb(170, 112, 224), rgb(112, 89, 226));
   transition: all 0.3s;
 }
 .Header .Container .Background .Portfolio-Box .Button a {
-  color: rgb(0, 0, 0);
+  color: rgb(233, 233, 241);
   font-size: 18px;
   font-weight: 600;
   text-decoration: none;
@@ -96,22 +97,22 @@ body {
 .Header .Container .Background .Header-Content {
   position: fixed;
   top: 7%;
-  left: 34%;
+  left: 35%;
   z-index: 3;
 }
 .Header .Container .Background .Header-Content .Content .Head .Menu li a {
   -webkit-backdrop-filter: blur(10px);
           backdrop-filter: blur(10px);
-  color: rgba(255, 255, 255, 0.3);
+  color: rgb(75, 75, 81);
   font-size: 17px;
   font-weight: 600;
-  border: rgb(75, 75, 81);
+  border: rgb(199, 198, 211);
   border-radius: 20px;
   padding: 10px 16px;
   transition: all 0.6s;
 }
 .Header .Container .Background .Header-Content .Content .Head .Menu li a:hover {
-  color: rgb(233, 233, 241);
+  color: rgb(22, 22, 22);
 }
 .Header .Container .Background .Header-Content .Content .Head .Menu .Normal-Menu a i {
   transition: all 0.6s;
@@ -120,23 +121,23 @@ body {
   top: 70%;
   -webkit-backdrop-filter: blur(10px);
           backdrop-filter: blur(10px);
-  border: rgb(75, 75, 81);
+  border: rgb(199, 198, 211);
   border-radius: 20px;
   padding: 10px 16px;
-  border: 2px solid rgb(48, 48, 51);
+  border: 2px solid rgb(199, 198, 211);
   opacity: 0;
   visibility: hidden;
 }
 .Header .Container .Background .Header-Content .Content .Head .Menu .Normal-Menu ul li a {
   -webkit-backdrop-filter: blur(0px);
           backdrop-filter: blur(0px);
-  color: rgba(255, 255, 255, 0.3);
+  color: rgb(22, 22, 22);
   font-size: 17px;
   font-weight: 600;
   transition: all 0.6s;
 }
 .Header .Container .Background .Header-Content .Content .Head .Menu .Normal-Menu ul li a:hover {
-  color: rgb(233, 233, 241);
+  color: rgb(75, 75, 81);
 }
 .Header .Container .Background .Header-Content .Content .Head .Menu .Normal-Menu:hover > ul {
   visibility: visible;
@@ -162,12 +163,12 @@ body {
   border: rgb(75, 75, 81);
   border-radius: 2.2rem;
   padding: 10px 20px;
-  border: 2px solid rgb(48, 48, 51);
+  border: 2px solid rgb(199, 198, 211);
   opacity: 0;
   visibility: hidden;
 }
 .Header .Container .Background .Header-Content .Content .Head .Menu .Mega-Menu ul li {
-  color: rgba(255, 255, 255, 0.3);
+  color: rgb(22, 22, 22);
   font-size: 17px;
   font-weight: 600;
   padding-right: 2rem;
@@ -177,7 +178,7 @@ body {
 }
 .Header .Container .Background .Header-Content .Content .Head .Menu .Mega-Menu ul li .Title {
   font-weight: bold;
-  color: rgba(255, 255, 255, 0.3);
+  color: rgb(22, 22, 22);
   display: inline-block;
   border-left: 5px solid rgb(48, 48, 51);
   border-radius: 5px;
@@ -185,7 +186,7 @@ body {
   margin-bottom: -24%;
 }
 .Header .Container .Background .Header-Content .Content .Head .Menu .Mega-Menu ul li a {
-  color: rgb(233, 233, 241);
+  color: rgb(0, 0, 0);
   -webkit-backdrop-filter: blur(0px);
           backdrop-filter: blur(0px);
 }
@@ -196,8 +197,8 @@ body {
   border-radius: 2.2rem;
   position: absolute;
   top: 80%;
-  left: 54%;
-  width: 28%;
+  left: 57%;
+  width: 25%;
   height: auto;
   opacity: 0;
   visibility: hidden;
@@ -217,18 +218,17 @@ body {
   display: none;
   -webkit-backdrop-filter: blur(10px);
           backdrop-filter: blur(10px);
-  display: inline-block;
   padding: 15px 10px 0px 15px;
   border-radius: 2.2rem;
 }
 .Header .Container .Background .Header-Content .Content .NavBar .Menu li a i {
   padding-top: 13px;
-  color: rgba(255, 255, 255, 0.3);
+  color: rgb(22, 22, 22);
   font-size: 18px;
   transition: all 0.6s;
 }
 .Header .Container .Background .Header-Content .Content .NavBar .Menu li a i:hover {
-  color: rgb(233, 233, 241);
+  color: rgb(199, 198, 211);
 }
 .Header .Container .Background .Header-Content .Content .NavBar .Menu li a #Message {
   background-color: rgb(225, 186, 197);
@@ -247,14 +247,14 @@ body {
 .Header .Container .Background .Header-Content .Button a:first-child {
   -webkit-backdrop-filter: blur(10px);
           backdrop-filter: blur(10px);
-  color: rgb(75, 75, 81);
+  color: rgb(22, 22, 22);
   padding: 10px 15px;
   margin-bottom: 7px;
   font-size: 20px;
   transition: all 0.6s;
 }
 .Header .Container .Background .Header-Content .Button a:first-child:hover {
-  color: rgb(233, 233, 241);
+  color: rgb(22, 22, 22);
 }
 .Header .Container .Background .Header-Content .Button a:last-child {
   background-color: rgb(206, 196, 239);
@@ -263,7 +263,7 @@ body {
   border-radius: 25px;
   font-size: 15px;
   font-weight: 700;
-  background: linear-gradient(to right, rgb(225, 186, 197), rgb(206, 196, 239));
+  background: linear-gradient(to right, rgb(170, 112, 224), rgb(112, 89, 226));
   transition: all 0.3s;
 }
 .Header .Container .Background .Header-Content .Button a:last-child:hover {
@@ -275,10 +275,10 @@ body {
   left: 34%;
 }
 .Header .Container .Background .Content .Top-Button a {
-  color: rgb(233, 233, 241);
+  color: rgb(22, 22, 22);
   font-size: 13px;
   font-weight: 600;
-  border: 1px solid rgb(48, 48, 51);
+  border: 1px solid rgb(199, 198, 211);
   border-radius: 15px;
   padding: 10px 15px;
 }
@@ -288,24 +288,26 @@ body {
   left: 34%;
 }
 .Header .Container .Background .Content .Content h1 {
-  color: rgb(228, 184, 191);
+  color: rgb(22, 22, 22);
   font-size: 65px;
   font-weight: 700;
-  background: linear-gradient(to right, rgb(225, 186, 197), rgb(233, 233, 241), rgb(206, 196, 239));
+  background: linear-gradient(to right, rgb(170, 112, 224), rgb(112, 89, 226));
   -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+          background-clip: text;
+  color: transparent;
 }
 .Header .Container .Background .Content .Button {
   position: absolute;
   top: 80%;
   left: 34%;
   display: flex;
+  align-items: center;
 }
 .Header .Container .Background .Content .Button a:first-child {
-  color: rgb(233, 233, 241);
+  color: rgb(22, 22, 22);
   font-size: 18px;
   font-weight: 500;
-  border: 1px solid rgb(48, 48, 51);
+  border: 1px solid rgb(199, 198, 211);
   border-radius: 20px;
   padding: 10px 20px;
   transition: all 0.3s;
@@ -320,7 +322,7 @@ body {
   transition: all 0.3s;
 }
 .Header .Container .Background .Content .Button a:last-child:hover {
-  color: rgb(233, 233, 241);
+  color: rgb(22, 22, 22);
 }
 .Header .Container .Background .Content .Logo {
   position: absolute;
@@ -328,13 +330,11 @@ body {
   left: 85%;
 }
 .Header .Container .Background .Content .Logo img {
-  width: auto;
-  height: 120px;
-  filter: invert(100%) brightness(100%);
+  filter: invert(0%) brightness(0%);
 }
 .Header .Container .Background .Content .Logo img {
-  width: 50px;
-  height: 50px;
+  width: auto;
+  height: 125px;
   animation: rotate 2s linear infinite;
 }
 @keyframes rotate {
@@ -349,7 +349,7 @@ body {
   position: relative;
   right: 50%;
   font-size: 24px;
-  color: rgb(233, 233, 241);
+  color: rgb(22, 22, 22);
 }
 @media (max-width: 576px) {
   .Header .Container .Background {
@@ -493,7 +493,7 @@ body {
     display: block;
     position: fixed;
     top: 85%;
-    right: 35%;
+    right: 25%;
   }
   .Header .Container .Background .Content {
     position: static;
@@ -521,9 +521,38 @@ body {
     display: none;
   }
 }
+@media (min-width: 1000px) and (max-width: 1200px) {
+  .Header .Container .Background .Portfolio-Box {
+    display: none;
+  }
+  .Header .Container .Background .Header-Content {
+    position: fixed;
+    top: 7%;
+    left: 9%;
+  }
+  .Header .Container .Background .Header-Content .NavBar {
+    display: none;
+  }
+  .Header .Container .Background .Content .Top-Button {
+    position: absolute;
+    left: 10%;
+  }
+  .Header .Container .Background .Content .Content {
+    position: absolute;
+    left: 10%;
+  }
+  .Header .Container .Background .Content .Button {
+    position: absolute;
+    left: 10%;
+    align-items: center;
+  }
+  .Header .Container .Background .Content .Logo {
+    display: none;
+  }
+}
 @media (min-width: 1400px) {
   .Header .Container .Background {
-    background-image: url("../images/Backgrounds/Main-Background.png");
+    background-image: url("../../images/Backgrounds/Main-White-Background.png");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -533,11 +562,11 @@ body {
     position: fixed;
     top: 6%;
     left: 5%;
-    background-color: rgb(22, 22, 22);
+    background-color: #ebf0f7;
     width: -moz-fit-content;
     width: fit-content;
     padding: 20px 50px 5px 50px;
-    border: 2px solid rgb(48, 48, 51);
+    border: 2px solid rgb(199, 198, 211);
     border-radius: 2.2rem;
   }
   .Header .Container .Background .Portfolio-Box .Title {
@@ -548,12 +577,13 @@ body {
     height: 85px;
   }
   .Header .Container .Background .Portfolio-Box .Title .Text h1 {
-    color: rgb(233, 233, 241);
+    color: rgb(199, 198, 211);
     font-weight: 600;
     font-size: 35px;
-    background: linear-gradient(to right, rgb(225, 186, 197), rgb(233, 233, 241), rgb(206, 196, 239));
+    background: linear-gradient(to right, rgb(170, 112, 224), rgb(112, 89, 226));
     -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+            background-clip: text;
+    color: transparent;
   }
   .Header .Container .Background .Portfolio-Box .Image {
     margin-bottom: 8px;
@@ -570,27 +600,27 @@ body {
     color: rgb(161, 161, 175);
   }
   .Header .Container .Background .Portfolio-Box .Content h5 {
-    color: rgb(233, 233, 241);
+    color: rgb(22, 22, 22);
   }
   .Header .Container .Background .Portfolio-Box .SocialMedia {
     margin-bottom: 10px;
     gap: 10px;
   }
   .Header .Container .Background .Portfolio-Box .SocialMedia i {
-    border: 1px solid rgb(48, 48, 51);
+    border: 1px solid rgb(199, 198, 211);
     border-radius: 40%;
     padding: 15px;
-    color: rgb(233, 233, 241);
+    color: rgb(22, 22, 22);
     font-size: 18px;
   }
   .Header .Container .Background .Portfolio-Box .Button {
-    background-color: rgb(206, 196, 239);
+    background-color: rgb(22, 22, 22);
     padding: 15px;
-    background: linear-gradient(to right, rgb(225, 186, 197), rgb(206, 196, 239));
+    background: linear-gradient(to right, rgb(170, 112, 224), rgb(112, 89, 226));
     transition: all 0.3s;
   }
   .Header .Container .Background .Portfolio-Box .Button a {
-    color: rgb(0, 0, 0);
+    color: rgb(233, 233, 241);
     font-size: 18px;
     font-weight: 600;
     text-decoration: none;
@@ -602,22 +632,22 @@ body {
   .Header .Container .Background .Header-Content {
     position: fixed;
     top: 7%;
-    left: 34%;
+    left: 35%;
     z-index: 3;
   }
   .Header .Container .Background .Header-Content .Content .Head .Menu li a {
     -webkit-backdrop-filter: blur(10px);
             backdrop-filter: blur(10px);
-    color: rgba(255, 255, 255, 0.3);
+    color: rgb(75, 75, 81);
     font-size: 17px;
     font-weight: 600;
-    border: rgb(75, 75, 81);
+    border: rgb(199, 198, 211);
     border-radius: 20px;
     padding: 10px 16px;
     transition: all 0.6s;
   }
   .Header .Container .Background .Header-Content .Content .Head .Menu li a:hover {
-    color: rgb(233, 233, 241);
+    color: rgb(22, 22, 22);
   }
   .Header .Container .Background .Header-Content .Content .Head .Menu .Normal-Menu a i {
     transition: all 0.6s;
@@ -626,23 +656,23 @@ body {
     top: 70%;
     -webkit-backdrop-filter: blur(10px);
             backdrop-filter: blur(10px);
-    border: rgb(75, 75, 81);
+    border: rgb(199, 198, 211);
     border-radius: 20px;
     padding: 10px 16px;
-    border: 2px solid rgb(48, 48, 51);
+    border: 2px solid rgb(199, 198, 211);
     opacity: 0;
     visibility: hidden;
   }
   .Header .Container .Background .Header-Content .Content .Head .Menu .Normal-Menu ul li a {
     -webkit-backdrop-filter: blur(0px);
             backdrop-filter: blur(0px);
-    color: rgba(255, 255, 255, 0.3);
+    color: rgb(22, 22, 22);
     font-size: 17px;
     font-weight: 600;
     transition: all 0.6s;
   }
   .Header .Container .Background .Header-Content .Content .Head .Menu .Normal-Menu ul li a:hover {
-    color: rgb(233, 233, 241);
+    color: rgb(75, 75, 81);
   }
   .Header .Container .Background .Header-Content .Content .Head .Menu .Normal-Menu:hover > ul {
     visibility: visible;
@@ -668,12 +698,12 @@ body {
     border: rgb(75, 75, 81);
     border-radius: 2.2rem;
     padding: 10px 20px;
-    border: 2px solid rgb(48, 48, 51);
+    border: 2px solid rgb(199, 198, 211);
     opacity: 0;
     visibility: hidden;
   }
   .Header .Container .Background .Header-Content .Content .Head .Menu .Mega-Menu ul li {
-    color: rgba(255, 255, 255, 0.3);
+    color: rgb(22, 22, 22);
     font-size: 17px;
     font-weight: 600;
     padding-right: 2rem;
@@ -683,7 +713,7 @@ body {
   }
   .Header .Container .Background .Header-Content .Content .Head .Menu .Mega-Menu ul li .Title {
     font-weight: bold;
-    color: rgba(255, 255, 255, 0.3);
+    color: rgb(22, 22, 22);
     display: inline-block;
     border-left: 5px solid rgb(48, 48, 51);
     border-radius: 5px;
@@ -691,7 +721,7 @@ body {
     margin-bottom: -24%;
   }
   .Header .Container .Background .Header-Content .Content .Head .Menu .Mega-Menu ul li a {
-    color: rgb(233, 233, 241);
+    color: rgb(0, 0, 0);
     -webkit-backdrop-filter: blur(0px);
             backdrop-filter: blur(0px);
   }
@@ -702,8 +732,8 @@ body {
     border-radius: 2.2rem;
     position: absolute;
     top: 80%;
-    left: 54%;
-    width: 28%;
+    left: 57%;
+    width: 25%;
     height: auto;
     opacity: 0;
     visibility: hidden;
@@ -728,12 +758,12 @@ body {
   }
   .Header .Container .Background .Header-Content .Content .NavBar .Menu li a i {
     padding-top: 13px;
-    color: rgba(255, 255, 255, 0.3);
+    color: rgb(22, 22, 22);
     font-size: 18px;
     transition: all 0.6s;
   }
   .Header .Container .Background .Header-Content .Content .NavBar .Menu li a i:hover {
-    color: rgb(233, 233, 241);
+    color: rgb(199, 198, 211);
   }
   .Header .Container .Background .Header-Content .Content .NavBar .Menu li a #Message {
     background-color: rgb(225, 186, 197);
@@ -752,14 +782,14 @@ body {
   .Header .Container .Background .Header-Content .Button a:first-child {
     -webkit-backdrop-filter: blur(10px);
             backdrop-filter: blur(10px);
-    color: rgb(75, 75, 81);
+    color: rgb(22, 22, 22);
     padding: 10px 15px;
     margin-bottom: 7px;
     font-size: 20px;
     transition: all 0.6s;
   }
   .Header .Container .Background .Header-Content .Button a:first-child:hover {
-    color: rgb(233, 233, 241);
+    color: rgb(22, 22, 22);
   }
   .Header .Container .Background .Header-Content .Button a:last-child {
     background-color: rgb(206, 196, 239);
@@ -768,7 +798,7 @@ body {
     border-radius: 25px;
     font-size: 15px;
     font-weight: 700;
-    background: linear-gradient(to right, rgb(225, 186, 197), rgb(206, 196, 239));
+    background: linear-gradient(to right, rgb(170, 112, 224), rgb(112, 89, 226));
     transition: all 0.3s;
   }
   .Header .Container .Background .Header-Content .Button a:last-child:hover {
@@ -780,10 +810,10 @@ body {
     left: 34%;
   }
   .Header .Container .Background .Content .Top-Button a {
-    color: rgb(233, 233, 241);
+    color: rgb(22, 22, 22);
     font-size: 13px;
     font-weight: 600;
-    border: 1px solid rgb(48, 48, 51);
+    border: 1px solid rgb(199, 198, 211);
     border-radius: 15px;
     padding: 10px 15px;
   }
@@ -793,12 +823,13 @@ body {
     left: 34%;
   }
   .Header .Container .Background .Content .Content h1 {
-    color: rgb(228, 184, 191);
+    color: rgb(22, 22, 22);
     font-size: 65px;
     font-weight: 700;
-    background: linear-gradient(to right, rgb(225, 186, 197), rgb(233, 233, 241), rgb(206, 196, 239));
+    background: linear-gradient(to right, rgb(170, 112, 224), rgb(112, 89, 226));
     -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+            background-clip: text;
+    color: transparent;
   }
   .Header .Container .Background .Content .Button {
     position: absolute;
@@ -808,10 +839,10 @@ body {
     align-items: center;
   }
   .Header .Container .Background .Content .Button a:first-child {
-    color: rgb(233, 233, 241);
+    color: rgb(22, 22, 22);
     font-size: 18px;
     font-weight: 500;
-    border: 1px solid rgb(48, 48, 51);
+    border: 1px solid rgb(199, 198, 211);
     border-radius: 20px;
     padding: 10px 20px;
     transition: all 0.3s;
@@ -826,7 +857,7 @@ body {
     transition: all 0.3s;
   }
   .Header .Container .Background .Content .Button a:last-child:hover {
-    color: rgb(233, 233, 241);
+    color: rgb(22, 22, 22);
   }
   .Header .Container .Background .Content .Logo {
     position: absolute;
@@ -834,7 +865,7 @@ body {
     left: 85%;
   }
   .Header .Container .Background .Content .Logo img {
-    filter: invert(100%) brightness(100%);
+    filter: invert(0%) brightness(0%);
   }
   .Header .Container .Background .Content .Logo img {
     width: auto;
@@ -853,7 +884,7 @@ body {
     position: relative;
     right: 50%;
     font-size: 24px;
-    color: rgb(233, 233, 241);
+    color: rgb(22, 22, 22);
   }
 }
 
@@ -890,11 +921,18 @@ body {
     margin-bottom: 5%;
   }
 }
+@media (min-width: 1000px) and (max-width: 1200px) {
+  .Main-Container > * {
+    margin-top: 9%;
+    margin-left: 10%;
+    margin-bottom: 5%;
+  }
+}
 .Main-Container .Container-One .Content .Top-Button a {
-  color: rgb(233, 233, 241);
+  color: rgb(22, 22, 22);
   font-size: 13px;
   font-weight: 600;
-  border: 1px solid rgb(48, 48, 51);
+  border: 1px solid rgb(199, 198, 211);
   border-radius: 15px;
   padding: 10px 15px;
 }
@@ -907,16 +945,14 @@ body {
   font-size: 55px;
   font-weight: 700;
   white-space: nowrap;
-  background: linear-gradient(to right, rgb(225, 186, 197), rgb(233, 233, 241), rgb(206, 196, 239));
+  background: linear-gradient(to right, rgb(170, 112, 224), rgb(112, 89, 226));
   -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+          background-clip: text;
+  color: transparent;
 }
 .Main-Container .Container-One .Cards {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-}
-.Main-Container .Container-One .Cards .Card {
-  position: relative;
 }
 .Main-Container .Container-One .Cards .Card figure img {
   width: 97%;
@@ -978,12 +1014,21 @@ body {
     font-size: 25px;
   }
 }
+@media (min-width: 1000px) and (max-width: 1200px) {
+  .Main-Container .Container-One .Cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .Main-Container .Container-One .Cards .Card figure img {
+    width: 80%;
+  }
+}
 @media (min-width: 1400px) {
   .Main-Container .Container-One .Content .Top-Button a {
-    color: rgb(233, 233, 241);
+    color: rgb(22, 22, 22);
     font-size: 13px;
     font-weight: 600;
-    border: 1px solid rgb(48, 48, 51);
+    border: 1px solid rgb(199, 198, 211);
     border-radius: 15px;
     padding: 10px 15px;
   }
@@ -996,16 +1041,14 @@ body {
     font-size: 55px;
     font-weight: 700;
     white-space: nowrap;
-    background: linear-gradient(to right, rgb(225, 186, 197), rgb(233, 233, 241), rgb(206, 196, 239));
+    background: linear-gradient(to right, rgb(170, 112, 224), rgb(112, 89, 226));
     -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+            background-clip: text;
+    color: transparent;
   }
   .Main-Container .Container-One .Cards {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-  }
-  .Main-Container .Container-One .Cards .Card {
-    position: relative;
   }
   .Main-Container .Container-One .Cards .Card figure img {
     width: 97%;
@@ -1041,14 +1084,11 @@ body {
     width: 97%;
   }
 }
-.Main-Container .Container-Two .Content {
-  margin-bottom: 5%;
-}
 .Main-Container .Container-Two .Content .Top-Button a {
-  color: rgb(233, 233, 241);
+  color: rgb(22, 22, 22);
   font-size: 13px;
   font-weight: 600;
-  border: 1px solid rgb(48, 48, 51);
+  border: 1px solid rgb(199, 198, 211);
   border-radius: 15px;
   padding: 10px 15px;
 }
@@ -1060,16 +1100,18 @@ body {
   color: rgb(228, 184, 191);
   font-size: 55px;
   font-weight: 700;
-  background: linear-gradient(to right, rgb(225, 186, 197), rgb(233, 233, 241), rgb(206, 196, 239));
+  white-space: nowrap;
+  background: linear-gradient(to right, rgb(170, 112, 224), rgb(112, 89, 226));
   -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+          background-clip: text;
+  color: transparent;
 }
 .Main-Container .Container-Two .Boxes {
   display: flex;
   gap: 40px;
 }
 .Main-Container .Container-Two .Boxes .Box {
-  border: 1px solid rgb(48, 48, 51);
+  border: 1px solid rgb(199, 198, 211);
   border-radius: 2.2rem;
   padding: 25px 55px;
 }
@@ -1078,12 +1120,12 @@ body {
   text-align: center;
   font-size: 65px;
   font-weight: 600;
-  color: rgb(206, 196, 239);
+  color: rgb(112, 89, 226);
 }
 .Main-Container .Container-Two .Boxes .Box span {
   font-size: 20px;
   font-weight: 600;
-  color: rgb(233, 233, 241);
+  color: rgb(22, 22, 22);
 }
 .Main-Container .Container-Two .Text {
   gap: 50px;
@@ -1093,7 +1135,7 @@ body {
 }
 .Main-Container .Container-Two .Text .Content-One p {
   font-size: 21px;
-  color: rgb(233, 233, 241);
+  color: rgb(22, 22, 22);
 }
 .Main-Container .Container-Two .Text .Content-One span {
   position: relative;
@@ -1126,7 +1168,7 @@ body {
   border-radius: 25px;
   font-size: 15px;
   font-weight: 700;
-  background: linear-gradient(to right, rgb(225, 186, 197), rgb(206, 196, 239));
+  background: linear-gradient(to right, rgb(170, 112, 224), rgb(112, 89, 226));
   transition: all 0.3s;
 }
 .Main-Container .Container-Two .Text .Content-One .Button:hover {
@@ -1141,7 +1183,7 @@ body {
   font-size: 17px;
 }
 .Main-Container .Container-Two .Text .Content-Two h6 {
-  color: rgb(233, 233, 241);
+  color: rgb(22, 22, 22);
   font-size: 18px;
   font-weight: 700;
   margin-bottom: 15%;
@@ -1198,14 +1240,11 @@ body {
   }
 }
 @media (min-width: 1400px) {
-  .Main-Container .Container-Two .Content {
-    margin-bottom: 5%;
-  }
   .Main-Container .Container-Two .Content .Top-Button a {
-    color: rgb(233, 233, 241);
+    color: rgb(22, 22, 22);
     font-size: 13px;
     font-weight: 600;
-    border: 1px solid rgb(48, 48, 51);
+    border: 1px solid rgb(199, 198, 211);
     border-radius: 15px;
     padding: 10px 15px;
   }
@@ -1217,16 +1256,18 @@ body {
     color: rgb(228, 184, 191);
     font-size: 55px;
     font-weight: 700;
-    background: linear-gradient(to right, rgb(225, 186, 197), rgb(233, 233, 241), rgb(206, 196, 239));
+    white-space: nowrap;
+    background: linear-gradient(to right, rgb(170, 112, 224), rgb(112, 89, 226));
     -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+            background-clip: text;
+    color: transparent;
   }
   .Main-Container .Container-Two .Boxes {
     display: flex;
     gap: 40px;
   }
   .Main-Container .Container-Two .Boxes .Box {
-    border: 1px solid rgb(48, 48, 51);
+    border: 1px solid rgb(199, 198, 211);
     border-radius: 2.2rem;
     padding: 25px 55px;
   }
@@ -1235,12 +1276,12 @@ body {
     text-align: center;
     font-size: 65px;
     font-weight: 600;
-    color: rgb(206, 196, 239);
+    color: rgb(112, 89, 226);
   }
   .Main-Container .Container-Two .Boxes .Box span {
     font-size: 20px;
     font-weight: 600;
-    color: rgb(233, 233, 241);
+    color: rgb(22, 22, 22);
   }
   .Main-Container .Container-Two .Text {
     gap: 50px;
@@ -1250,7 +1291,7 @@ body {
   }
   .Main-Container .Container-Two .Text .Content-One p {
     font-size: 21px;
-    color: rgb(233, 233, 241);
+    color: rgb(22, 22, 22);
   }
   .Main-Container .Container-Two .Text .Content-One span {
     position: relative;
@@ -1283,7 +1324,7 @@ body {
     border-radius: 25px;
     font-size: 15px;
     font-weight: 700;
-    background: linear-gradient(to right, rgb(225, 186, 197), rgb(206, 196, 239));
+    background: linear-gradient(to right, rgb(170, 112, 224), rgb(112, 89, 226));
     transition: all 0.3s;
   }
   .Main-Container .Container-Two .Text .Content-One .Button:hover {
@@ -1298,7 +1339,7 @@ body {
     font-size: 17px;
   }
   .Main-Container .Container-Two .Text .Content-Two h6 {
-    color: rgb(233, 233, 241);
+    color: rgb(22, 22, 22);
     font-size: 18px;
     font-weight: 700;
     margin-bottom: 15%;
@@ -1308,7 +1349,7 @@ body {
   grid-template-columns: repeat(2, 1fr);
 }
 .Main-Container .Container-Three .Mega-Card .Cards {
-  border: 1px solid rgb(48, 48, 51);
+  border: 1px solid rgb(199, 198, 211);
   width: -moz-fit-content;
   width: fit-content;
   border-radius: 2.2rem;
@@ -1320,7 +1361,7 @@ body {
   margin-top: 6%;
 }
 .Main-Container .Container-Three .Mega-Card .Cards .Title h3 {
-  color: rgb(233, 233, 241);
+  color: rgb(22, 22, 22);
   font-size: 35px;
   font-weight: 600;
 }
@@ -1328,8 +1369,8 @@ body {
   margin-left: 8%;
 }
 .Main-Container .Container-Three .Mega-Card .Cards .Button a {
-  color: rgb(233, 233, 241);
-  border: 1px solid rgb(48, 48, 51);
+  color: rgb(22, 22, 22);
+  border: 1px solid rgb(199, 198, 211);
   padding: 10px 20px;
   width: -moz-fit-content;
   width: fit-content;
@@ -1343,7 +1384,7 @@ body {
   margin-left: 8%;
 }
 .Main-Container .Container-Three .Mega-Card .Cards .Description p {
-  color: rgb(233, 233, 241);
+  color: rgb(22, 22, 22);
   font-size: 18px;
 }
 .Main-Container .Container-Three .Mega-Card .Cards .Image img {
@@ -1413,7 +1454,7 @@ body {
     grid-template-columns: repeat(2, 1fr);
   }
   .Main-Container .Container-Three .Mega-Card .Cards {
-    border: 1px solid rgb(48, 48, 51);
+    border: 1px solid rgb(199, 198, 211);
     width: -moz-fit-content;
     width: fit-content;
     border-radius: 2.2rem;
@@ -1425,7 +1466,7 @@ body {
     margin-top: 6%;
   }
   .Main-Container .Container-Three .Mega-Card .Cards .Title h3 {
-    color: rgb(233, 233, 241);
+    color: rgb(22, 22, 22);
     font-size: 35px;
     font-weight: 600;
   }
@@ -1433,8 +1474,8 @@ body {
     margin-left: 8%;
   }
   .Main-Container .Container-Three .Mega-Card .Cards .Button a {
-    color: rgb(233, 233, 241);
-    border: 1px solid rgb(48, 48, 51);
+    color: rgb(22, 22, 22);
+    border: 1px solid rgb(199, 198, 211);
     padding: 10px 20px;
     width: -moz-fit-content;
     width: fit-content;
@@ -1448,7 +1489,7 @@ body {
     margin-left: 8%;
   }
   .Main-Container .Container-Three .Mega-Card .Cards .Description p {
-    color: rgb(233, 233, 241);
+    color: rgb(22, 22, 22);
     font-size: 18px;
   }
   .Main-Container .Container-Three .Mega-Card .Cards .Image img {
@@ -1464,10 +1505,10 @@ body {
   margin-bottom: 5%;
 }
 .Main-Container .Container-Four .Content .Top-Button a {
-  color: rgb(233, 233, 241);
+  color: rgb(22, 22, 22);
   font-size: 13px;
   font-weight: 600;
-  border: 1px solid rgb(48, 48, 51);
+  border: 1px solid rgb(199, 198, 211);
   border-radius: 15px;
   padding: 10px 15px;
 }
@@ -1476,12 +1517,13 @@ body {
   margin-bottom: 5%;
 }
 .Main-Container .Container-Four .Content .Text h1 {
-  color: rgb(228, 184, 191);
+  color: rgb(22, 22, 22);
   font-size: 55px;
   font-weight: 700;
-  background: linear-gradient(to right, rgb(225, 186, 197), rgb(233, 233, 241), rgb(206, 196, 239));
+  background: linear-gradient(to right, rgb(170, 112, 224), rgb(112, 89, 226));
   -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+          background-clip: text;
+  color: transparent;
 }
 .Main-Container .Container-Four .Content .Text .Text {
   margin-top: 5%;
@@ -1489,7 +1531,7 @@ body {
 }
 .Main-Container .Container-Four .Content .Text .Text p {
   font-size: 21px;
-  color: rgb(233, 233, 241);
+  color: rgb(22, 22, 22);
 }
 .Main-Container .Container-Four .Content .Text .Text span {
   position: relative;
@@ -1513,27 +1555,27 @@ body {
 .Main-Container .Container-Four .Education h3 {
   font-size: 35px;
   font-weight: 700;
-  color: rgb(233, 233, 241);
+  color: rgb(22, 22, 22);
   margin-bottom: 5%;
 }
 .Main-Container .Container-Four .Education hr {
   width: 88%;
   height: 2px;
-  color: rgba(255, 255, 255, 0.3);
+  color: rgb(161, 161, 175);
   margin-bottom: 3%;
   margin-top: 3%;
 }
 .Main-Container .Container-Four .Education .Info {
-  color: rgb(233, 233, 241);
+  color: rgb(22, 22, 22);
   gap: 40px;
   font-family: Poppins, sans-serif;
 }
 .Main-Container .Container-Four .Education .Info span {
   font-size: 14px;
-  color: rgb(199, 198, 211);
+  color: rgb(75, 75, 81);
 }
 .Main-Container .Container-Four .Education .Info span:last-child {
-  color: rgb(233, 233, 241);
+  color: rgb(22, 22, 22);
   font-weight: 700;
 }
 .Main-Container .Container-Four .Education .Info h4 {
@@ -1580,10 +1622,10 @@ body {
     margin-bottom: 5%;
   }
   .Main-Container .Container-Four .Content .Top-Button a {
-    color: rgb(233, 233, 241);
+    color: rgb(22, 22, 22);
     font-size: 13px;
     font-weight: 600;
-    border: 1px solid rgb(48, 48, 51);
+    border: 1px solid rgb(199, 198, 211);
     border-radius: 15px;
     padding: 10px 15px;
   }
@@ -1592,12 +1634,13 @@ body {
     margin-bottom: 5%;
   }
   .Main-Container .Container-Four .Content .Text h1 {
-    color: rgb(228, 184, 191);
+    color: rgb(22, 22, 22);
     font-size: 55px;
     font-weight: 700;
-    background: linear-gradient(to right, rgb(225, 186, 197), rgb(233, 233, 241), rgb(206, 196, 239));
+    background: linear-gradient(to right, rgb(170, 112, 224), rgb(112, 89, 226));
     -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+            background-clip: text;
+    color: transparent;
   }
   .Main-Container .Container-Four .Content .Text .Text {
     margin-top: 5%;
@@ -1605,7 +1648,7 @@ body {
   }
   .Main-Container .Container-Four .Content .Text .Text p {
     font-size: 21px;
-    color: rgb(233, 233, 241);
+    color: rgb(22, 22, 22);
   }
   .Main-Container .Container-Four .Content .Text .Text span {
     position: relative;
@@ -1629,27 +1672,27 @@ body {
   .Main-Container .Container-Four .Education h3 {
     font-size: 35px;
     font-weight: 700;
-    color: rgb(233, 233, 241);
+    color: rgb(22, 22, 22);
     margin-bottom: 5%;
   }
   .Main-Container .Container-Four .Education hr {
     width: 88%;
     height: 2px;
-    color: rgba(255, 255, 255, 0.3);
+    color: rgb(161, 161, 175);
     margin-bottom: 3%;
     margin-top: 3%;
   }
   .Main-Container .Container-Four .Education .Info {
-    color: rgb(233, 233, 241);
+    color: rgb(22, 22, 22);
     gap: 40px;
     font-family: Poppins, sans-serif;
   }
   .Main-Container .Container-Four .Education .Info span {
     font-size: 14px;
-    color: rgb(199, 198, 211);
+    color: rgb(75, 75, 81);
   }
   .Main-Container .Container-Four .Education .Info span:last-child {
-    color: rgb(233, 233, 241);
+    color: rgb(22, 22, 22);
     font-weight: 700;
   }
   .Main-Container .Container-Four .Education .Info h4 {
@@ -1668,67 +1711,40 @@ body {
 .Main-Container .Container-Five .Experience h3 {
   font-size: 35px;
   font-weight: 700;
-  color: rgb(233, 233, 241);
+  color: rgb(22, 22, 22);
   margin-bottom: 5%;
 }
 .Main-Container .Container-Five .Experience hr {
   width: 88%;
   height: 2px;
-  color: rgba(255, 255, 255, 0.3);
+  color: rgb(161, 161, 175);
   margin-bottom: 3%;
   margin-top: 3%;
 }
 .Main-Container .Container-Five .Experience .Info {
-  color: rgb(233, 233, 241);
+  color: rgb(22, 22, 22);
+  gap: 40px;
   font-family: Poppins, sans-serif;
 }
 .Main-Container .Container-Five .Experience .Info span {
-  font-size: 13px;
-  color: rgb(199, 198, 211);
-  position: relative;
-  text-decoration: underline;
-  text-decoration: none;
-  text-decoration-thickness: 1px;
+  font-size: 14px;
+  color: rgb(75, 75, 81);
 }
 .Main-Container .Container-Five .Experience .Info span:last-child {
-  color: rgb(199, 198, 211);
+  color: rgb(22, 22, 22);
   font-weight: 700;
-}
-.Main-Container .Container-Five .Experience .Info span span::after {
-  content: "";
-  position: absolute;
-  bottom: 1.5px;
-  left: 0;
-  width: 0;
-  height: 1px;
-  background-color: rgb(206, 196, 239);
-  transition: width 0.4s ease-in-out;
-}
-.Main-Container .Container-Five .Experience .Info span span:hover::after {
-  width: 100%;
 }
 .Main-Container .Container-Five .Experience .Info h4 {
   font-family: "Syne", sans-serif;
   font-size: 30px;
   line-height: 30px;
 }
-.Main-Container .Container-Five .Experience .Info h4 .Text {
-  color: rgb(233, 233, 241);
-  font-size: 14px;
-  font-weight: 700;
-}
 .Main-Container .Container-Five .Experience .Info p {
   margin-right: 130px;
   font-size: 16px;
 }
 .Main-Container .Container-Five .Experience .Space h4 {
-  margin-right: 50px;
-}
-.Main-Container .Container-Five .Experience .Space p {
-  margin-right: 175px;
-}
-.Main-Container .Container-Five .Experience .Paragraph h4 {
-  margin-right: 30px;
+  margin-right: 38px;
 }
 @media (max-width: 576px) {
   .Main-Container .Container-Five .Experience h3 {
@@ -1749,27 +1765,27 @@ body {
   .Main-Container .Container-Five .Experience h3 {
     font-size: 35px;
     font-weight: 700;
-    color: rgb(233, 233, 241);
+    color: rgb(22, 22, 22);
     margin-bottom: 5%;
   }
   .Main-Container .Container-Five .Experience hr {
     width: 88%;
     height: 2px;
-    color: rgba(255, 255, 255, 0.3);
+    color: rgb(161, 161, 175);
     margin-bottom: 3%;
     margin-top: 3%;
   }
   .Main-Container .Container-Five .Experience .Info {
-    color: rgb(233, 233, 241);
+    color: rgb(22, 22, 22);
     gap: 40px;
     font-family: Poppins, sans-serif;
   }
   .Main-Container .Container-Five .Experience .Info span {
     font-size: 14px;
-    color: rgb(199, 198, 211);
+    color: rgb(75, 75, 81);
   }
   .Main-Container .Container-Five .Experience .Info span:last-child {
-    color: rgb(233, 233, 241);
+    color: rgb(22, 22, 22);
     font-weight: 700;
   }
   .Main-Container .Container-Five .Experience .Info h4 {
@@ -1786,7 +1802,7 @@ body {
   }
 }
 .Main-Container .Container-Six h3 {
-  color: rgb(233, 233, 241);
+  color: rgb(22, 22, 22);
   font-size: 35px;
   font-weight: 700;
   margin-bottom: 4%;
@@ -1798,13 +1814,13 @@ body {
   margin-bottom: 15%;
 }
 .Main-Container .Container-Six h6 {
-  color: rgb(233, 233, 241);
+  color: rgb(22, 22, 22);
   font-family: "Poppins", sans-serif;
   font-size: 18px;
   font-weight: 700;
 }
 .Main-Container .Container-Six .Card {
-  border: 1px solid rgb(48, 48, 51);
+  border: 1px solid rgb(199, 198, 211);
   border-radius: 2.2rem;
   padding: 25px 30px;
 }
@@ -1816,10 +1832,10 @@ body {
   margin-bottom: 6%;
 }
 .Main-Container .Container-Seven .Content .Top-Button a {
-  color: rgb(233, 233, 241);
+  color: rgb(22, 22, 22);
   font-size: 13px;
   font-weight: 600;
-  border: 1px solid rgb(48, 48, 51);
+  border: 1px solid rgb(199, 198, 211);
   border-radius: 15px;
   padding: 10px 15px;
 }
@@ -1828,15 +1844,16 @@ body {
   margin-bottom: 5%;
 }
 .Main-Container .Container-Seven .Content .Text h1 {
-  color: rgb(228, 184, 191);
+  color: rgb(22, 22, 22);
   font-size: 55px;
   font-weight: 700;
-  background: linear-gradient(to right, rgb(225, 186, 197), rgb(233, 233, 241), rgb(206, 196, 239));
+  background: linear-gradient(to right, rgb(170, 112, 224), rgb(112, 89, 226));
   -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+          background-clip: text;
+  color: transparent;
 }
 .Main-Container .Container-Seven .Swiper-Slides .swiper {
-  border: 1px solid rgb(48, 48, 51);
+  border: 1px solid rgb(199, 198, 211);
   border-radius: 2.2rem;
   width: 93%;
   margin-right: 80px;
@@ -1852,36 +1869,37 @@ body {
   margin-right: 20px;
 }
 .Main-Container .Container-Seven .Swiper-Slides .swiper .swiper-wrapper .Title .Content h2 {
-  color: rgb(233, 233, 241);
+  color: rgb(22, 22, 22);
   font-size: 30px;
   font-weight: 700;
   line-height: 20px;
 }
 .Main-Container .Container-Seven .Swiper-Slides .swiper .swiper-wrapper .Title .Content span {
-  color: rgb(199, 198, 211);
+  color: rgb(22, 22, 22);
 }
 .Main-Container .Container-Seven .Swiper-Slides .swiper .swiper-wrapper .Title .Content span:last-child {
-  color: rgb(233, 233, 241);
+  color: rgb(22, 22, 22);
   font-weight: 600;
 }
 .Main-Container .Container-Seven .Swiper-Slides .swiper .swiper-wrapper .Title .Content i {
-  color: rgb(206, 196, 239);
+  color: rgb(22, 22, 22);
   margin-top: 10px;
   background: linear-gradient(to right, rgb(225, 186, 197), rgb(206, 196, 239));
   -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+          background-clip: text;
+  color: transparent;
 }
 .Main-Container .Container-Seven .Swiper-Slides .swiper .swiper-wrapper .Command p {
   font-size: 22px;
   font-weight: 400;
-  color: rgb(233, 233, 241);
+  color: rgb(22, 22, 22);
   margin-bottom: 10px;
 }
 .Main-Container .Container-Seven .Swiper-Slides .swiper .swiper-wrapper .Text {
   margin-top: 4%;
 }
 .Main-Container .Container-Seven .Swiper-Slides .swiper .swiper-wrapper .Text span {
-  color: rgb(233, 233, 241);
+  color: rgb(22, 22, 22);
   font-size: 18px;
   font-weight: 600;
 }
@@ -1891,8 +1909,8 @@ body {
 }
 .Main-Container .Container-Seven .Swiper-Slides .Button-Next,
 .Main-Container .Container-Seven .Swiper-Slides .Button-Prev {
-  color: aliceblue;
-  border: 1px solid rgb(48, 48, 51);
+  color: rgb(22, 22, 22);
+  border: 1px solid rgb(199, 198, 211);
   padding: 15px 20px;
   border-radius: 20px;
   font-size: 12px;
@@ -1983,7 +2001,8 @@ body {
     font-weight: 700;
     background: linear-gradient(to right, rgb(225, 186, 197), rgb(233, 233, 241), rgb(206, 196, 239));
     -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+            background-clip: text;
+    color: transparent;
   }
   .Main-Container .Container-Seven .Swiper-Slides .swiper {
     border: 1px solid rgb(48, 48, 51);
@@ -2019,7 +2038,8 @@ body {
     margin-top: 10px;
     background: linear-gradient(to right, rgb(225, 186, 197), rgb(206, 196, 239));
     -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+            background-clip: text;
+    color: transparent;
   }
   .Main-Container .Container-Seven .Swiper-Slides .swiper .swiper-wrapper .Command p {
     font-size: 22px;
@@ -2043,6 +2063,75 @@ body {
   .Main-Container .Container-Seven .Swiper-Slides .Button-Prev {
     color: aliceblue;
     border: 1px solid rgb(48, 48, 51);
+    padding: 15px 20px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 700;
+    width: -moz-fit-content;
+    width: fit-content;
+    margin-top: 2%;
+  }
+}
+@media (min-width: 1000px) and (max-width: 1200px) {
+  .Main-Container .Container-Seven .Swiper-Slides .swiper {
+    border: 1px solid rgb(199, 198, 211);
+    border-radius: 2.2rem;
+    width: 93%;
+    margin-right: 80px;
+  }
+  .Main-Container .Container-Seven .Swiper-Slides .swiper .swiper-wrapper {
+    padding: 50px 50px;
+  }
+  .Main-Container .Container-Seven .Swiper-Slides .swiper .swiper-wrapper .Title .Image img {
+    width: auto;
+    height: 100px;
+    border-radius: 2.2rem;
+    margin-bottom: 20px;
+    margin-right: 20px;
+  }
+  .Main-Container .Container-Seven .Swiper-Slides .swiper .swiper-wrapper .Title .Content h2 {
+    color: rgb(22, 22, 22);
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 20px;
+  }
+  .Main-Container .Container-Seven .Swiper-Slides .swiper .swiper-wrapper .Title .Content span {
+    color: rgb(22, 22, 22);
+  }
+  .Main-Container .Container-Seven .Swiper-Slides .swiper .swiper-wrapper .Title .Content span:last-child {
+    color: rgb(22, 22, 22);
+    font-weight: 600;
+  }
+  .Main-Container .Container-Seven .Swiper-Slides .swiper .swiper-wrapper .Title .Content i {
+    color: rgb(22, 22, 22);
+    margin-top: 10px;
+    background: linear-gradient(to right, rgb(225, 186, 197), rgb(206, 196, 239));
+    -webkit-background-clip: text;
+            background-clip: text;
+    color: transparent;
+  }
+  .Main-Container .Container-Seven .Swiper-Slides .swiper .swiper-wrapper .Command p {
+    font-size: 22px;
+    font-weight: 400;
+    color: rgb(22, 22, 22);
+    margin-bottom: 10px;
+  }
+  .Main-Container .Container-Seven .Swiper-Slides .swiper .swiper-wrapper .Text {
+    margin-top: 4%;
+  }
+  .Main-Container .Container-Seven .Swiper-Slides .swiper .swiper-wrapper .Text span {
+    color: rgb(22, 22, 22);
+    font-size: 18px;
+    font-weight: 600;
+  }
+  .Main-Container .Container-Seven .Swiper-Slides .swiper .swiper-wrapper .Text span i {
+    font-size: 17px;
+    margin-left: 5px;
+  }
+  .Main-Container .Container-Seven .Swiper-Slides .Button-Next,
+  .Main-Container .Container-Seven .Swiper-Slides .Button-Prev {
+    color: rgb(22, 22, 22);
+    border: 1px solid rgb(199, 198, 211);
     padding: 15px 20px;
     border-radius: 20px;
     font-size: 12px;
@@ -2057,10 +2146,10 @@ body {
     margin-bottom: 6%;
   }
   .Main-Container .Container-Seven .Content .Top-Button a {
-    color: rgb(233, 233, 241);
+    color: rgb(22, 22, 22);
     font-size: 13px;
     font-weight: 600;
-    border: 1px solid rgb(48, 48, 51);
+    border: 1px solid rgb(199, 198, 211);
     border-radius: 15px;
     padding: 10px 15px;
   }
@@ -2069,15 +2158,16 @@ body {
     margin-bottom: 5%;
   }
   .Main-Container .Container-Seven .Content .Text h1 {
-    color: rgb(228, 184, 191);
+    color: rgb(22, 22, 22);
     font-size: 55px;
     font-weight: 700;
-    background: linear-gradient(to right, rgb(225, 186, 197), rgb(233, 233, 241), rgb(206, 196, 239));
+    background: linear-gradient(to right, rgb(170, 112, 224), rgb(112, 89, 226));
     -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+            background-clip: text;
+    color: transparent;
   }
   .Main-Container .Container-Seven .Swiper-Slides .swiper {
-    border: 1px solid rgb(48, 48, 51);
+    border: 1px solid rgb(199, 198, 211);
     border-radius: 2.2rem;
     width: 93%;
     margin-right: 80px;
@@ -2093,36 +2183,37 @@ body {
     margin-right: 20px;
   }
   .Main-Container .Container-Seven .Swiper-Slides .swiper .swiper-wrapper .Title .Content h2 {
-    color: rgb(233, 233, 241);
+    color: rgb(22, 22, 22);
     font-size: 30px;
     font-weight: 700;
     line-height: 20px;
   }
   .Main-Container .Container-Seven .Swiper-Slides .swiper .swiper-wrapper .Title .Content span {
-    color: rgb(199, 198, 211);
+    color: rgb(22, 22, 22);
   }
   .Main-Container .Container-Seven .Swiper-Slides .swiper .swiper-wrapper .Title .Content span:last-child {
-    color: rgb(233, 233, 241);
+    color: rgb(22, 22, 22);
     font-weight: 600;
   }
   .Main-Container .Container-Seven .Swiper-Slides .swiper .swiper-wrapper .Title .Content i {
-    color: rgb(206, 196, 239);
+    color: rgb(22, 22, 22);
     margin-top: 10px;
     background: linear-gradient(to right, rgb(225, 186, 197), rgb(206, 196, 239));
     -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+            background-clip: text;
+    color: transparent;
   }
   .Main-Container .Container-Seven .Swiper-Slides .swiper .swiper-wrapper .Command p {
     font-size: 22px;
     font-weight: 400;
-    color: rgb(233, 233, 241);
+    color: rgb(22, 22, 22);
     margin-bottom: 10px;
   }
   .Main-Container .Container-Seven .Swiper-Slides .swiper .swiper-wrapper .Text {
     margin-top: 4%;
   }
   .Main-Container .Container-Seven .Swiper-Slides .swiper .swiper-wrapper .Text span {
-    color: rgb(233, 233, 241);
+    color: rgb(22, 22, 22);
     font-size: 18px;
     font-weight: 600;
   }
@@ -2132,8 +2223,8 @@ body {
   }
   .Main-Container .Container-Seven .Swiper-Slides .Button-Next,
   .Main-Container .Container-Seven .Swiper-Slides .Button-Prev {
-    color: aliceblue;
-    border: 1px solid rgb(48, 48, 51);
+    color: rgb(22, 22, 22);
+    border: 1px solid rgb(199, 198, 211);
     padding: 15px 20px;
     border-radius: 20px;
     font-size: 12px;
@@ -2147,10 +2238,10 @@ body {
   margin-bottom: 7%;
 }
 .Main-Container .Container-Eight .Content .Top-Button a {
-  color: rgb(233, 233, 241);
+  color: rgb(22, 22, 22);
   font-size: 13px;
   font-weight: 600;
-  border: 1px solid rgb(48, 48, 51);
+  border: 1px solid rgb(199, 198, 211);
   border-radius: 15px;
   padding: 10px 15px;
 }
@@ -2159,12 +2250,13 @@ body {
   margin-bottom: 5%;
 }
 .Main-Container .Container-Eight .Content .Text h1 {
-  color: rgb(228, 184, 191);
+  color: rgb(22, 22, 22);
   font-size: 55px;
   font-weight: 700;
-  background: linear-gradient(to right, rgb(225, 186, 197), rgb(233, 233, 241), rgb(206, 196, 239));
+  background: linear-gradient(to right, rgb(170, 112, 224), rgb(112, 89, 226));
   -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+          background-clip: text;
+  color: transparent;
 }
 .Main-Container .Container-Eight .Input-Container .Inputs {
   display: flex;
@@ -2175,35 +2267,35 @@ body {
   height: 100%;
   padding: 6px;
   border: none;
-  background-color: rgb(17, 17, 17);
-  color: rgb(199, 198, 211);
+  background-color: rgb(233, 233, 241);
+  color: rgb(22, 22, 22);
   font-weight: 500;
   font-size: 23px !important;
-  border-bottom: 2px solid rgb(75, 75, 81);
+  border-bottom: 2px solid rgb(199, 198, 211);
   outline: none;
   resize: none;
   font-size: 16px;
   margin-top: 5%;
 }
 .Main-Container .Container-Eight .Input-Container .Inputs .Input input:focus {
-  border-bottom: 2px solid rgb(225, 186, 197);
+  border-bottom: 2px solid rgb(112, 89, 226);
 }
 .Main-Container .Container-Eight .Input-Container .Inputs textarea {
   width: 100%;
   height: 150px;
   padding: 10px;
   border: none;
-  background-color: rgb(17, 17, 17);
-  color: #ddd;
+  background-color: rgb(233, 233, 241);
+  color: rgb(22, 22, 22);
   font-size: 23px !important;
   font-weight: 500;
-  border-bottom: 2px solid rgb(75, 75, 81);
+  border-bottom: 2px solid rgb(199, 198, 211);
   outline: none;
   resize: none;
   margin-top: 7%;
 }
 .Main-Container .Container-Eight .Input-Container .Inputs textarea:focus {
-  border-bottom: 2px solid rgb(225, 186, 197);
+  border-bottom: 2px solid rgb(112, 89, 226);
 }
 .Main-Container .Container-Eight .Input-Container .row-2 input {
   margin-top: 10% !important;
@@ -2211,7 +2303,7 @@ body {
   height: 100%;
   padding: 6px;
   border: none;
-  background-color: rgb(17, 17, 17);
+  background-color: rgb(233, 233, 241);
   color: rgb(199, 198, 211);
   font-weight: 500;
   font-size: 23px !important;
@@ -2234,7 +2326,7 @@ body {
   border-radius: 25px;
   font-size: 15px;
   font-weight: 700;
-  background: linear-gradient(to right, rgb(225, 186, 197), rgb(206, 196, 239));
+  background: linear-gradient(to right, rgb(170, 112, 224), rgb(112, 89, 226));
 }
 @media (max-width: 576px) {
   .Main-Container .Container-Eight .Content .Text h1 {
@@ -2299,15 +2391,15 @@ body {
     margin-top: 10%;
   }
 }
-@media (min-width: 1400px) {
+@media (min-width: 1000px) and (max-width: 1200px) {
   .Main-Container .Container-Eight .Content {
     margin-bottom: 7%;
   }
   .Main-Container .Container-Eight .Content .Top-Button a {
-    color: rgb(233, 233, 241);
+    color: rgb(22, 22, 22);
     font-size: 13px;
     font-weight: 600;
-    border: 1px solid rgb(48, 48, 51);
+    border: 1px solid rgb(199, 198, 211);
     border-radius: 15px;
     padding: 10px 15px;
   }
@@ -2316,12 +2408,13 @@ body {
     margin-bottom: 5%;
   }
   .Main-Container .Container-Eight .Content .Text h1 {
-    color: rgb(228, 184, 191);
+    color: rgb(22, 22, 22);
     font-size: 55px;
     font-weight: 700;
     background: linear-gradient(to right, rgb(225, 186, 197), rgb(233, 233, 241), rgb(206, 196, 239));
     -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+            background-clip: text;
+    color: transparent;
   }
   .Main-Container .Container-Eight .Input-Container .Inputs {
     display: flex;
@@ -2332,11 +2425,11 @@ body {
     height: 100%;
     padding: 6px;
     border: none;
-    background-color: rgb(17, 17, 17);
-    color: rgb(199, 198, 211);
+    background-color: rgb(233, 233, 241);
+    color: rgb(22, 22, 22);
     font-weight: 500;
     font-size: 23px !important;
-    border-bottom: 2px solid rgb(75, 75, 81);
+    border-bottom: 2px solid rgb(199, 198, 211);
     outline: none;
     resize: none;
     font-size: 16px;
@@ -2350,11 +2443,11 @@ body {
     height: 150px;
     padding: 10px;
     border: none;
-    background-color: rgb(17, 17, 17);
-    color: #ddd;
+    background-color: rgb(233, 233, 241);
+    color: rgb(22, 22, 22);
     font-size: 23px !important;
     font-weight: 500;
-    border-bottom: 2px solid rgb(75, 75, 81);
+    border-bottom: 2px solid rgb(199, 198, 211);
     outline: none;
     resize: none;
     margin-top: 7%;
@@ -2368,7 +2461,7 @@ body {
     height: 100%;
     padding: 6px;
     border: none;
-    background-color: rgb(17, 17, 17);
+    background-color: rgb(233, 233, 241);
     color: rgb(199, 198, 211);
     font-weight: 500;
     font-size: 23px !important;
@@ -2394,7 +2487,107 @@ body {
     background: linear-gradient(to right, rgb(225, 186, 197), rgb(206, 196, 239));
   }
 }
+@media (min-width: 1400px) {
+  .Main-Container .Container-Eight .Content {
+    margin-bottom: 7%;
+  }
+  .Main-Container .Container-Eight .Content .Top-Button a {
+    color: rgb(22, 22, 22);
+    font-size: 13px;
+    font-weight: 600;
+    border: 1px solid rgb(199, 198, 211);
+    border-radius: 15px;
+    padding: 10px 15px;
+  }
+  .Main-Container .Container-Eight .Content .Text {
+    margin-top: 3%;
+    margin-bottom: 5%;
+  }
+  .Main-Container .Container-Eight .Content .Text h1 {
+    color: rgb(22, 22, 22);
+    font-size: 55px;
+    font-weight: 700;
+    background: linear-gradient(to right, rgb(170, 112, 224), rgb(112, 89, 226));
+    -webkit-background-clip: text;
+            background-clip: text;
+    color: transparent;
+  }
+  .Main-Container .Container-Eight .Input-Container .Inputs {
+    display: flex;
+    gap: 150px;
+  }
+  .Main-Container .Container-Eight .Input-Container .Inputs .Input input {
+    width: 130%;
+    height: 100%;
+    padding: 6px;
+    border: none;
+    background-color: rgb(233, 233, 241);
+    color: rgb(22, 22, 22);
+    font-weight: 500;
+    font-size: 23px !important;
+    border-bottom: 2px solid rgb(199, 198, 211);
+    outline: none;
+    resize: none;
+    font-size: 16px;
+    margin-top: 5%;
+  }
+  .Main-Container .Container-Eight .Input-Container .Inputs .Input input:focus {
+    border-bottom: 2px solid rgb(112, 89, 226);
+  }
+  .Main-Container .Container-Eight .Input-Container .Inputs textarea {
+    width: 100%;
+    height: 150px;
+    padding: 10px;
+    border: none;
+    background-color: rgb(233, 233, 241);
+    color: rgb(22, 22, 22);
+    font-size: 23px !important;
+    font-weight: 500;
+    border-bottom: 2px solid rgb(199, 198, 211);
+    outline: none;
+    resize: none;
+    margin-top: 7%;
+  }
+  .Main-Container .Container-Eight .Input-Container .Inputs textarea:focus {
+    border-bottom: 2px solid rgb(112, 89, 226);
+  }
+  .Main-Container .Container-Eight .Input-Container .row-2 input {
+    margin-top: 10% !important;
+    width: 100%;
+    height: 100%;
+    padding: 6px;
+    border: none;
+    background-color: rgb(233, 233, 241);
+    color: rgb(199, 198, 211);
+    font-weight: 500;
+    font-size: 23px !important;
+    border-bottom: 2px solid rgb(75, 75, 81);
+    outline: none;
+    outline: none;
+    resize: none;
+    font-size: 16px;
+    margin-top: 5%;
+  }
+  .Main-Container .Container-Eight .Input-Container .Button {
+    margin-top: 5%;
+  }
+  .Main-Container .Container-Eight .Input-Container .Button a {
+    background-color: rgb(206, 196, 239);
+    color: rgb(17, 17, 17);
+    padding: 15px 25px;
+    width: -moz-fit-content;
+    width: fit-content;
+    border-radius: 25px;
+    font-size: 15px;
+    font-weight: 700;
+    background: linear-gradient(to right, rgb(170, 112, 224), rgb(112, 89, 226));
+  }
+}
 
+.Footer {
+  max-width: 1500px;
+  margin: 0 auto;
+}
 .Footer .Main-Container {
   margin-left: 3%;
   margin-bottom: 10%;
@@ -2403,33 +2596,34 @@ body {
   margin-bottom: 10px;
 }
 .Footer .Main-Container .SocialMedia i {
-  border: 1px solid rgb(48, 48, 51);
+  border: 1px solid rgb(199, 198, 211);
   border-radius: 2.2rem;
   padding: 40px 58px;
-  color: rgb(75, 75, 81);
+  color: rgb(161, 161, 175);
   font-size: 50px;
   transition: all 0.3s ease-in-out;
 }
 .Footer .Main-Container .SocialMedia i:hover {
   transform: scale(1.05);
-  color: rgb(233, 233, 241);
+  color: rgb(22, 22, 22);
 }
 .Footer .Main-Container .Content .Text {
   margin-top: 5%;
 }
 .Footer .Main-Container .Content .Text p {
-  color: rgb(228, 184, 191);
+  color: rgb(22, 22, 22);
   font-size: 35px;
   font-weight: 700;
   margin-bottom: 4%;
-  background: linear-gradient(to right, rgb(225, 186, 197), rgb(233, 233, 241), rgb(206, 196, 239));
+  background: linear-gradient(to right, rgb(170, 112, 224), rgb(112, 89, 226));
   -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+          background-clip: text;
+  color: transparent;
 }
 .Footer .Main-Container .Content .Text hr {
   width: 100%;
   height: 3px;
-  color: rgb(199, 198, 211);
+  color: rgb(161, 161, 175);
   margin-bottom: 3%;
 }
 .Footer .Main-Container .Content .Info {
@@ -2438,12 +2632,12 @@ body {
   font-family: "Poppins", sans-serif;
 }
 .Footer .Main-Container .Content .Info span {
-  color: rgb(233, 233, 241);
+  color: rgb(161, 161, 175);
   font-weight: 700;
 }
 .Footer .Main-Container .Content .Info h6 {
   font-weight: 400;
-  color: rgb(161, 161, 175);
+  color: rgb(17, 17, 17);
 }
 @media (max-width: 576px) {
   .Footer .Main-Container {
@@ -2508,6 +2702,25 @@ body {
     gap: 10px;
   }
 }
+@media (min-width: 1000px) and (max-width: 1200px) {
+  .Footer .Main-Container {
+    margin-left: 0%;
+  }
+  .Footer .Main-Container .Container .SocialMedia i {
+    display: block;
+  }
+  .Footer .Main-Container .Container .Content .Text p {
+    font-size: 35px;
+  }
+  .Footer .Main-Container .Container .Content .Text hr {
+    width: 93%;
+  }
+  .Footer .Main-Container .Container .Content .Info {
+    margin-top: 10px;
+    display: flex;
+    gap: 250px;
+  }
+}
 @media (min-width: 1400px) {
   .Footer .Main-Container {
     margin-left: 3%;
@@ -2517,33 +2730,34 @@ body {
     margin-bottom: 10px;
   }
   .Footer .Main-Container .SocialMedia i {
-    border: 1px solid rgb(48, 48, 51);
+    border: 1px solid rgb(199, 198, 211);
     border-radius: 2.2rem;
     padding: 40px 58px;
-    color: rgb(75, 75, 81);
+    color: rgb(161, 161, 175);
     font-size: 50px;
     transition: all 0.3s ease-in-out;
   }
   .Footer .Main-Container .SocialMedia i:hover {
     transform: scale(1.05);
-    color: rgb(233, 233, 241);
+    color: rgb(22, 22, 22);
   }
   .Footer .Main-Container .Content .Text {
     margin-top: 5%;
   }
   .Footer .Main-Container .Content .Text p {
-    color: rgb(228, 184, 191);
+    color: rgb(22, 22, 22);
     font-size: 35px;
     font-weight: 700;
     margin-bottom: 4%;
-    background: linear-gradient(to right, rgb(225, 186, 197), rgb(233, 233, 241), rgb(206, 196, 239));
+    background: linear-gradient(to right, rgb(170, 112, 224), rgb(112, 89, 226));
     -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+            background-clip: text;
+    color: transparent;
   }
   .Footer .Main-Container .Content .Text hr {
     width: 100%;
     height: 3px;
-    color: rgb(199, 198, 211);
+    color: rgb(161, 161, 175);
     margin-bottom: 3%;
   }
   .Footer .Main-Container .Content .Info {
@@ -2552,11 +2766,11 @@ body {
     font-family: "Poppins", sans-serif;
   }
   .Footer .Main-Container .Content .Info span {
-    color: rgb(233, 233, 241);
+    color: rgb(161, 161, 175);
     font-weight: 700;
   }
   .Footer .Main-Container .Content .Info h6 {
     font-weight: 400;
-    color: rgb(161, 161, 175);
+    color: rgb(17, 17, 17);
   }
 }/*# sourceMappingURL=style.css.map */
