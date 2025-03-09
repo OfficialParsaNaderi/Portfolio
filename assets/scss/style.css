@@ -25,7 +25,7 @@ body {
 }
 .Header .Container .Background .Portfolio-Box {
   position: fixed;
-  top: 7%;
+  top: 6%;
   left: 5%;
   background-color: rgb(22, 22, 22);
   width: -moz-fit-content;
@@ -55,6 +55,7 @@ body {
 .Header .Container .Background .Portfolio-Box .Image img {
   width: auto;
   height: 280px;
+  max-width: 100%;
 }
 .Header .Container .Background .Portfolio-Box .Content {
   margin-bottom: 5px;
@@ -67,6 +68,7 @@ body {
 }
 .Header .Container .Background .Portfolio-Box .SocialMedia {
   margin-bottom: 10px;
+  gap: 10px;
 }
 .Header .Container .Background .Portfolio-Box .SocialMedia i {
   border: 1px solid rgb(48, 48, 51);
@@ -211,6 +213,33 @@ body {
 .Header .Container .Background .Header-Content .Content .Head .Menu .Mega-Menu:hover > a > i {
   rotate: 180deg;
 }
+.Header .Container .Background .Header-Content .Content .NavBar {
+  display: none;
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+  display: inline-block;
+  padding: 15px 10px 0px 15px;
+  border-radius: 2.2rem;
+}
+.Header .Container .Background .Header-Content .Content .NavBar .Menu li a i {
+  padding-top: 13px;
+  color: rgba(255, 255, 255, 0.3);
+  font-size: 18px;
+  transition: all 0.6s;
+}
+.Header .Container .Background .Header-Content .Content .NavBar .Menu li a i:hover {
+  color: rgb(233, 233, 241);
+}
+.Header .Container .Background .Header-Content .Content .NavBar .Menu li a #Message {
+  background-color: rgb(225, 186, 197);
+  color: #000000;
+  padding: 13px;
+  border-radius: 25px;
+  transition: all 0.3s;
+}
+.Header .Container .Background .Header-Content .Content .NavBar .Menu li a #Message:hover {
+  transform: scale(1.05);
+}
 .Header .Container .Background .Header-Content .Button {
   margin-bottom: 5px;
   margin-right: -5%;
@@ -270,6 +299,7 @@ body {
   position: absolute;
   top: 80%;
   left: 34%;
+  display: flex;
 }
 .Header .Container .Background .Content .Button a:first-child {
   color: rgb(233, 233, 241);
@@ -302,19 +332,565 @@ body {
   height: 120px;
   filter: invert(100%) brightness(100%);
 }
+.Header .Container .Background .Content .Logo img {
+  width: 50px;
+  height: 50px;
+  animation: rotate 2s linear infinite;
+}
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
 .Header .Container .Background .Content .Logo i {
   position: relative;
   right: 50%;
   font-size: 24px;
   color: rgb(233, 233, 241);
 }
-
-.Main .Container-One {
-  margin-top: 2%;
-  margin-left: 34%;
-  margin-bottom: 12%;
+@media (max-width: 576px) {
+  .Header .Container .Background {
+    background-image: none;
+    height: auto;
+  }
+  .Header .Container .Background .Portfolio-Box {
+    position: static;
+    width: 90%;
+    margin: 0 auto;
+    padding: 15px;
+    top: 0;
+    left: 0;
+  }
+  .Header .Container .Background .Portfolio-Box .Title .Title-Logo img {
+    height: 70px;
+  }
+  .Header .Container .Background .Portfolio-Box .Title .Text h1 {
+    font-size: 28px;
+    line-height: 30px;
+  }
+  .Header .Container .Background .Portfolio-Box .Image img {
+    height: auto;
+    max-width: 100%;
+  }
+  .Header .Container .Background .Portfolio-Box .SocialMedia {
+    justify-content: center;
+    margin-top: 10px;
+  }
+  .Header .Container .Background .Portfolio-Box .Button {
+    margin-bottom: 15px;
+    text-align: center;
+  }
+  .Header .Container .Background .Header-Content .Head {
+    display: none;
+  }
+  .Header .Container .Background .Header-Content .NavBar {
+    display: block;
+    position: fixed;
+    top: 90%;
+    right: 22%;
+  }
+  .Header .Container .Background .Content {
+    position: static;
+    padding: 15px;
+  }
+  .Header .Container .Background .Content .Top-Button,
+  .Header .Container .Background .Content .Content,
+  .Header .Container .Background .Content .Button {
+    position: static;
+    margin: 10px 0;
+    text-align: center;
+  }
+  .Header .Container .Background .Content .Content h1 {
+    font-size: 45px;
+  }
+  .Header .Container .Background .Content .Button {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .Header .Container .Background .Content .Button a {
+    padding: 10px;
+  }
+  .Header .Container .Background .Content .Logo {
+    display: none;
+  }
 }
-.Main .Container-One .Content .Top-Button a {
+@media (min-width: 577px) and (max-width: 767px) {
+  .Header .Container .Background {
+    background-image: none;
+    height: auto;
+  }
+  .Header .Container .Background .Portfolio-Box {
+    position: static;
+    width: 90%;
+    margin: 0 auto;
+    padding: 15px;
+    top: 0;
+    left: 0;
+  }
+  .Header .Container .Background .Portfolio-Box .Title .Title-Logo img {
+    height: 70px;
+  }
+  .Header .Container .Background .Portfolio-Box .Title .Text h1 {
+    font-size: 28px;
+    line-height: 30px;
+  }
+  .Header .Container .Background .Portfolio-Box .Image img {
+    height: auto;
+    max-width: 100%;
+  }
+  .Header .Container .Background .Portfolio-Box .SocialMedia {
+    justify-content: center;
+    margin-top: 10px;
+  }
+  .Header .Container .Background .Portfolio-Box .Button {
+    margin-bottom: 15px;
+    text-align: center;
+  }
+  .Header .Container .Background .Header-Content .Head {
+    display: none;
+  }
+  .Header .Container .Background .Header-Content .NavBar {
+    display: block;
+    position: fixed;
+    top: 90%;
+    right: 20%;
+  }
+  .Header .Container .Background .Content {
+    position: static;
+    padding: 15px;
+  }
+  .Header .Container .Background .Content .Top-Button,
+  .Header .Container .Background .Content .Content,
+  .Header .Container .Background .Content .Button {
+    position: static;
+    margin: 10px 0;
+    text-align: center;
+  }
+  .Header .Container .Background .Content .Content h1 {
+    font-size: 45px;
+  }
+  .Header .Container .Background .Content .Button {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .Header .Container .Background .Content .Button a {
+    padding: 10px;
+  }
+  .Header .Container .Background .Content .Logo {
+    display: none;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .Header .Container .Background .Portfolio-Box {
+    display: none;
+  }
+  .Header .Container .Background .Header-Content .NavBar {
+    display: block;
+    position: fixed;
+    top: 85%;
+    right: 35%;
+  }
+  .Header .Container .Background .Content {
+    position: static;
+    padding: 15px;
+  }
+  .Header .Container .Background .Content .Top-Button,
+  .Header .Container .Background .Content .Content,
+  .Header .Container .Background .Content .Button {
+    position: static;
+    margin: 10px 0;
+    text-align: center;
+  }
+  .Header .Container .Background .Content .Content h1 {
+    font-size: 45px;
+  }
+  .Header .Container .Background .Content .Button {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .Header .Container .Background .Content .Button a {
+    padding: 10px;
+  }
+  .Header .Container .Background .Content .Logo {
+    display: none;
+  }
+}
+@media (min-width: 1400px) {
+  .Header .Container .Background {
+    background-image: url("../images/Backgrounds/Main-Background.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+  }
+  .Header .Container .Background .Portfolio-Box {
+    position: fixed;
+    top: 6%;
+    left: 5%;
+    background-color: rgb(22, 22, 22);
+    width: -moz-fit-content;
+    width: fit-content;
+    padding: 20px 50px 5px 50px;
+    border: 2px solid rgb(48, 48, 51);
+    border-radius: 2.2rem;
+  }
+  .Header .Container .Background .Portfolio-Box .Title {
+    margin-bottom: 10px;
+  }
+  .Header .Container .Background .Portfolio-Box .Title .Title-Logo img {
+    width: auto;
+    height: 85px;
+  }
+  .Header .Container .Background .Portfolio-Box .Title .Text h1 {
+    color: rgb(233, 233, 241);
+    font-weight: 600;
+    font-size: 35px;
+    background: linear-gradient(to right, rgb(225, 186, 197), rgb(233, 233, 241), rgb(206, 196, 239));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  .Header .Container .Background .Portfolio-Box .Image {
+    margin-bottom: 8px;
+  }
+  .Header .Container .Background .Portfolio-Box .Image img {
+    width: auto;
+    height: 280px;
+    max-width: 100%;
+  }
+  .Header .Container .Background .Portfolio-Box .Content {
+    margin-bottom: 5px;
+  }
+  .Header .Container .Background .Portfolio-Box .Content span {
+    color: rgb(161, 161, 175);
+  }
+  .Header .Container .Background .Portfolio-Box .Content h5 {
+    color: rgb(233, 233, 241);
+  }
+  .Header .Container .Background .Portfolio-Box .SocialMedia {
+    margin-bottom: 10px;
+    gap: 10px;
+  }
+  .Header .Container .Background .Portfolio-Box .SocialMedia i {
+    border: 1px solid rgb(48, 48, 51);
+    border-radius: 40%;
+    padding: 15px;
+    color: rgb(233, 233, 241);
+    font-size: 18px;
+  }
+  .Header .Container .Background .Portfolio-Box .Button {
+    background-color: rgb(206, 196, 239);
+    padding: 15px;
+    background: linear-gradient(to right, rgb(225, 186, 197), rgb(206, 196, 239));
+    transition: all 0.3s;
+  }
+  .Header .Container .Background .Portfolio-Box .Button a {
+    color: rgb(0, 0, 0);
+    font-size: 18px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.3s;
+  }
+  .Header .Container .Background .Portfolio-Box .Button:hover {
+    transform: scale(1.03);
+  }
+  .Header .Container .Background .Header-Content {
+    position: fixed;
+    top: 7%;
+    left: 34%;
+    z-index: 3;
+  }
+  .Header .Container .Background .Header-Content .Content .Head .Menu li a {
+    -webkit-backdrop-filter: blur(10px);
+            backdrop-filter: blur(10px);
+    color: rgba(255, 255, 255, 0.3);
+    font-size: 17px;
+    font-weight: 600;
+    border: rgb(75, 75, 81);
+    border-radius: 20px;
+    padding: 10px 16px;
+    transition: all 0.6s;
+  }
+  .Header .Container .Background .Header-Content .Content .Head .Menu li a:hover {
+    color: rgb(233, 233, 241);
+  }
+  .Header .Container .Background .Header-Content .Content .Head .Menu .Normal-Menu a i {
+    transition: all 0.6s;
+  }
+  .Header .Container .Background .Header-Content .Content .Head .Menu .Normal-Menu ul {
+    top: 70%;
+    -webkit-backdrop-filter: blur(10px);
+            backdrop-filter: blur(10px);
+    border: rgb(75, 75, 81);
+    border-radius: 20px;
+    padding: 10px 16px;
+    border: 2px solid rgb(48, 48, 51);
+    opacity: 0;
+    visibility: hidden;
+  }
+  .Header .Container .Background .Header-Content .Content .Head .Menu .Normal-Menu ul li a {
+    -webkit-backdrop-filter: blur(0px);
+            backdrop-filter: blur(0px);
+    color: rgba(255, 255, 255, 0.3);
+    font-size: 17px;
+    font-weight: 600;
+    transition: all 0.6s;
+  }
+  .Header .Container .Background .Header-Content .Content .Head .Menu .Normal-Menu ul li a:hover {
+    color: rgb(233, 233, 241);
+  }
+  .Header .Container .Background .Header-Content .Content .Head .Menu .Normal-Menu:hover > ul {
+    visibility: visible;
+    opacity: 1;
+  }
+  .Header .Container .Background .Header-Content .Content .Head .Menu .Normal-Menu:hover > ul > a > i {
+    rotate: 180deg;
+  }
+  .Header .Container .Background .Header-Content .Content .Head .Menu .Normal-Menu:hover > a > i {
+    rotate: 180deg;
+  }
+  .Header .Container .Background .Header-Content .Content .Head .Menu .Mega-Menu a i {
+    transition: all 0.6s;
+  }
+  .Header .Container .Background .Header-Content .Content .Head .Menu .Mega-Menu ul {
+    left: 0;
+    top: 70%;
+    width: 83%;
+    height: 720%;
+    top: 70%;
+    -webkit-backdrop-filter: blur(10px);
+            backdrop-filter: blur(10px);
+    border: rgb(75, 75, 81);
+    border-radius: 2.2rem;
+    padding: 10px 20px;
+    border: 2px solid rgb(48, 48, 51);
+    opacity: 0;
+    visibility: hidden;
+  }
+  .Header .Container .Background .Header-Content .Content .Head .Menu .Mega-Menu ul li {
+    color: rgba(255, 255, 255, 0.3);
+    font-size: 17px;
+    font-weight: 600;
+    padding-right: 2rem;
+  }
+  .Header .Container .Background .Header-Content .Content .Head .Menu .Mega-Menu ul li:first-child {
+    padding-right: 0;
+  }
+  .Header .Container .Background .Header-Content .Content .Head .Menu .Mega-Menu ul li .Title {
+    font-weight: bold;
+    color: rgba(255, 255, 255, 0.3);
+    display: inline-block;
+    border-left: 5px solid rgb(48, 48, 51);
+    border-radius: 5px;
+    padding-left: 0.5rem;
+    margin-bottom: -24%;
+  }
+  .Header .Container .Background .Header-Content .Content .Head .Menu .Mega-Menu ul li a {
+    color: rgb(233, 233, 241);
+    -webkit-backdrop-filter: blur(0px);
+            backdrop-filter: blur(0px);
+  }
+  .Header .Container .Background .Header-Content .Content .Head .Menu .Mega-Menu ul .L2 .Title {
+    margin-bottom: -22%;
+  }
+  .Header .Container .Background .Header-Content .Content .Head .Menu .Mega-Menu img {
+    border-radius: 2.2rem;
+    position: absolute;
+    top: 80%;
+    left: 54%;
+    width: 28%;
+    height: auto;
+    opacity: 0;
+    visibility: hidden;
+  }
+  .Header .Container .Background .Header-Content .Content .Head .Menu .Mega-Menu:hover > ul {
+    opacity: 1;
+    visibility: visible;
+  }
+  .Header .Container .Background .Header-Content .Content .Head .Menu .Mega-Menu:hover > img {
+    opacity: 1;
+    visibility: visible;
+  }
+  .Header .Container .Background .Header-Content .Content .Head .Menu .Mega-Menu:hover > a > i {
+    rotate: 180deg;
+  }
+  .Header .Container .Background .Header-Content .Content .NavBar {
+    display: none;
+    -webkit-backdrop-filter: blur(10px);
+            backdrop-filter: blur(10px);
+    padding: 15px 10px 0px 15px;
+    border-radius: 2.2rem;
+  }
+  .Header .Container .Background .Header-Content .Content .NavBar .Menu li a i {
+    padding-top: 13px;
+    color: rgba(255, 255, 255, 0.3);
+    font-size: 18px;
+    transition: all 0.6s;
+  }
+  .Header .Container .Background .Header-Content .Content .NavBar .Menu li a i:hover {
+    color: rgb(233, 233, 241);
+  }
+  .Header .Container .Background .Header-Content .Content .NavBar .Menu li a #Message {
+    background-color: rgb(225, 186, 197);
+    color: #000000;
+    padding: 13px;
+    border-radius: 25px;
+    transition: all 0.3s;
+  }
+  .Header .Container .Background .Header-Content .Content .NavBar .Menu li a #Message:hover {
+    transform: scale(1.05);
+  }
+  .Header .Container .Background .Header-Content .Button {
+    margin-bottom: 5px;
+    margin-right: -5%;
+  }
+  .Header .Container .Background .Header-Content .Button a:first-child {
+    -webkit-backdrop-filter: blur(10px);
+            backdrop-filter: blur(10px);
+    color: rgb(75, 75, 81);
+    padding: 10px 15px;
+    margin-bottom: 7px;
+    font-size: 20px;
+    transition: all 0.6s;
+  }
+  .Header .Container .Background .Header-Content .Button a:first-child:hover {
+    color: rgb(233, 233, 241);
+  }
+  .Header .Container .Background .Header-Content .Button a:last-child {
+    background-color: rgb(206, 196, 239);
+    color: rgb(17, 17, 17);
+    padding: 15px 25px;
+    border-radius: 25px;
+    font-size: 15px;
+    font-weight: 700;
+    background: linear-gradient(to right, rgb(225, 186, 197), rgb(206, 196, 239));
+    transition: all 0.3s;
+  }
+  .Header .Container .Background .Header-Content .Button a:last-child:hover {
+    transform: scale(1.03);
+  }
+  .Header .Container .Background .Content .Top-Button {
+    position: absolute;
+    top: 33%;
+    left: 34%;
+  }
+  .Header .Container .Background .Content .Top-Button a {
+    color: rgb(233, 233, 241);
+    font-size: 13px;
+    font-weight: 600;
+    border: 1px solid rgb(48, 48, 51);
+    border-radius: 15px;
+    padding: 10px 15px;
+  }
+  .Header .Container .Background .Content .Content {
+    position: absolute;
+    top: 40%;
+    left: 34%;
+  }
+  .Header .Container .Background .Content .Content h1 {
+    color: rgb(228, 184, 191);
+    font-size: 65px;
+    font-weight: 700;
+    background: linear-gradient(to right, rgb(225, 186, 197), rgb(233, 233, 241), rgb(206, 196, 239));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  .Header .Container .Background .Content .Button {
+    position: absolute;
+    top: 80%;
+    left: 34%;
+    display: flex;
+    align-items: center;
+  }
+  .Header .Container .Background .Content .Button a:first-child {
+    color: rgb(233, 233, 241);
+    font-size: 18px;
+    font-weight: 500;
+    border: 1px solid rgb(48, 48, 51);
+    border-radius: 20px;
+    padding: 10px 20px;
+    transition: all 0.3s;
+  }
+  .Header .Container .Background .Content .Button a:first-child:hover {
+    transform: scale(1.03);
+  }
+  .Header .Container .Background .Content .Button a:last-child {
+    font-size: 16px;
+    font-weight: 700;
+    color: rgb(75, 75, 81);
+    transition: all 0.3s;
+  }
+  .Header .Container .Background .Content .Button a:last-child:hover {
+    color: rgb(233, 233, 241);
+  }
+  .Header .Container .Background .Content .Logo {
+    position: absolute;
+    top: 72.5%;
+    left: 85%;
+  }
+  .Header .Container .Background .Content .Logo img {
+    filter: invert(100%) brightness(100%);
+  }
+  .Header .Container .Background .Content .Logo img {
+    width: auto;
+    height: 125px;
+    animation: rotate 2s linear infinite;
+  }
+  @keyframes rotate {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  .Header .Container .Background .Content .Logo i {
+    position: relative;
+    right: 50%;
+    font-size: 24px;
+    color: rgb(233, 233, 241);
+  }
+}
+
+.Main-Container {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+.Main-Container > * {
+  margin-top: 9%;
+  margin-left: 33%;
+  margin-bottom: 10%;
+}
+.Main-Container > *:last-child {
+  margin-bottom: 0;
+}
+@media (max-width: 576px) {
+  .Main-Container > * {
+    margin-top: 3%;
+    margin-left: 0%;
+    margin-bottom: 5%;
+  }
+}
+@media (min-width: 577px) and (max-width: 767px) {
+  .Main-Container > * {
+    margin-top: 3%;
+    margin-left: 0%;
+    margin-bottom: 5%;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .Main-Container > * {
+    margin-top: 3%;
+    margin-left: 0%;
+    margin-bottom: 5%;
+  }
+}
+.Main-Container .Container-One .Content .Top-Button a {
   color: rgb(233, 233, 241);
   font-size: 13px;
   font-weight: 600;
@@ -322,36 +898,35 @@ body {
   border-radius: 15px;
   padding: 10px 15px;
 }
-.Main .Container-One .Content .Text {
+.Main-Container .Container-One .Content .Text {
   margin-top: 3%;
   margin-bottom: 5%;
 }
-.Main .Container-One .Content .Text h1 {
+.Main-Container .Container-One .Content .Text h1 {
   color: rgb(228, 184, 191);
   font-size: 55px;
   font-weight: 700;
+  white-space: nowrap;
   background: linear-gradient(to right, rgb(225, 186, 197), rgb(233, 233, 241), rgb(206, 196, 239));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-.Main .Container-One .Cards {
+.Main-Container .Container-One .Cards {
+  display: grid;
   grid-template-columns: repeat(2, 1fr);
 }
-.Main .Container-One .Cards .Card {
+.Main-Container .Container-One .Cards .Card {
   position: relative;
 }
-.Main .Container-One .Cards .Card figure {
-  position: relative;
-}
-.Main .Container-One .Cards .Card figure img {
-  width: 87%;
+.Main-Container .Container-One .Cards .Card figure img {
+  width: 97%;
   border-radius: 30px;
   transition: all 0.3s;
 }
-.Main .Container-One .Cards .Card figure img:hover {
+.Main-Container .Container-One .Cards .Card figure img:hover {
   transform: scale(1.03);
 }
-.Main .Container-One .Cards .Card figure figcaption .White {
+.Main-Container .Container-One .Cards .Card figure figcaption .White {
   z-index: 2;
   background-color: rgb(233, 233, 241);
   color: rgb(17, 17, 17);
@@ -359,7 +934,7 @@ body {
   border-radius: 15px;
   margin-top: -20%;
 }
-.Main .Container-One .Cards .Card figure figcaption .Black {
+.Main-Container .Container-One .Cards .Card figure figcaption .Black {
   z-index: 2;
   background-color: rgb(17, 17, 17);
   color: rgb(233, 233, 241);
@@ -367,26 +942,109 @@ body {
   border-radius: 15px;
   margin-top: -20%;
 }
-.Main .Container-One .Cards .Card figure figcaption span:first-child {
+.Main-Container .Container-One .Cards .Card figure figcaption span:first-child {
   margin-left: 5%;
 }
-.Main .Container-One .Cards .Space {
-  margin-left: -8%;
-}
-.Main .Container-One .Cards .Space figure {
+.Main-Container .Container-One .Cards .Space figure {
   position: relative;
 }
-.Main .Container-One .Cards .Space figure img {
-  width: 82%;
+.Main-Container .Container-One .Cards .Space figure img {
+  width: 97%;
 }
-.Main .Container-Two {
-  margin-left: 34%;
-  margin-bottom: 12%;
+@media (max-width: 576px) {
+  .Main-Container .Container-One {
+    margin-top: 10%;
+    margin-left: 0%;
+  }
+  .Main-Container .Container-One .Content .Text h1 {
+    font-size: 38px;
+  }
+  .Main-Container .Container-One .Crads {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .Main-Container .Container-One .Crads .Card figure img {
+    width: 100%;
+  }
 }
-.Main .Container-Two .Content {
+@media (min-width: 577px) {
+  .Main-Container .Container-One .Content .Text h1 {
+    font-size: 40px;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .Main-Container .Container-One .Crads .Card figure figcaption .White span,
+  .Main-Container .Container-One .Crads .Card figure figcaption .Black span {
+    font-size: 25px;
+  }
+}
+@media (min-width: 1400px) {
+  .Main-Container .Container-One .Content .Top-Button a {
+    color: rgb(233, 233, 241);
+    font-size: 13px;
+    font-weight: 600;
+    border: 1px solid rgb(48, 48, 51);
+    border-radius: 15px;
+    padding: 10px 15px;
+  }
+  .Main-Container .Container-One .Content .Text {
+    margin-top: 3%;
+    margin-bottom: 5%;
+  }
+  .Main-Container .Container-One .Content .Text h1 {
+    color: rgb(228, 184, 191);
+    font-size: 55px;
+    font-weight: 700;
+    white-space: nowrap;
+    background: linear-gradient(to right, rgb(225, 186, 197), rgb(233, 233, 241), rgb(206, 196, 239));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  .Main-Container .Container-One .Cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .Main-Container .Container-One .Cards .Card {
+    position: relative;
+  }
+  .Main-Container .Container-One .Cards .Card figure img {
+    width: 97%;
+    border-radius: 30px;
+    transition: all 0.3s;
+  }
+  .Main-Container .Container-One .Cards .Card figure img:hover {
+    transform: scale(1.03);
+  }
+  .Main-Container .Container-One .Cards .Card figure figcaption .White {
+    z-index: 2;
+    background-color: rgb(233, 233, 241);
+    color: rgb(17, 17, 17);
+    padding: 5px 10px;
+    border-radius: 15px;
+    margin-top: -20%;
+  }
+  .Main-Container .Container-One .Cards .Card figure figcaption .Black {
+    z-index: 2;
+    background-color: rgb(17, 17, 17);
+    color: rgb(233, 233, 241);
+    padding: 5px 10px;
+    border-radius: 15px;
+    margin-top: -20%;
+  }
+  .Main-Container .Container-One .Cards .Card figure figcaption span:first-child {
+    margin-left: 5%;
+  }
+  .Main-Container .Container-One .Cards .Space figure {
+    position: relative;
+  }
+  .Main-Container .Container-One .Cards .Space figure img {
+    width: 97%;
+  }
+}
+.Main-Container .Container-Two .Content {
   margin-bottom: 5%;
 }
-.Main .Container-Two .Content .Top-Button a {
+.Main-Container .Container-Two .Content .Top-Button a {
   color: rgb(233, 233, 241);
   font-size: 13px;
   font-weight: 600;
@@ -394,11 +1052,11 @@ body {
   border-radius: 15px;
   padding: 10px 15px;
 }
-.Main .Container-Two .Content .Text {
+.Main-Container .Container-Two .Content .Text {
   margin-top: 3%;
   margin-bottom: 5%;
 }
-.Main .Container-Two .Content .Text h1 {
+.Main-Container .Container-Two .Content .Text h1 {
   color: rgb(228, 184, 191);
   font-size: 55px;
   font-weight: 700;
@@ -406,40 +1064,44 @@ body {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-.Main .Container-Two .Boxes {
-  gap: 50px;
+.Main-Container .Container-Two .Boxes {
+  display: flex;
+  gap: 40px;
 }
-.Main .Container-Two .Boxes .Box {
+.Main-Container .Container-Two .Boxes .Box {
   border: 1px solid rgb(48, 48, 51);
   border-radius: 2.2rem;
   padding: 25px 55px;
 }
-.Main .Container-Two .Boxes .Box h2 {
+.Main-Container .Container-Two .Boxes .Box h2 {
   font-family: Poppins, sans-serif;
   text-align: center;
   font-size: 65px;
   font-weight: 600;
   color: rgb(206, 196, 239);
 }
-.Main .Container-Two .Boxes .Box span {
+.Main-Container .Container-Two .Boxes .Box span {
   font-size: 20px;
   font-weight: 600;
   color: rgb(233, 233, 241);
 }
-.Main .Container-Two .Text .Content-One {
+.Main-Container .Container-Two .Text {
+  gap: 50px;
+}
+.Main-Container .Container-Two .Text .Content-One {
   margin-top: 5%;
 }
-.Main .Container-Two .Text .Content-One p {
+.Main-Container .Container-Two .Text .Content-One p {
   font-size: 21px;
   color: rgb(233, 233, 241);
 }
-.Main .Container-Two .Text .Content-One span {
+.Main-Container .Container-Two .Text .Content-One span {
   position: relative;
   text-decoration: underline;
   text-decoration-color: rgb(75, 75, 81);
   text-decoration-thickness: 1px;
 }
-.Main .Container-Two .Text .Content-One span::after {
+.Main-Container .Container-Two .Text .Content-One span::after {
   content: "";
   position: absolute;
   bottom: 1.5px;
@@ -449,13 +1111,13 @@ body {
   background-color: rgb(206, 196, 239);
   transition: width 0.4s ease-in-out;
 }
-.Main .Container-Two .Text .Content-One span:hover::after {
+.Main-Container .Container-Two .Text .Content-One span:hover::after {
   width: 100%;
 }
-.Main .Container-Two .Text .Content-One .Button {
+.Main-Container .Container-Two .Text .Content-One .Button {
   margin-top: 5%;
 }
-.Main .Container-Two .Text .Content-One .Button a {
+.Main-Container .Container-Two .Text .Content-One .Button a {
   background-color: rgb(206, 196, 239);
   color: rgb(17, 17, 17);
   padding: 15px 25px;
@@ -467,52 +1129,205 @@ body {
   background: linear-gradient(to right, rgb(225, 186, 197), rgb(206, 196, 239));
   transition: all 0.3s;
 }
-.Main .Container-Two .Text .Content-One .Button:hover {
+.Main-Container .Container-Two .Text .Content-One .Button:hover {
   transform: scale(1.02);
 }
-.Main .Container-Two .Text .Content-Two {
+.Main-Container .Container-Two .Text .Content-Two {
   margin-top: 5%;
-  margin-right: 16%;
   font-family: Poppins, sans-serif;
 }
-.Main .Container-Two .Text .Content-Two span {
+.Main-Container .Container-Two .Text .Content-Two span {
   color: rgb(75, 75, 81);
   font-size: 17px;
 }
-.Main .Container-Two .Text .Content-Two h6 {
+.Main-Container .Container-Two .Text .Content-Two h6 {
   color: rgb(233, 233, 241);
   font-size: 18px;
   font-weight: 700;
   margin-bottom: 15%;
 }
-.Main .Container-Three {
-  margin-left: 34%;
-  margin-bottom: 13%;
+@media (max-width: 576px) {
+  .Main-Container .Container-Two .Content .Text h1 {
+    font-size: 34px;
+  }
+  .Main-Container .Container-Two .Boxes {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    margin-right: 5%;
+    gap: 20px;
+  }
+  .Main-Container .Container-Two .Boxes .Box {
+    padding: 25px 25px;
+  }
+  .Main-Container .Container-Two .Boxes .Box span {
+    display: block;
+    font-size: 26px;
+    text-align: center;
+    white-space: nowrap;
+  }
+  .Main-Container .Container-Two .Text .Content-One p {
+    font-size: 18px;
+  }
+  .Main-Container .Container-Two .Text .Content-One .Button a {
+    width: 100%;
+    padding-left: 38%;
+  }
 }
-.Main .Container-Three .Mega-Card {
+@media (min-width: 577px) and (max-width: 767px) {
+  .Main-Container .Container-Two .Content .Text h1 {
+    font-size: 36px;
+  }
+  .Main-Container .Container-Two .Text .Content-One p {
+    font-size: 18px;
+  }
+  .Main-Container .Container-Two .Text .Content-One .Button a {
+    width: 100%;
+    padding-left: 38%;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .Main-Container .Container-Two .Content .Text h1 {
+    font-size: 40px;
+  }
+  .Main-Container .Container-Two .Text .Content-One p {
+    font-size: 18px;
+  }
+  .Main-Container .Container-Two .Text .Content-One .Button a {
+    width: 100%;
+    padding-left: 38%;
+  }
+}
+@media (min-width: 1400px) {
+  .Main-Container .Container-Two .Content {
+    margin-bottom: 5%;
+  }
+  .Main-Container .Container-Two .Content .Top-Button a {
+    color: rgb(233, 233, 241);
+    font-size: 13px;
+    font-weight: 600;
+    border: 1px solid rgb(48, 48, 51);
+    border-radius: 15px;
+    padding: 10px 15px;
+  }
+  .Main-Container .Container-Two .Content .Text {
+    margin-top: 3%;
+    margin-bottom: 5%;
+  }
+  .Main-Container .Container-Two .Content .Text h1 {
+    color: rgb(228, 184, 191);
+    font-size: 55px;
+    font-weight: 700;
+    background: linear-gradient(to right, rgb(225, 186, 197), rgb(233, 233, 241), rgb(206, 196, 239));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  .Main-Container .Container-Two .Boxes {
+    display: flex;
+    gap: 40px;
+  }
+  .Main-Container .Container-Two .Boxes .Box {
+    border: 1px solid rgb(48, 48, 51);
+    border-radius: 2.2rem;
+    padding: 25px 55px;
+  }
+  .Main-Container .Container-Two .Boxes .Box h2 {
+    font-family: Poppins, sans-serif;
+    text-align: center;
+    font-size: 65px;
+    font-weight: 600;
+    color: rgb(206, 196, 239);
+  }
+  .Main-Container .Container-Two .Boxes .Box span {
+    font-size: 20px;
+    font-weight: 600;
+    color: rgb(233, 233, 241);
+  }
+  .Main-Container .Container-Two .Text {
+    gap: 50px;
+  }
+  .Main-Container .Container-Two .Text .Content-One {
+    margin-top: 5%;
+  }
+  .Main-Container .Container-Two .Text .Content-One p {
+    font-size: 21px;
+    color: rgb(233, 233, 241);
+  }
+  .Main-Container .Container-Two .Text .Content-One span {
+    position: relative;
+    text-decoration: underline;
+    text-decoration-color: rgb(75, 75, 81);
+    text-decoration-thickness: 1px;
+  }
+  .Main-Container .Container-Two .Text .Content-One span::after {
+    content: "";
+    position: absolute;
+    bottom: 1.5px;
+    left: 0;
+    width: 0;
+    height: 1px;
+    background-color: rgb(206, 196, 239);
+    transition: width 0.4s ease-in-out;
+  }
+  .Main-Container .Container-Two .Text .Content-One span:hover::after {
+    width: 100%;
+  }
+  .Main-Container .Container-Two .Text .Content-One .Button {
+    margin-top: 5%;
+  }
+  .Main-Container .Container-Two .Text .Content-One .Button a {
+    background-color: rgb(206, 196, 239);
+    color: rgb(17, 17, 17);
+    padding: 15px 25px;
+    width: -moz-fit-content;
+    width: fit-content;
+    border-radius: 25px;
+    font-size: 15px;
+    font-weight: 700;
+    background: linear-gradient(to right, rgb(225, 186, 197), rgb(206, 196, 239));
+    transition: all 0.3s;
+  }
+  .Main-Container .Container-Two .Text .Content-One .Button:hover {
+    transform: scale(1.02);
+  }
+  .Main-Container .Container-Two .Text .Content-Two {
+    margin-top: 5%;
+    font-family: Poppins, sans-serif;
+  }
+  .Main-Container .Container-Two .Text .Content-Two span {
+    color: rgb(75, 75, 81);
+    font-size: 17px;
+  }
+  .Main-Container .Container-Two .Text .Content-Two h6 {
+    color: rgb(233, 233, 241);
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 15%;
+  }
+}
+.Main-Container .Container-Three .Mega-Card {
   grid-template-columns: repeat(2, 1fr);
 }
-.Main .Container-Three .Mega-Card .Cards {
+.Main-Container .Container-Three .Mega-Card .Cards {
   border: 1px solid rgb(48, 48, 51);
   width: -moz-fit-content;
   width: fit-content;
   border-radius: 2.2rem;
   overflow: hidden;
 }
-.Main .Container-Three .Mega-Card .Cards .Title {
+.Main-Container .Container-Three .Mega-Card .Cards .Title {
   margin-left: 8%;
   margin-bottom: 2%;
   margin-top: 6%;
 }
-.Main .Container-Three .Mega-Card .Cards .Title h3 {
+.Main-Container .Container-Three .Mega-Card .Cards .Title h3 {
   color: rgb(233, 233, 241);
   font-size: 35px;
   font-weight: 600;
 }
-.Main .Container-Three .Mega-Card .Cards .Button {
+.Main-Container .Container-Three .Mega-Card .Cards .Button {
   margin-left: 8%;
 }
-.Main .Container-Three .Mega-Card .Cards .Button a {
+.Main-Container .Container-Three .Mega-Card .Cards .Button a {
   color: rgb(233, 233, 241);
   border: 1px solid rgb(48, 48, 51);
   padding: 10px 20px;
@@ -522,31 +1337,133 @@ body {
   font-size: 12px;
   font-weight: 700;
 }
-.Main .Container-Three .Mega-Card .Cards .Description {
+.Main-Container .Container-Three .Mega-Card .Cards .Description {
   margin-top: 4%;
   margin-bottom: 5%;
   margin-left: 8%;
 }
-.Main .Container-Three .Mega-Card .Cards .Description p {
+.Main-Container .Container-Three .Mega-Card .Cards .Description p {
   color: rgb(233, 233, 241);
   font-size: 18px;
 }
-.Main .Container-Three .Mega-Card .Cards .Image img {
+.Main-Container .Container-Three .Mega-Card .Cards .Image img {
   width: auto;
   height: 400px;
   padding-top: 70px;
 }
-.Main .Container-Three .Mega-Card .Space {
+.Main-Container .Container-Three .Mega-Card .Space {
   margin-left: -5%;
 }
-.Main .Container-Four {
-  margin-left: 34%;
-  margin-bottom: 10%;
+@media (max-width: 576px) {
+  .Main-Container .Container-Three {
+    margin-left: 12%;
+  }
+  .Main-Container .Container-Three .Mega-Card {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .Main-Container .Container-Three .Mega-Card .Cards {
+    width: 80%;
+  }
+  .Main-Container .Container-Three .Mega-Card .Cards .Image img {
+    width: 100%;
+    height: auto;
+  }
+  .Main-Container .Container-Three .Mega-Card .Space {
+    margin-left: 0;
+  }
 }
-.Main .Container-Four .Content {
+@media (min-width: 577px) and (max-width: 767px) {
+  .Main-Container .Container-Three {
+    margin-left: 12%;
+  }
+  .Main-Container .Container-Three .Mega-Card {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .Main-Container .Container-Three .Mega-Card .Cards {
+    width: 80%;
+  }
+  .Main-Container .Container-Three .Mega-Card .Cards .Image img {
+    width: 100%;
+    height: auto;
+  }
+  .Main-Container .Container-Three .Mega-Card .Space {
+    margin-left: 0;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .Main-Container .Container-Three {
+    margin-left: 12%;
+  }
+  .Main-Container .Container-Three .Mega-Card {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .Main-Container .Container-Three .Mega-Card .Cards {
+    width: 80%;
+  }
+  .Main-Container .Container-Three .Mega-Card .Cards .Image img {
+    width: 100%;
+    height: auto;
+  }
+  .Main-Container .Container-Three .Mega-Card .Space {
+    margin-left: 0;
+  }
+}
+@media (min-width: 1400px) {
+  .Main-Container .Container-Three .Mega-Card {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .Main-Container .Container-Three .Mega-Card .Cards {
+    border: 1px solid rgb(48, 48, 51);
+    width: -moz-fit-content;
+    width: fit-content;
+    border-radius: 2.2rem;
+    overflow: hidden;
+  }
+  .Main-Container .Container-Three .Mega-Card .Cards .Title {
+    margin-left: 8%;
+    margin-bottom: 2%;
+    margin-top: 6%;
+  }
+  .Main-Container .Container-Three .Mega-Card .Cards .Title h3 {
+    color: rgb(233, 233, 241);
+    font-size: 35px;
+    font-weight: 600;
+  }
+  .Main-Container .Container-Three .Mega-Card .Cards .Button {
+    margin-left: 8%;
+  }
+  .Main-Container .Container-Three .Mega-Card .Cards .Button a {
+    color: rgb(233, 233, 241);
+    border: 1px solid rgb(48, 48, 51);
+    padding: 10px 20px;
+    width: -moz-fit-content;
+    width: fit-content;
+    border-radius: 15px;
+    font-size: 12px;
+    font-weight: 700;
+  }
+  .Main-Container .Container-Three .Mega-Card .Cards .Description {
+    margin-top: 4%;
+    margin-bottom: 5%;
+    margin-left: 8%;
+  }
+  .Main-Container .Container-Three .Mega-Card .Cards .Description p {
+    color: rgb(233, 233, 241);
+    font-size: 18px;
+  }
+  .Main-Container .Container-Three .Mega-Card .Cards .Image img {
+    width: auto;
+    height: 400px;
+    padding-top: 70px;
+  }
+  .Main-Container .Container-Three .Mega-Card .Space {
+    margin-left: -5%;
+  }
+}
+.Main-Container .Container-Four .Content {
   margin-bottom: 5%;
 }
-.Main .Container-Four .Content .Top-Button a {
+.Main-Container .Container-Four .Content .Top-Button a {
   color: rgb(233, 233, 241);
   font-size: 13px;
   font-weight: 600;
@@ -554,11 +1471,11 @@ body {
   border-radius: 15px;
   padding: 10px 15px;
 }
-.Main .Container-Four .Content .Text {
+.Main-Container .Container-Four .Content .Text {
   margin-top: 3%;
   margin-bottom: 5%;
 }
-.Main .Container-Four .Content .Text h1 {
+.Main-Container .Container-Four .Content .Text h1 {
   color: rgb(228, 184, 191);
   font-size: 55px;
   font-weight: 700;
@@ -566,21 +1483,21 @@ body {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-.Main .Container-Four .Content .Text .Text {
+.Main-Container .Container-Four .Content .Text .Text {
   margin-top: 5%;
   margin-bottom: 10%;
 }
-.Main .Container-Four .Content .Text .Text p {
+.Main-Container .Container-Four .Content .Text .Text p {
   font-size: 21px;
   color: rgb(233, 233, 241);
 }
-.Main .Container-Four .Content .Text .Text span {
+.Main-Container .Container-Four .Content .Text .Text span {
   position: relative;
   text-decoration: underline;
   text-decoration-color: rgb(75, 75, 81);
   text-decoration-thickness: 1px;
 }
-.Main .Container-Four .Content .Text .Text span::after {
+.Main-Container .Container-Four .Content .Text .Text span::after {
   content: "";
   position: absolute;
   bottom: 1.5px;
@@ -590,70 +1507,182 @@ body {
   background-color: rgb(206, 196, 239);
   transition: width 0.4s ease-in-out;
 }
-.Main .Container-Four .Content .Text .Text span:hover::after {
+.Main-Container .Container-Four .Content .Text .Text span:hover::after {
   width: 100%;
 }
-.Main .Container-Four .Education h3 {
+.Main-Container .Container-Four .Education h3 {
   font-size: 35px;
   font-weight: 700;
   color: rgb(233, 233, 241);
   margin-bottom: 5%;
 }
-.Main .Container-Four .Education hr {
+.Main-Container .Container-Four .Education hr {
   width: 88%;
   height: 2px;
   color: rgba(255, 255, 255, 0.3);
   margin-bottom: 3%;
   margin-top: 3%;
 }
-.Main .Container-Four .Education .Info {
+.Main-Container .Container-Four .Education .Info {
   color: rgb(233, 233, 241);
   gap: 40px;
   font-family: Poppins, sans-serif;
 }
-.Main .Container-Four .Education .Info span {
+.Main-Container .Container-Four .Education .Info span {
   font-size: 14px;
   color: rgb(199, 198, 211);
 }
-.Main .Container-Four .Education .Info span:last-child {
+.Main-Container .Container-Four .Education .Info span:last-child {
   color: rgb(233, 233, 241);
   font-weight: 700;
 }
-.Main .Container-Four .Education .Info h4 {
+.Main-Container .Container-Four .Education .Info h4 {
   font-family: "Syne", sans-serif;
   font-size: 30px;
   line-height: 30px;
 }
-.Main .Container-Four .Education .Info p {
+.Main-Container .Container-Four .Education .Info p {
   margin-right: 130px;
   font-size: 16px;
 }
-.Main .Container-Four .Education .Space h4 {
+.Main-Container .Container-Four .Education .Space h4 {
   margin-right: 38px;
 }
-.Main .Container-Five {
-  margin-left: 34%;
-  margin-bottom: 8%;
+@media (max-width: 576px) {
+  .Main-Container .Container-Four .Content .Text h1 {
+    font-size: 34px;
+  }
+  .Main-Container .Container-Four .Content .Text .Text p {
+    font-size: 20px;
+  }
+  .Main-Container .Container-Four .Education h3 {
+    text-align: center;
+  }
 }
-.Main .Container-Five .Experience h3 {
+@media (min-width: 577px) and (max-width: 767px) {
+  .Main-Container .Container-Four .Content .Text h1 {
+    font-size: 36px;
+  }
+  .Main-Container .Container-Four .Education h3 {
+    text-align: center;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .Main-Container .Container-Four .Content .Text h1 {
+    font-size: 40px;
+  }
+  .Main-Container .Container-Four .Education h3 {
+    text-align: center;
+  }
+}
+@media (min-width: 1400px) {
+  .Main-Container .Container-Four .Content {
+    margin-bottom: 5%;
+  }
+  .Main-Container .Container-Four .Content .Top-Button a {
+    color: rgb(233, 233, 241);
+    font-size: 13px;
+    font-weight: 600;
+    border: 1px solid rgb(48, 48, 51);
+    border-radius: 15px;
+    padding: 10px 15px;
+  }
+  .Main-Container .Container-Four .Content .Text {
+    margin-top: 3%;
+    margin-bottom: 5%;
+  }
+  .Main-Container .Container-Four .Content .Text h1 {
+    color: rgb(228, 184, 191);
+    font-size: 55px;
+    font-weight: 700;
+    background: linear-gradient(to right, rgb(225, 186, 197), rgb(233, 233, 241), rgb(206, 196, 239));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  .Main-Container .Container-Four .Content .Text .Text {
+    margin-top: 5%;
+    margin-bottom: 10%;
+  }
+  .Main-Container .Container-Four .Content .Text .Text p {
+    font-size: 21px;
+    color: rgb(233, 233, 241);
+  }
+  .Main-Container .Container-Four .Content .Text .Text span {
+    position: relative;
+    text-decoration: underline;
+    text-decoration-color: rgb(75, 75, 81);
+    text-decoration-thickness: 1px;
+  }
+  .Main-Container .Container-Four .Content .Text .Text span::after {
+    content: "";
+    position: absolute;
+    bottom: 1.5px;
+    left: 0;
+    width: 0;
+    height: 1px;
+    background-color: rgb(206, 196, 239);
+    transition: width 0.4s ease-in-out;
+  }
+  .Main-Container .Container-Four .Content .Text .Text span:hover::after {
+    width: 100%;
+  }
+  .Main-Container .Container-Four .Education h3 {
+    font-size: 35px;
+    font-weight: 700;
+    color: rgb(233, 233, 241);
+    margin-bottom: 5%;
+  }
+  .Main-Container .Container-Four .Education hr {
+    width: 88%;
+    height: 2px;
+    color: rgba(255, 255, 255, 0.3);
+    margin-bottom: 3%;
+    margin-top: 3%;
+  }
+  .Main-Container .Container-Four .Education .Info {
+    color: rgb(233, 233, 241);
+    gap: 40px;
+    font-family: Poppins, sans-serif;
+  }
+  .Main-Container .Container-Four .Education .Info span {
+    font-size: 14px;
+    color: rgb(199, 198, 211);
+  }
+  .Main-Container .Container-Four .Education .Info span:last-child {
+    color: rgb(233, 233, 241);
+    font-weight: 700;
+  }
+  .Main-Container .Container-Four .Education .Info h4 {
+    font-family: "Syne", sans-serif;
+    font-size: 30px;
+    line-height: 30px;
+  }
+  .Main-Container .Container-Four .Education .Info p {
+    margin-right: 130px;
+    font-size: 16px;
+  }
+  .Main-Container .Container-Four .Education .Space h4 {
+    margin-right: 38px;
+  }
+}
+.Main-Container .Container-Five .Experience h3 {
   font-size: 35px;
   font-weight: 700;
   color: rgb(233, 233, 241);
   margin-bottom: 5%;
 }
-.Main .Container-Five .Experience hr {
+.Main-Container .Container-Five .Experience hr {
   width: 88%;
   height: 2px;
   color: rgba(255, 255, 255, 0.3);
   margin-bottom: 3%;
   margin-top: 3%;
 }
-.Main .Container-Five .Experience .Info {
+.Main-Container .Container-Five .Experience .Info {
   color: rgb(233, 233, 241);
-  gap: 40px;
   font-family: Poppins, sans-serif;
 }
-.Main .Container-Five .Experience .Info span {
+.Main-Container .Container-Five .Experience .Info span {
   font-size: 13px;
   color: rgb(199, 198, 211);
   position: relative;
@@ -661,11 +1690,11 @@ body {
   text-decoration: none;
   text-decoration-thickness: 1px;
 }
-.Main .Container-Five .Experience .Info span:last-child {
+.Main-Container .Container-Five .Experience .Info span:last-child {
   color: rgb(199, 198, 211);
   font-weight: 700;
 }
-.Main .Container-Five .Experience .Info span span::after {
+.Main-Container .Container-Five .Experience .Info span span::after {
   content: "";
   position: absolute;
   bottom: 1.5px;
@@ -675,71 +1704,118 @@ body {
   background-color: rgb(206, 196, 239);
   transition: width 0.4s ease-in-out;
 }
-.Main .Container-Five .Experience .Info span span:hover::after {
+.Main-Container .Container-Five .Experience .Info span span:hover::after {
   width: 100%;
 }
-.Main .Container-Five .Experience .Info h4 {
+.Main-Container .Container-Five .Experience .Info h4 {
   font-family: "Syne", sans-serif;
   font-size: 30px;
   line-height: 30px;
 }
-.Main .Container-Five .Experience .Info h4 .Text {
+.Main-Container .Container-Five .Experience .Info h4 .Text {
   color: rgb(233, 233, 241);
   font-size: 14px;
   font-weight: 700;
 }
-.Main .Container-Five .Experience .Info p {
+.Main-Container .Container-Five .Experience .Info p {
   margin-right: 130px;
   font-size: 16px;
 }
-.Main .Container-Five .Experience .Space h4 {
+.Main-Container .Container-Five .Experience .Space h4 {
   margin-right: 50px;
 }
-.Main .Container-Five .Experience .Space p {
+.Main-Container .Container-Five .Experience .Space p {
   margin-right: 175px;
 }
-.Main .Container-Five .Experience .Paragraph h4 {
+.Main-Container .Container-Five .Experience .Paragraph h4 {
   margin-right: 30px;
 }
-.Main .Container-Six {
-  margin-left: 34%;
-  margin-bottom: 12%;
+@media (max-width: 576px) {
+  .Main-Container .Container-Five .Experience h3 {
+    text-align: center;
+  }
 }
-.Main .Container-Six h3 {
+@media (min-width: 577px) and (max-width: 767px) {
+  .Main-Container .Container-Five .Experience h3 {
+    text-align: center;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .Main-Container .Container-Five .Experience h3 {
+    text-align: center;
+  }
+}
+@media (min-width: 1400px) {
+  .Main-Container .Container-Five .Experience h3 {
+    font-size: 35px;
+    font-weight: 700;
+    color: rgb(233, 233, 241);
+    margin-bottom: 5%;
+  }
+  .Main-Container .Container-Five .Experience hr {
+    width: 88%;
+    height: 2px;
+    color: rgba(255, 255, 255, 0.3);
+    margin-bottom: 3%;
+    margin-top: 3%;
+  }
+  .Main-Container .Container-Five .Experience .Info {
+    color: rgb(233, 233, 241);
+    gap: 40px;
+    font-family: Poppins, sans-serif;
+  }
+  .Main-Container .Container-Five .Experience .Info span {
+    font-size: 14px;
+    color: rgb(199, 198, 211);
+  }
+  .Main-Container .Container-Five .Experience .Info span:last-child {
+    color: rgb(233, 233, 241);
+    font-weight: 700;
+  }
+  .Main-Container .Container-Five .Experience .Info h4 {
+    font-family: "Syne", sans-serif;
+    font-size: 30px;
+    line-height: 30px;
+  }
+  .Main-Container .Container-Five .Experience .Info p {
+    margin-right: 130px;
+    font-size: 16px;
+  }
+  .Main-Container .Container-Five .Experience .Space h4 {
+    margin-right: 38px;
+  }
+}
+.Main-Container .Container-Six h3 {
   color: rgb(233, 233, 241);
   font-size: 35px;
   font-weight: 700;
   margin-bottom: 4%;
 }
-.Main .Container-Six img {
+.Main-Container .Container-Six img {
   width: auto;
   height: 70px;
   border-radius: 20px;
   margin-bottom: 15%;
 }
-.Main .Container-Six h6 {
+.Main-Container .Container-Six h6 {
   color: rgb(233, 233, 241);
   font-family: "Poppins", sans-serif;
   font-size: 18px;
   font-weight: 700;
 }
-.Main .Container-Six .Card {
+.Main-Container .Container-Six .Card {
   border: 1px solid rgb(48, 48, 51);
   border-radius: 2.2rem;
   padding: 25px 30px;
 }
-.Main .Container-Six .HTML5,
-.Main .Container-Six .CSS3 {
+.Main-Container .Container-Six .HTML5,
+.Main-Container .Container-Six .CSS3 {
   padding: 25px 32px;
 }
-.Main .Container-Seven {
-  margin-left: 34%;
-  margin-bottom: 12%;
-}
-.Main .Container-Seven .Content {
+.Main-Container .Container-Seven .Content {
   margin-bottom: 6%;
 }
-.Main .Container-Seven .Content .Top-Button a {
+.Main-Container .Container-Seven .Content .Top-Button a {
   color: rgb(233, 233, 241);
   font-size: 13px;
   font-weight: 600;
@@ -747,11 +1823,11 @@ body {
   border-radius: 15px;
   padding: 10px 15px;
 }
-.Main .Container-Seven .Content .Text {
+.Main-Container .Container-Seven .Content .Text {
   margin-top: 3%;
   margin-bottom: 5%;
 }
-.Main .Container-Seven .Content .Text h1 {
+.Main-Container .Container-Seven .Content .Text h1 {
   color: rgb(228, 184, 191);
   font-size: 55px;
   font-weight: 700;
@@ -759,62 +1835,62 @@ body {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-.Main .Container-Seven .Swiper-Slides .swiper {
+.Main-Container .Container-Seven .Swiper-Slides .swiper {
   border: 1px solid rgb(48, 48, 51);
   border-radius: 2.2rem;
   width: 93%;
   margin-right: 80px;
 }
-.Main .Container-Seven .Swiper-Slides .swiper .swiper-wrapper {
+.Main-Container .Container-Seven .Swiper-Slides .swiper .swiper-wrapper {
   padding: 50px 50px;
 }
-.Main .Container-Seven .Swiper-Slides .swiper .swiper-wrapper .Title .Image img {
+.Main-Container .Container-Seven .Swiper-Slides .swiper .swiper-wrapper .Title .Image img {
   width: auto;
   height: 100px;
   border-radius: 2.2rem;
   margin-bottom: 20px;
   margin-right: 20px;
 }
-.Main .Container-Seven .Swiper-Slides .swiper .swiper-wrapper .Title .Content h2 {
+.Main-Container .Container-Seven .Swiper-Slides .swiper .swiper-wrapper .Title .Content h2 {
   color: rgb(233, 233, 241);
   font-size: 30px;
   font-weight: 700;
   line-height: 20px;
 }
-.Main .Container-Seven .Swiper-Slides .swiper .swiper-wrapper .Title .Content span {
+.Main-Container .Container-Seven .Swiper-Slides .swiper .swiper-wrapper .Title .Content span {
   color: rgb(199, 198, 211);
 }
-.Main .Container-Seven .Swiper-Slides .swiper .swiper-wrapper .Title .Content span:last-child {
+.Main-Container .Container-Seven .Swiper-Slides .swiper .swiper-wrapper .Title .Content span:last-child {
   color: rgb(233, 233, 241);
   font-weight: 600;
 }
-.Main .Container-Seven .Swiper-Slides .swiper .swiper-wrapper .Title .Content i {
+.Main-Container .Container-Seven .Swiper-Slides .swiper .swiper-wrapper .Title .Content i {
   color: rgb(206, 196, 239);
   margin-top: 10px;
   background: linear-gradient(to right, rgb(225, 186, 197), rgb(206, 196, 239));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-.Main .Container-Seven .Swiper-Slides .swiper .swiper-wrapper .Command p {
+.Main-Container .Container-Seven .Swiper-Slides .swiper .swiper-wrapper .Command p {
   font-size: 22px;
   font-weight: 400;
   color: rgb(233, 233, 241);
   margin-bottom: 10px;
 }
-.Main .Container-Seven .Swiper-Slides .swiper .swiper-wrapper .Text {
+.Main-Container .Container-Seven .Swiper-Slides .swiper .swiper-wrapper .Text {
   margin-top: 4%;
 }
-.Main .Container-Seven .Swiper-Slides .swiper .swiper-wrapper .Text span {
+.Main-Container .Container-Seven .Swiper-Slides .swiper .swiper-wrapper .Text span {
   color: rgb(233, 233, 241);
   font-size: 18px;
   font-weight: 600;
 }
-.Main .Container-Seven .Swiper-Slides .swiper .swiper-wrapper .Text span i {
+.Main-Container .Container-Seven .Swiper-Slides .swiper .swiper-wrapper .Text span i {
   font-size: 17px;
   margin-left: 5px;
 }
-.Main .Container-Seven .Swiper-Slides .Button-Next,
-.Main .Container-Seven .Swiper-Slides .Button-Prev {
+.Main-Container .Container-Seven .Swiper-Slides .Button-Next,
+.Main-Container .Container-Seven .Swiper-Slides .Button-Prev {
   color: aliceblue;
   border: 1px solid rgb(48, 48, 51);
   padding: 15px 20px;
@@ -825,14 +1901,252 @@ body {
   width: fit-content;
   margin-top: 2%;
 }
-.Main .Container-Eight {
-  margin-left: 34%;
-  margin-bottom: 12%;
+@media (max-width: 576px) {
+  .Main-Container .Container-Seven .Content .Text h1 {
+    font-size: 38px;
+  }
+  .Main-Container .Container-Seven .Swiper-Slides .swiper .swiper-wrapper {
+    padding: 20px;
+  }
+  .Main-Container .Container-Seven .Swiper-Slides .swiper .swiper-wrapper .Title .Image img {
+    width: auto;
+    height: 80px;
+  }
+  .Main-Container .Container-Seven .Swiper-Slides .swiper .swiper-wrapper .Title .Content h2 {
+    font-size: 20px;
+    line-height: 10px;
+  }
+  .Main-Container .Container-Seven .Swiper-Slides .swiper .swiper-wrapper .Title .Content span {
+    font-size: 15px;
+  }
+  .Main-Container .Container-Seven .Swiper-Slides .swiper .swiper-wrapper .Title .Content i {
+    font-size: 12px;
+  }
+  .Main-Container .Container-Seven .Swiper-Slides .swiper .swiper-wrapper .Command p {
+    font-size: 13px;
+    margin-left: -8px;
+  }
+  .Main-Container .Container-Seven .Swiper-Slides .swiper .swiper-wrapper .Text span {
+    font-size: 12px;
+    margin-left: -10px;
+  }
 }
-.Main .Container-Eight .Content {
-  margin-bottom: 5%;
+@media (min-width: 577px) {
+  .Main-Container .Container-Seven .Content .Text h1 {
+    font-size: 40px;
+  }
+  .Main-Container .Container-Seven .Swiper-Slides .swiper .swiper-wrapper {
+    padding: 20px;
+  }
+  .Main-Container .Container-Seven .Swiper-Slides .swiper .swiper-wrapper .Title .Image img {
+    width: auto;
+    height: 80px;
+  }
+  .Main-Container .Container-Seven .Swiper-Slides .swiper .swiper-wrapper .Title .Content h2 {
+    font-size: 20px;
+    line-height: 10px;
+  }
+  .Main-Container .Container-Seven .Swiper-Slides .swiper .swiper-wrapper .Title .Content span {
+    font-size: 15px;
+  }
+  .Main-Container .Container-Seven .Swiper-Slides .swiper .swiper-wrapper .Title .Content i {
+    font-size: 12px;
+  }
+  .Main-Container .Container-Seven .Swiper-Slides .swiper .swiper-wrapper .Command p {
+    font-size: 15px;
+    margin-left: -8px;
+  }
+  .Main-Container .Container-Seven .Swiper-Slides .swiper .swiper-wrapper .Text span {
+    font-size: 12px;
+    margin-left: -10px;
+  }
 }
-.Main .Container-Eight .Content .Top-Button a {
+@media (min-width: 768px) and (max-width: 991px) {
+  .Main-Container .Container-Seven .Content {
+    margin-bottom: 6%;
+  }
+  .Main-Container .Container-Seven .Content .Top-Button a {
+    color: rgb(233, 233, 241);
+    font-size: 13px;
+    font-weight: 600;
+    border: 1px solid rgb(48, 48, 51);
+    border-radius: 15px;
+    padding: 10px 15px;
+  }
+  .Main-Container .Container-Seven .Content .Text {
+    margin-top: 3%;
+    margin-bottom: 5%;
+  }
+  .Main-Container .Container-Seven .Content .Text h1 {
+    color: rgb(228, 184, 191);
+    font-size: 55px;
+    font-weight: 700;
+    background: linear-gradient(to right, rgb(225, 186, 197), rgb(233, 233, 241), rgb(206, 196, 239));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  .Main-Container .Container-Seven .Swiper-Slides .swiper {
+    border: 1px solid rgb(48, 48, 51);
+    border-radius: 2.2rem;
+    width: 93%;
+    margin-right: 80px;
+  }
+  .Main-Container .Container-Seven .Swiper-Slides .swiper .swiper-wrapper {
+    padding: 50px 50px;
+  }
+  .Main-Container .Container-Seven .Swiper-Slides .swiper .swiper-wrapper .Title .Image img {
+    width: auto;
+    height: 100px;
+    border-radius: 2.2rem;
+    margin-bottom: 20px;
+    margin-right: 20px;
+  }
+  .Main-Container .Container-Seven .Swiper-Slides .swiper .swiper-wrapper .Title .Content h2 {
+    color: rgb(233, 233, 241);
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 20px;
+  }
+  .Main-Container .Container-Seven .Swiper-Slides .swiper .swiper-wrapper .Title .Content span {
+    color: rgb(199, 198, 211);
+  }
+  .Main-Container .Container-Seven .Swiper-Slides .swiper .swiper-wrapper .Title .Content span:last-child {
+    color: rgb(233, 233, 241);
+    font-weight: 600;
+  }
+  .Main-Container .Container-Seven .Swiper-Slides .swiper .swiper-wrapper .Title .Content i {
+    color: rgb(206, 196, 239);
+    margin-top: 10px;
+    background: linear-gradient(to right, rgb(225, 186, 197), rgb(206, 196, 239));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  .Main-Container .Container-Seven .Swiper-Slides .swiper .swiper-wrapper .Command p {
+    font-size: 22px;
+    font-weight: 400;
+    color: rgb(233, 233, 241);
+    margin-bottom: 10px;
+  }
+  .Main-Container .Container-Seven .Swiper-Slides .swiper .swiper-wrapper .Text {
+    margin-top: 4%;
+  }
+  .Main-Container .Container-Seven .Swiper-Slides .swiper .swiper-wrapper .Text span {
+    color: rgb(233, 233, 241);
+    font-size: 18px;
+    font-weight: 600;
+  }
+  .Main-Container .Container-Seven .Swiper-Slides .swiper .swiper-wrapper .Text span i {
+    font-size: 17px;
+    margin-left: 5px;
+  }
+  .Main-Container .Container-Seven .Swiper-Slides .Button-Next,
+  .Main-Container .Container-Seven .Swiper-Slides .Button-Prev {
+    color: aliceblue;
+    border: 1px solid rgb(48, 48, 51);
+    padding: 15px 20px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 700;
+    width: -moz-fit-content;
+    width: fit-content;
+    margin-top: 2%;
+  }
+}
+@media (min-width: 1400px) {
+  .Main-Container .Container-Seven .Content {
+    margin-bottom: 6%;
+  }
+  .Main-Container .Container-Seven .Content .Top-Button a {
+    color: rgb(233, 233, 241);
+    font-size: 13px;
+    font-weight: 600;
+    border: 1px solid rgb(48, 48, 51);
+    border-radius: 15px;
+    padding: 10px 15px;
+  }
+  .Main-Container .Container-Seven .Content .Text {
+    margin-top: 3%;
+    margin-bottom: 5%;
+  }
+  .Main-Container .Container-Seven .Content .Text h1 {
+    color: rgb(228, 184, 191);
+    font-size: 55px;
+    font-weight: 700;
+    background: linear-gradient(to right, rgb(225, 186, 197), rgb(233, 233, 241), rgb(206, 196, 239));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  .Main-Container .Container-Seven .Swiper-Slides .swiper {
+    border: 1px solid rgb(48, 48, 51);
+    border-radius: 2.2rem;
+    width: 93%;
+    margin-right: 80px;
+  }
+  .Main-Container .Container-Seven .Swiper-Slides .swiper .swiper-wrapper {
+    padding: 50px 50px;
+  }
+  .Main-Container .Container-Seven .Swiper-Slides .swiper .swiper-wrapper .Title .Image img {
+    width: auto;
+    height: 100px;
+    border-radius: 2.2rem;
+    margin-bottom: 20px;
+    margin-right: 20px;
+  }
+  .Main-Container .Container-Seven .Swiper-Slides .swiper .swiper-wrapper .Title .Content h2 {
+    color: rgb(233, 233, 241);
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 20px;
+  }
+  .Main-Container .Container-Seven .Swiper-Slides .swiper .swiper-wrapper .Title .Content span {
+    color: rgb(199, 198, 211);
+  }
+  .Main-Container .Container-Seven .Swiper-Slides .swiper .swiper-wrapper .Title .Content span:last-child {
+    color: rgb(233, 233, 241);
+    font-weight: 600;
+  }
+  .Main-Container .Container-Seven .Swiper-Slides .swiper .swiper-wrapper .Title .Content i {
+    color: rgb(206, 196, 239);
+    margin-top: 10px;
+    background: linear-gradient(to right, rgb(225, 186, 197), rgb(206, 196, 239));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  .Main-Container .Container-Seven .Swiper-Slides .swiper .swiper-wrapper .Command p {
+    font-size: 22px;
+    font-weight: 400;
+    color: rgb(233, 233, 241);
+    margin-bottom: 10px;
+  }
+  .Main-Container .Container-Seven .Swiper-Slides .swiper .swiper-wrapper .Text {
+    margin-top: 4%;
+  }
+  .Main-Container .Container-Seven .Swiper-Slides .swiper .swiper-wrapper .Text span {
+    color: rgb(233, 233, 241);
+    font-size: 18px;
+    font-weight: 600;
+  }
+  .Main-Container .Container-Seven .Swiper-Slides .swiper .swiper-wrapper .Text span i {
+    font-size: 17px;
+    margin-left: 5px;
+  }
+  .Main-Container .Container-Seven .Swiper-Slides .Button-Next,
+  .Main-Container .Container-Seven .Swiper-Slides .Button-Prev {
+    color: aliceblue;
+    border: 1px solid rgb(48, 48, 51);
+    padding: 15px 20px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 700;
+    width: -moz-fit-content;
+    width: fit-content;
+    margin-top: 2%;
+  }
+}
+.Main-Container .Container-Eight .Content {
+  margin-bottom: 7%;
+}
+.Main-Container .Container-Eight .Content .Top-Button a {
   color: rgb(233, 233, 241);
   font-size: 13px;
   font-weight: 600;
@@ -840,11 +2154,11 @@ body {
   border-radius: 15px;
   padding: 10px 15px;
 }
-.Main .Container-Eight .Content .Text {
+.Main-Container .Container-Eight .Content .Text {
   margin-top: 3%;
   margin-bottom: 5%;
 }
-.Main .Container-Eight .Content .Text h1 {
+.Main-Container .Container-Eight .Content .Text h1 {
   color: rgb(228, 184, 191);
   font-size: 55px;
   font-weight: 700;
@@ -852,10 +2166,11 @@ body {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-.Main .Container-Eight .Input-Container .Inputs {
+.Main-Container .Container-Eight .Input-Container .Inputs {
+  display: flex;
   gap: 150px;
 }
-.Main .Container-Eight .Input-Container .Inputs .Input input {
+.Main-Container .Container-Eight .Input-Container .Inputs .Input input {
   width: 130%;
   height: 100%;
   padding: 6px;
@@ -870,11 +2185,11 @@ body {
   font-size: 16px;
   margin-top: 5%;
 }
-.Main .Container-Eight .Input-Container .Inputs .Input input:focus {
+.Main-Container .Container-Eight .Input-Container .Inputs .Input input:focus {
   border-bottom: 2px solid rgb(225, 186, 197);
 }
-.Main .Container-Eight .Input-Container .Inputs textarea {
-  width: 90%;
+.Main-Container .Container-Eight .Input-Container .Inputs textarea {
+  width: 100%;
   height: 150px;
   padding: 10px;
   border: none;
@@ -887,12 +2202,12 @@ body {
   resize: none;
   margin-top: 7%;
 }
-.Main .Container-Eight .Input-Container .Inputs textarea:focus {
+.Main-Container .Container-Eight .Input-Container .Inputs textarea:focus {
   border-bottom: 2px solid rgb(225, 186, 197);
 }
-.Main .Container-Eight .Input-Container .row-2 input {
+.Main-Container .Container-Eight .Input-Container .row-2 input {
   margin-top: 10% !important;
-  width: 120%;
+  width: 100%;
   height: 100%;
   padding: 6px;
   border: none;
@@ -907,10 +2222,10 @@ body {
   font-size: 16px;
   margin-top: 5%;
 }
-.Main .Container-Eight .Input-Container .Button {
+.Main-Container .Container-Eight .Input-Container .Button {
   margin-top: 5%;
 }
-.Main .Container-Eight .Input-Container .Button a {
+.Main-Container .Container-Eight .Input-Container .Button a {
   background-color: rgb(206, 196, 239);
   color: rgb(17, 17, 17);
   padding: 15px 25px;
@@ -921,15 +2236,173 @@ body {
   font-weight: 700;
   background: linear-gradient(to right, rgb(225, 186, 197), rgb(206, 196, 239));
 }
+@media (max-width: 576px) {
+  .Main-Container .Container-Eight .Content .Text h1 {
+    font-size: 38px;
+  }
+  .Main-Container .Container-Eight .Input-Container .Inputs {
+    display: grid;
+    gap: 20px;
+  }
+  .Main-Container .Container-Eight .Input-Container .Inputs .Input input {
+    width: 90%;
+    height: 100%;
+  }
+  .Main-Container .Container-Eight .Input-Container .Inputs textarea {
+    width: 95%;
+    height: 100px;
+    margin-top: 18%;
+  }
+  .Main-Container .Container-Eight .Input-Container .Button {
+    margin-top: 10%;
+  }
+}
+@media (min-width: 577px) {
+  .Main-Container .Container-Eight .Content .Text h1 {
+    font-size: 44px;
+  }
+  .Main-Container .Container-Eight .Input-Container .Inputs {
+    display: grid;
+    gap: 20px;
+  }
+  .Main-Container .Container-Eight .Input-Container .Inputs .Input input {
+    width: 90%;
+    height: 100%;
+  }
+  .Main-Container .Container-Eight .Input-Container .Inputs textarea {
+    width: 95%;
+    height: 100px;
+    margin-top: 8%;
+  }
+  .Main-Container .Container-Eight .Input-Container .Button {
+    margin-top: 10%;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .Main-Container .Container-Eight .Content .Text h1 {
+    font-size: 55px;
+  }
+  .Main-Container .Container-Eight .Input-Container .Inputs {
+    display: block;
+    gap: 20px;
+  }
+  .Main-Container .Container-Eight .Input-Container .Inputs .Input input {
+    width: 90%;
+    height: 100%;
+  }
+  .Main-Container .Container-Eight .Input-Container .Inputs textarea {
+    width: 95%;
+    height: 100px;
+    margin-top: 6%;
+  }
+  .Main-Container .Container-Eight .Input-Container .Button {
+    margin-top: 10%;
+  }
+}
+@media (min-width: 1400px) {
+  .Main-Container .Container-Eight .Content {
+    margin-bottom: 7%;
+  }
+  .Main-Container .Container-Eight .Content .Top-Button a {
+    color: rgb(233, 233, 241);
+    font-size: 13px;
+    font-weight: 600;
+    border: 1px solid rgb(48, 48, 51);
+    border-radius: 15px;
+    padding: 10px 15px;
+  }
+  .Main-Container .Container-Eight .Content .Text {
+    margin-top: 3%;
+    margin-bottom: 5%;
+  }
+  .Main-Container .Container-Eight .Content .Text h1 {
+    color: rgb(228, 184, 191);
+    font-size: 55px;
+    font-weight: 700;
+    background: linear-gradient(to right, rgb(225, 186, 197), rgb(233, 233, 241), rgb(206, 196, 239));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  .Main-Container .Container-Eight .Input-Container .Inputs {
+    display: flex;
+    gap: 150px;
+  }
+  .Main-Container .Container-Eight .Input-Container .Inputs .Input input {
+    width: 130%;
+    height: 100%;
+    padding: 6px;
+    border: none;
+    background-color: rgb(17, 17, 17);
+    color: rgb(199, 198, 211);
+    font-weight: 500;
+    font-size: 23px !important;
+    border-bottom: 2px solid rgb(75, 75, 81);
+    outline: none;
+    resize: none;
+    font-size: 16px;
+    margin-top: 5%;
+  }
+  .Main-Container .Container-Eight .Input-Container .Inputs .Input input:focus {
+    border-bottom: 2px solid rgb(225, 186, 197);
+  }
+  .Main-Container .Container-Eight .Input-Container .Inputs textarea {
+    width: 100%;
+    height: 150px;
+    padding: 10px;
+    border: none;
+    background-color: rgb(17, 17, 17);
+    color: #ddd;
+    font-size: 23px !important;
+    font-weight: 500;
+    border-bottom: 2px solid rgb(75, 75, 81);
+    outline: none;
+    resize: none;
+    margin-top: 7%;
+  }
+  .Main-Container .Container-Eight .Input-Container .Inputs textarea:focus {
+    border-bottom: 2px solid rgb(225, 186, 197);
+  }
+  .Main-Container .Container-Eight .Input-Container .row-2 input {
+    margin-top: 10% !important;
+    width: 100%;
+    height: 100%;
+    padding: 6px;
+    border: none;
+    background-color: rgb(17, 17, 17);
+    color: rgb(199, 198, 211);
+    font-weight: 500;
+    font-size: 23px !important;
+    border-bottom: 2px solid rgb(75, 75, 81);
+    outline: none;
+    outline: none;
+    resize: none;
+    font-size: 16px;
+    margin-top: 5%;
+  }
+  .Main-Container .Container-Eight .Input-Container .Button {
+    margin-top: 5%;
+  }
+  .Main-Container .Container-Eight .Input-Container .Button a {
+    background-color: rgb(206, 196, 239);
+    color: rgb(17, 17, 17);
+    padding: 15px 25px;
+    width: -moz-fit-content;
+    width: fit-content;
+    border-radius: 25px;
+    font-size: 15px;
+    font-weight: 700;
+    background: linear-gradient(to right, rgb(225, 186, 197), rgb(206, 196, 239));
+  }
+}
 
-.Footer .Container {
-  margin-left: 34%;
+.Footer .Main-Container {
+  margin-left: 3%;
   margin-bottom: 10%;
 }
-.Footer .Container .SocialMedia {
+.Footer .Main-Container .SocialMedia {
   margin-bottom: 10px;
 }
-.Footer .Container .SocialMedia i {
+.Footer .Main-Container .SocialMedia i {
   border: 1px solid rgb(48, 48, 51);
   border-radius: 2.2rem;
   padding: 40px 58px;
@@ -937,14 +2410,14 @@ body {
   font-size: 50px;
   transition: all 0.3s ease-in-out;
 }
-.Footer .Container .SocialMedia i:hover {
+.Footer .Main-Container .SocialMedia i:hover {
   transform: scale(1.05);
   color: rgb(233, 233, 241);
 }
-.Footer .Container .Content .Text {
+.Footer .Main-Container .Content .Text {
   margin-top: 5%;
 }
-.Footer .Container .Content .Text p {
+.Footer .Main-Container .Content .Text p {
   color: rgb(228, 184, 191);
   font-size: 35px;
   font-weight: 700;
@@ -953,21 +2426,137 @@ body {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-.Footer .Container .Content .Text hr {
-  width: 90%;
+.Footer .Main-Container .Content .Text hr {
+  width: 100%;
   height: 3px;
   color: rgb(199, 198, 211);
   margin-bottom: 3%;
 }
-.Footer .Container .Content .Info {
+.Footer .Main-Container .Content .Info {
+  display: flex;
   gap: 200px;
   font-family: "Poppins", sans-serif;
 }
-.Footer .Container .Content .Info span {
+.Footer .Main-Container .Content .Info span {
   color: rgb(233, 233, 241);
   font-weight: 700;
 }
-.Footer .Container .Content .Info h6 {
+.Footer .Main-Container .Content .Info h6 {
   font-weight: 400;
   color: rgb(161, 161, 175);
+}
+@media (max-width: 576px) {
+  .Footer .Main-Container {
+    margin-left: 0%;
+  }
+  .Footer .Main-Container .Container .SocialMedia i {
+    display: none;
+  }
+  .Footer .Main-Container .Container .Content .Text p {
+    font-size: 24px;
+  }
+  .Footer .Main-Container .Container .Content .Text hr {
+    width: 93%;
+  }
+  .Footer .Main-Container .Container .Content .Info {
+    margin-top: 10px;
+    display: grid;
+    gap: 10px;
+  }
+}
+@media (min-width: 577px) and (max-width: 767px) {
+  .Footer .Main-Container {
+    margin-left: 0%;
+  }
+  .Footer .Main-Container .Container .SocialMedia i {
+    display: none;
+  }
+  .Footer .Main-Container .Container .Content .Text p {
+    font-size: 30px;
+  }
+  .Footer .Main-Container .Container .Content .Text hr {
+    width: 93%;
+  }
+  .Footer .Main-Container .Container .Content .Info {
+    margin-top: 10px;
+    display: grid;
+    gap: 10px;
+  }
+  .Footer .Main-Container .Container .Content .Info span {
+    font-size: 20px;
+  }
+  .Footer .Main-Container .Container .Content .Info h6 {
+    font-size: 25px;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .Footer .Main-Container {
+    margin-left: 0%;
+  }
+  .Footer .Main-Container .Container .SocialMedia i {
+    display: none;
+  }
+  .Footer .Main-Container .Container .Content .Text p {
+    font-size: 35px;
+  }
+  .Footer .Main-Container .Container .Content .Text hr {
+    width: 93%;
+  }
+  .Footer .Main-Container .Container .Content .Info {
+    margin-top: 10px;
+    display: grid;
+    gap: 10px;
+  }
+}
+@media (min-width: 1400px) {
+  .Footer .Main-Container {
+    margin-left: 3%;
+    margin-bottom: 10%;
+  }
+  .Footer .Main-Container .SocialMedia {
+    margin-bottom: 10px;
+  }
+  .Footer .Main-Container .SocialMedia i {
+    border: 1px solid rgb(48, 48, 51);
+    border-radius: 2.2rem;
+    padding: 40px 58px;
+    color: rgb(75, 75, 81);
+    font-size: 50px;
+    transition: all 0.3s ease-in-out;
+  }
+  .Footer .Main-Container .SocialMedia i:hover {
+    transform: scale(1.05);
+    color: rgb(233, 233, 241);
+  }
+  .Footer .Main-Container .Content .Text {
+    margin-top: 5%;
+  }
+  .Footer .Main-Container .Content .Text p {
+    color: rgb(228, 184, 191);
+    font-size: 35px;
+    font-weight: 700;
+    margin-bottom: 4%;
+    background: linear-gradient(to right, rgb(225, 186, 197), rgb(233, 233, 241), rgb(206, 196, 239));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  .Footer .Main-Container .Content .Text hr {
+    width: 100%;
+    height: 3px;
+    color: rgb(199, 198, 211);
+    margin-bottom: 3%;
+  }
+  .Footer .Main-Container .Content .Info {
+    display: flex;
+    gap: 200px;
+    font-family: "Poppins", sans-serif;
+  }
+  .Footer .Main-Container .Content .Info span {
+    color: rgb(233, 233, 241);
+    font-weight: 700;
+  }
+  .Footer .Main-Container .Content .Info h6 {
+    font-weight: 400;
+    color: rgb(161, 161, 175);
+  }
 }/*# sourceMappingURL=style.css.map */
