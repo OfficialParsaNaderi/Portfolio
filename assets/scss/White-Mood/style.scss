@@ -53,6 +53,40 @@ img {
     max-width: 100%;
 }
 
+/* Webkit-based browsers (Chrome, Safari, Edge) */
+
+// Styling for Scrollbar
+::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: none;
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgb(100, 26, 247);
+    border-radius: 20px;
+    transition: background 0.7s;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: rgb(148, 90, 245);
+}
+
+/* Firefox */
+html {
+    scrollbar-width: thin;
+    /* Makes scrollbar thin (similar to 10px) */
+    scrollbar-color: rgb(100, 26, 247) transparent;
+}
+
+/* Firefox hover effect (requires a workaround with JavaScript or additional CSS) */
+html:hover {
+    scrollbar-color: rgb(148, 90, 245) transparent;
+}
+
 // Styling for Body (Whole of WebPage)
 body {
     font-family: $_font-default;
@@ -196,10 +230,6 @@ Make WebPage Scalable for Desktops .!
                 top: 7%;
                 left: 35%;
                 z-index: 3;
-
-                @media (min-width: 1400px) {
-                    left: calc((100% - 1430px) / 2 + 490px);
-                }
 
                 .Content {
                     .Head {
@@ -356,10 +386,13 @@ Make WebPage Scalable for Desktops .!
                     }
 
                     .NavBar {
-                        display: none;
+                        display: block;
                         backdrop-filter: blur(10px);
                         padding: 15px 10px 0px 15px;
                         border-radius: $_radius-m;
+                        position: fixed;
+                        top: 90%;
+                        right: 20%;
 
                         .Menu {
                             li {
@@ -372,12 +405,12 @@ Make WebPage Scalable for Desktops .!
                                         transition: all $_animspeed-slow;
 
                                         &:hover {
-                                            color: $t-mediumdark;
+                                            color: $t-muteddark;
                                         }
                                     }
 
                                     #Message {
-                                        background-color: $t-accentdark;
+                                        background-color: rgb(112, 89, 226);
                                         color: #000000;
                                         padding: 13px;
                                         border-radius: 25px;
@@ -557,9 +590,11 @@ Make WebPage Scalable for Desktops .!
                         }
                     }
 
-                    .Image img {
-                        height: auto;
-                        max-width: 100%;
+                    .Image {
+                        img {
+                            height: auto;
+                            max-width: 100%;
+                        }
                     }
 
                     .SocialMedia {
@@ -574,17 +609,11 @@ Make WebPage Scalable for Desktops .!
                 }
 
                 .Header-Content {
-                    .Head {
-                        display: none;
+                    .Header-Content {
+                        .Head {
+                            display: none;
+                        }
                     }
-
-                    .NavBar {
-                        display: block;
-                        position: fixed;
-                        top: 90%;
-                        right: 22%;
-                    }
-
                 }
 
                 .Content {
@@ -611,7 +640,7 @@ Make WebPage Scalable for Desktops .!
                         gap: 10px;
 
                         a {
-                            padding: 10px;
+                            width: 100%;
                         }
                     }
 
@@ -671,10 +700,8 @@ Make WebPage Scalable for Desktops .!
                     }
 
                     .NavBar {
-                        display: block;
                         position: fixed;
-                        top: 90%;
-                        right: 20%;
+                        right: 60%;
                     }
                 }
 
@@ -701,7 +728,7 @@ Make WebPage Scalable for Desktops .!
                         gap: 10px;
 
                         a {
-                            padding: 10px;
+                            width: 100%;
                         }
                     }
 
@@ -753,7 +780,7 @@ Make WebPage Scalable for Desktops .!
                         gap: 10px;
 
                         a {
-                            padding: 10px;
+                            width: 100%;
                         }
                     }
 
@@ -1270,7 +1297,7 @@ Make WebPage Scalable for Desktops .!
             }
 
             @media (max-width : 576px) {
-                margin-top: 3%;
+                margin-top: 10%;
                 margin-left: 0%;
                 margin-bottom: 5%;
             }
@@ -1385,13 +1412,18 @@ Make WebPage Scalable for Desktops .!
                 }
 
                 @media (max-width: 576px) {
-                    margin-top: 10%;
-                    margin-left: 0%;
+                    margin-top: 100%;
 
                     .Content {
                         .Text {
                             h1 {
                                 font-size: 38px;
+                            }
+                        }
+
+                        .Button {
+                            a {
+                                width: 100%;
                             }
                         }
                     }
@@ -1411,7 +1443,9 @@ Make WebPage Scalable for Desktops .!
 
                 }
 
-                @media (min-width: 577px) {
+                @media (min-width: 577px) and (max-width: 767px) {
+                    margin-top: 100%;
+
                     .Content {
                         .Text {
                             h1 {
@@ -1422,6 +1456,8 @@ Make WebPage Scalable for Desktops .!
                 }
 
                 @media (min-width: 768px) and (max-width: 991px) {
+                    margin-top: 0%;
+
                     .Crads {
                         .Card {
                             figure {
@@ -2438,7 +2474,7 @@ Make WebPage Scalable for Desktops .!
                     }
                 }
 
-                @media (max-width: 576px) {
+                @media (max-width: 576px) and (max-width: 767px) {
                     .Experience {
                         h3 {
                             text-align: center;
@@ -2733,7 +2769,7 @@ Make WebPage Scalable for Desktops .!
                     }
                 }
 
-                @media (min-width: 577px) {
+                @media (min-width: 577px) and (max-width: 767px) {
                     .Content {
                         .Text {
                             h1 {
@@ -2773,7 +2809,7 @@ Make WebPage Scalable for Desktops .!
 
                                 .Command {
                                     p {
-                                        font-size: 15px;
+                                        font-size: 13px;
                                         margin-left: -8px;
                                     }
                                 }
@@ -2917,7 +2953,7 @@ Make WebPage Scalable for Desktops .!
                 @media (min-width: 1000px) and (max-width: 1200px) {
                     .Swiper-Slides {
                         .swiper {
-                            border: 1px solid $t-mediumdark;
+                            border: 1px solid $stroke-elementsdark;
                             border-radius: $_radius-m;
                             width: 93%;
                             margin-right: 80px;
@@ -2938,23 +2974,23 @@ Make WebPage Scalable for Desktops .!
 
                                     .Content {
                                         h2 {
-                                            color: $base-tintdark;
+                                            color: $t-brightdark;
                                             font-size: 30px;
                                             font-weight: 700;
                                             line-height: 20px;
                                         }
 
                                         span {
-                                            color: $base-tintdark;
+                                            color: $t-mediumdark;
 
                                             &:last-child {
-                                                color: $base-tintdark;
+                                                color: $t-brightdark;
                                                 font-weight: 600;
                                             }
                                         }
 
                                         i {
-                                            color: $base-tintdark;
+                                            color: $secondarydark;
                                             margin-top: 10px;
                                             background: linear-gradient(to right,
                                                     rgb(225, 186, 197),
@@ -2969,7 +3005,7 @@ Make WebPage Scalable for Desktops .!
                                     p {
                                         font-size: 22px;
                                         font-weight: 400;
-                                        color: $base-tintdark;
+                                        color: $t-brightdark;
                                         margin-bottom: 10px;
                                     }
                                 }
@@ -2978,7 +3014,7 @@ Make WebPage Scalable for Desktops .!
                                     margin-top: 4%;
 
                                     span {
-                                        color: $base-tintdark;
+                                        color: $t-brightdark;
                                         font-size: 18px;
                                         font-weight: 600;
 
@@ -2994,8 +3030,8 @@ Make WebPage Scalable for Desktops .!
 
                         .Button-Next,
                         .Button-Prev {
-                            color: $base-tintdark;
-                            border: 1px solid $t-mediumdark;
+                            color: aliceblue;
+                            border: 1px solid $stroke-elementsdark;
                             padding: 15px 20px;
                             border-radius: 20px;
                             font-size: 12px;
@@ -3192,7 +3228,7 @@ Make WebPage Scalable for Desktops .!
                         }
 
                         textarea {
-                            width: 100%;
+                            width: 90%;
                             height: 150px;
                             padding: 10px;
                             border: none;
@@ -3206,6 +3242,7 @@ Make WebPage Scalable for Desktops .!
                             margin-top: 7%;
 
                             &:focus {
+                                width: 90%;
                                 border-bottom: 2px solid rgb(112, 89, 226);
                             }
                         }
@@ -3284,7 +3321,7 @@ Make WebPage Scalable for Desktops .!
                     }
                 }
 
-                @media (min-width: 577px) {
+                @media (min-width: 577px) and (max-width: 767px) {
                     .Content {
                         .Text {
                             h1 {
@@ -3307,9 +3344,9 @@ Make WebPage Scalable for Desktops .!
                             }
 
                             textarea {
-                                width: 95%;
+                                width: 90%;
                                 height: 100px;
-                                margin-top: 8%;
+                                margin-top: 15%;
                             }
                         }
 
@@ -3344,7 +3381,7 @@ Make WebPage Scalable for Desktops .!
                             textarea {
                                 width: 95%;
                                 height: 100px;
-                                margin-top: 6%;
+                                margin-top: 8%;
                             }
                         }
 
@@ -3355,38 +3392,6 @@ Make WebPage Scalable for Desktops .!
                 }
 
                 @media (min-width: 1000px) and (max-width: 1200px) {
-                    .Content {
-                        margin-bottom: 7%;
-
-                        .Top-Button {
-                            a {
-                                color: $base-tintdark;
-                                font-size: 13px;
-                                font-weight: 600;
-                                border: 1px solid $t-mediumdark;
-                                border-radius: 15px;
-                                padding: 10px 15px;
-                            }
-                        }
-
-                        .Text {
-                            margin-top: 3%;
-                            margin-bottom: 5%;
-
-                            h1 {
-                                color: $base-tintdark;
-                                font-size: 55px;
-                                font-weight: 700;
-                                background: linear-gradient(to right,
-                                        rgb(225, 186, 197),
-                                        rgb(233, 233, 241),
-                                        rgb(206, 196, 239));
-                                background-clip: text;
-                                color: transparent;
-                            }
-                        }
-                    }
-
                     .Input-Container {
 
                         .Inputs {
@@ -3399,11 +3404,11 @@ Make WebPage Scalable for Desktops .!
                                     height: 100%;
                                     padding: 6px;
                                     border: none;
-                                    background-color: $t-brightdark;
-                                    color: $base-tintdark;
+                                    background-color: $basedark;
+                                    color: $t-mediumdark;
                                     font-weight: 500;
                                     font-size: 23px !important;
-                                    border-bottom: 2px solid $t-mediumdark;
+                                    border-bottom: 2px solid $stroke-controlsdark;
                                     outline: none;
                                     resize: none;
                                     font-size: 16px;
@@ -3420,16 +3425,17 @@ Make WebPage Scalable for Desktops .!
                                 height: 150px;
                                 padding: 10px;
                                 border: none;
-                                background-color: $t-brightdark;
-                                color: $base-tintdark;
+                                background-color: $basedark;
+                                color: #ddd;
                                 font-size: 23px !important;
                                 font-weight: 500;
-                                border-bottom: 2px solid $t-mediumdark;
+                                border-bottom: 2px solid $stroke-controlsdark;
                                 outline: none;
                                 resize: none;
                                 margin-top: 7%;
 
                                 &:focus {
+                                    width: 100%;
                                     border-bottom: 2px solid $t-accentdark;
                                 }
                             }
@@ -3443,7 +3449,7 @@ Make WebPage Scalable for Desktops .!
                                 height: 100%;
                                 padding: 6px;
                                 border: none;
-                                background-color: $t-brightdark;
+                                background-color: $basedark;
                                 color: $t-mediumdark;
                                 font-weight: 500;
                                 font-size: 23px !important;
@@ -3535,7 +3541,7 @@ Make WebPage Scalable for Desktops .!
                             }
 
                             textarea {
-                                width: 100%;
+                                width: 90%;
                                 height: 150px;
                                 padding: 10px;
                                 border: none;
@@ -3549,6 +3555,7 @@ Make WebPage Scalable for Desktops .!
                                 margin-top: 7%;
 
                                 &:focus {
+                                    width: 90%;
                                     border-bottom: 2px solid rgb(112, 89, 226);
                                 }
                             }
@@ -3711,7 +3718,7 @@ Make WebPage Scalable for Desktops .!
                     .Content {
                         .Text {
                             p {
-                                font-size: 30px;
+                                font-size: 25px;
                             }
 
                             hr {

@@ -1,7 +1,8 @@
-HTML5
-SCSS/Sass
-Bootstrap 5
-Font Awesome
-AOS (Animate On Scroll)
-Swiper.js
-Google Fonts (Syne, Poppins)
+# HTML5
+# CSS3
+# SCSS/Sass
+# Bootstrap 5
+# Font Awesome
+# AOS (Animate On Scroll)
+# Swiper.js
+# Google Fonts (Syne, Poppins)

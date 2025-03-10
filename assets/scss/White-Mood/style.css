@@ -10,6 +10,39 @@ img {
   max-width: 100%;
 }
 
+/* Webkit-based browsers (Chrome, Safari, Edge) */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: none;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgb(100, 26, 247);
+  border-radius: 20px;
+  -webkit-transition: background 0.7s;
+  transition: background 0.7s;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(148, 90, 245);
+}
+
+/* Firefox */
+html {
+  scrollbar-width: thin;
+  /* Makes scrollbar thin (similar to 10px) */
+  scrollbar-color: rgb(100, 26, 247) transparent;
+}
+
+/* Firefox hover effect (requires a workaround with JavaScript or additional CSS) */
+html:hover {
+  scrollbar-color: rgb(148, 90, 245) transparent;
+}
+
 body {
   font-family: "Syne", sans-serif;
   cursor: pointer;
@@ -133,11 +166,6 @@ Make WebPage Scalable for Desktops .!
   left: 35%;
   z-index: 3;
 }
-@media (min-width: 1400px) {
-  .Header .Container .Background .Header-Content {
-    left: calc((100% - 1430px) / 2 + 490px);
-  }
-}
 .Header .Container .Background .Header-Content .Content .Head .Menu li a {
   -webkit-backdrop-filter: blur(10px);
           backdrop-filter: blur(10px);
@@ -253,11 +281,14 @@ Make WebPage Scalable for Desktops .!
   rotate: 180deg;
 }
 .Header .Container .Background .Header-Content .Content .NavBar {
-  display: none;
+  display: block;
   -webkit-backdrop-filter: blur(10px);
           backdrop-filter: blur(10px);
   padding: 15px 10px 0px 15px;
   border-radius: 2.2rem;
+  position: fixed;
+  top: 90%;
+  right: 20%;
 }
 .Header .Container .Background .Header-Content .Content .NavBar .Menu li a i {
   padding-top: 13px;
@@ -266,10 +297,10 @@ Make WebPage Scalable for Desktops .!
   transition: all 0.6s;
 }
 .Header .Container .Background .Header-Content .Content .NavBar .Menu li a i:hover {
-  color: rgb(199, 198, 211);
+  color: rgb(161, 161, 175);
 }
 .Header .Container .Background .Header-Content .Content .NavBar .Menu li a #Message {
-  background-color: rgb(225, 186, 197);
+  background-color: rgb(112, 89, 226);
   color: #000000;
   padding: 13px;
   border-radius: 25px;
@@ -425,14 +456,8 @@ Make WebPage Scalable for Desktops .!
     margin-bottom: 15px;
     text-align: center;
   }
-  .Header .Container .Background .Header-Content .Head {
+  .Header .Container .Background .Header-Content .Header-Content .Head {
     display: none;
-  }
-  .Header .Container .Background .Header-Content .NavBar {
-    display: block;
-    position: fixed;
-    top: 90%;
-    right: 22%;
   }
   .Header .Container .Background .Content {
     position: static;
@@ -454,7 +479,7 @@ Make WebPage Scalable for Desktops .!
     gap: 10px;
   }
   .Header .Container .Background .Content .Button a {
-    padding: 10px;
+    width: 100%;
   }
   .Header .Container .Background .Content .Logo {
     display: none;
@@ -496,10 +521,8 @@ Make WebPage Scalable for Desktops .!
     display: none;
   }
   .Header .Container .Background .Header-Content .NavBar {
-    display: block;
     position: fixed;
-    top: 90%;
-    right: 20%;
+    right: 60%;
   }
   .Header .Container .Background .Content {
     position: static;
@@ -521,7 +544,7 @@ Make WebPage Scalable for Desktops .!
     gap: 10px;
   }
   .Header .Container .Background .Content .Button a {
-    padding: 10px;
+    width: 100%;
   }
   .Header .Container .Background .Content .Logo {
     display: none;
@@ -557,7 +580,7 @@ Make WebPage Scalable for Desktops .!
     gap: 10px;
   }
   .Header .Container .Background .Content .Button a {
-    padding: 10px;
+    width: 100%;
   }
   .Header .Container .Background .Content .Logo {
     display: none;
@@ -963,7 +986,7 @@ Make WebPage Scalable for Desktops .!
 }
 @media (max-width: 576px) {
   .Main-Container > * {
-    margin-top: 3%;
+    margin-top: 10%;
     margin-left: 0%;
     margin-bottom: 5%;
   }
@@ -1050,11 +1073,13 @@ Make WebPage Scalable for Desktops .!
 }
 @media (max-width: 576px) {
   .Main-Container .Container-One {
-    margin-top: 10%;
-    margin-left: 0%;
+    margin-top: 100%;
   }
   .Main-Container .Container-One .Content .Text h1 {
     font-size: 38px;
+  }
+  .Main-Container .Container-One .Content .Button a {
+    width: 100%;
   }
   .Main-Container .Container-One .Crads {
     display: grid;
@@ -1064,12 +1089,18 @@ Make WebPage Scalable for Desktops .!
     width: 100%;
   }
 }
-@media (min-width: 577px) {
+@media (min-width: 577px) and (max-width: 767px) {
+  .Main-Container .Container-One {
+    margin-top: 100%;
+  }
   .Main-Container .Container-One .Content .Text h1 {
     font-size: 40px;
   }
 }
 @media (min-width: 768px) and (max-width: 991px) {
+  .Main-Container .Container-One {
+    margin-top: 0%;
+  }
   .Main-Container .Container-One .Crads .Card figure figcaption .White span,
   .Main-Container .Container-One .Crads .Card figure figcaption .Black span {
     font-size: 25px;
@@ -1807,7 +1838,7 @@ Make WebPage Scalable for Desktops .!
 .Main-Container .Container-Five .Experience .Space h4 {
   margin-right: 38px;
 }
-@media (max-width: 576px) {
+@media (max-width: 576px) and (max-width: 767px) {
   .Main-Container .Container-Five .Experience h3 {
     text-align: center;
   }
@@ -2010,7 +2041,7 @@ Make WebPage Scalable for Desktops .!
     margin-left: -10px;
   }
 }
-@media (min-width: 577px) {
+@media (min-width: 577px) and (max-width: 767px) {
   .Main-Container .Container-Seven .Content .Text h1 {
     font-size: 40px;
   }
@@ -2032,7 +2063,7 @@ Make WebPage Scalable for Desktops .!
     font-size: 12px;
   }
   .Main-Container .Container-Seven .Swiper-Slides .swiper .swiper-wrapper .Command p {
-    font-size: 15px;
+    font-size: 13px;
     margin-left: -8px;
   }
   .Main-Container .Container-Seven .Swiper-Slides .swiper .swiper-wrapper .Text span {
@@ -2135,7 +2166,7 @@ Make WebPage Scalable for Desktops .!
 }
 @media (min-width: 1000px) and (max-width: 1200px) {
   .Main-Container .Container-Seven .Swiper-Slides .swiper {
-    border: 1px solid rgb(199, 198, 211);
+    border: 1px solid rgb(48, 48, 51);
     border-radius: 2.2rem;
     width: 93%;
     margin-right: 80px;
@@ -2151,20 +2182,20 @@ Make WebPage Scalable for Desktops .!
     margin-right: 20px;
   }
   .Main-Container .Container-Seven .Swiper-Slides .swiper .swiper-wrapper .Title .Content h2 {
-    color: rgb(22, 22, 22);
+    color: rgb(233, 233, 241);
     font-size: 30px;
     font-weight: 700;
     line-height: 20px;
   }
   .Main-Container .Container-Seven .Swiper-Slides .swiper .swiper-wrapper .Title .Content span {
-    color: rgb(22, 22, 22);
+    color: rgb(199, 198, 211);
   }
   .Main-Container .Container-Seven .Swiper-Slides .swiper .swiper-wrapper .Title .Content span:last-child {
-    color: rgb(22, 22, 22);
+    color: rgb(233, 233, 241);
     font-weight: 600;
   }
   .Main-Container .Container-Seven .Swiper-Slides .swiper .swiper-wrapper .Title .Content i {
-    color: rgb(22, 22, 22);
+    color: rgb(206, 196, 239);
     margin-top: 10px;
     background: linear-gradient(to right, rgb(225, 186, 197), rgb(206, 196, 239));
     -webkit-background-clip: text;
@@ -2174,14 +2205,14 @@ Make WebPage Scalable for Desktops .!
   .Main-Container .Container-Seven .Swiper-Slides .swiper .swiper-wrapper .Command p {
     font-size: 22px;
     font-weight: 400;
-    color: rgb(22, 22, 22);
+    color: rgb(233, 233, 241);
     margin-bottom: 10px;
   }
   .Main-Container .Container-Seven .Swiper-Slides .swiper .swiper-wrapper .Text {
     margin-top: 4%;
   }
   .Main-Container .Container-Seven .Swiper-Slides .swiper .swiper-wrapper .Text span {
-    color: rgb(22, 22, 22);
+    color: rgb(233, 233, 241);
     font-size: 18px;
     font-weight: 600;
   }
@@ -2191,8 +2222,8 @@ Make WebPage Scalable for Desktops .!
   }
   .Main-Container .Container-Seven .Swiper-Slides .Button-Next,
   .Main-Container .Container-Seven .Swiper-Slides .Button-Prev {
-    color: rgb(22, 22, 22);
-    border: 1px solid rgb(199, 198, 211);
+    color: aliceblue;
+    border: 1px solid rgb(48, 48, 51);
     padding: 15px 20px;
     border-radius: 20px;
     font-size: 12px;
@@ -2342,7 +2373,7 @@ Make WebPage Scalable for Desktops .!
   border-bottom: 2px solid rgb(112, 89, 226);
 }
 .Main-Container .Container-Eight .Input-Container .Inputs textarea {
-  width: 100%;
+  width: 90%;
   height: 150px;
   padding: 10px;
   border: none;
@@ -2356,6 +2387,7 @@ Make WebPage Scalable for Desktops .!
   margin-top: 7%;
 }
 .Main-Container .Container-Eight .Input-Container .Inputs textarea:focus {
+  width: 90%;
   border-bottom: 2px solid rgb(112, 89, 226);
 }
 .Main-Container .Container-Eight .Input-Container .row-2 input {
@@ -2410,7 +2442,7 @@ Make WebPage Scalable for Desktops .!
     margin-top: 10%;
   }
 }
-@media (min-width: 577px) {
+@media (min-width: 577px) and (max-width: 767px) {
   .Main-Container .Container-Eight .Content .Text h1 {
     font-size: 44px;
   }
@@ -2423,9 +2455,9 @@ Make WebPage Scalable for Desktops .!
     height: 100%;
   }
   .Main-Container .Container-Eight .Input-Container .Inputs textarea {
-    width: 95%;
+    width: 90%;
     height: 100px;
-    margin-top: 8%;
+    margin-top: 15%;
   }
   .Main-Container .Container-Eight .Input-Container .Button {
     margin-top: 10%;
@@ -2446,37 +2478,13 @@ Make WebPage Scalable for Desktops .!
   .Main-Container .Container-Eight .Input-Container .Inputs textarea {
     width: 95%;
     height: 100px;
-    margin-top: 6%;
+    margin-top: 8%;
   }
   .Main-Container .Container-Eight .Input-Container .Button {
     margin-top: 10%;
   }
 }
 @media (min-width: 1000px) and (max-width: 1200px) {
-  .Main-Container .Container-Eight .Content {
-    margin-bottom: 7%;
-  }
-  .Main-Container .Container-Eight .Content .Top-Button a {
-    color: rgb(22, 22, 22);
-    font-size: 13px;
-    font-weight: 600;
-    border: 1px solid rgb(199, 198, 211);
-    border-radius: 15px;
-    padding: 10px 15px;
-  }
-  .Main-Container .Container-Eight .Content .Text {
-    margin-top: 3%;
-    margin-bottom: 5%;
-  }
-  .Main-Container .Container-Eight .Content .Text h1 {
-    color: rgb(22, 22, 22);
-    font-size: 55px;
-    font-weight: 700;
-    background: linear-gradient(to right, rgb(225, 186, 197), rgb(233, 233, 241), rgb(206, 196, 239));
-    -webkit-background-clip: text;
-            background-clip: text;
-    color: transparent;
-  }
   .Main-Container .Container-Eight .Input-Container .Inputs {
     display: flex;
     gap: 150px;
@@ -2486,11 +2494,11 @@ Make WebPage Scalable for Desktops .!
     height: 100%;
     padding: 6px;
     border: none;
-    background-color: rgb(233, 233, 241);
-    color: rgb(22, 22, 22);
+    background-color: rgb(17, 17, 17);
+    color: rgb(199, 198, 211);
     font-weight: 500;
     font-size: 23px !important;
-    border-bottom: 2px solid rgb(199, 198, 211);
+    border-bottom: 2px solid rgb(75, 75, 81);
     outline: none;
     resize: none;
     font-size: 16px;
@@ -2504,16 +2512,17 @@ Make WebPage Scalable for Desktops .!
     height: 150px;
     padding: 10px;
     border: none;
-    background-color: rgb(233, 233, 241);
-    color: rgb(22, 22, 22);
+    background-color: rgb(17, 17, 17);
+    color: #ddd;
     font-size: 23px !important;
     font-weight: 500;
-    border-bottom: 2px solid rgb(199, 198, 211);
+    border-bottom: 2px solid rgb(75, 75, 81);
     outline: none;
     resize: none;
     margin-top: 7%;
   }
   .Main-Container .Container-Eight .Input-Container .Inputs textarea:focus {
+    width: 100%;
     border-bottom: 2px solid rgb(225, 186, 197);
   }
   .Main-Container .Container-Eight .Input-Container .row-2 input {
@@ -2522,7 +2531,7 @@ Make WebPage Scalable for Desktops .!
     height: 100%;
     padding: 6px;
     border: none;
-    background-color: rgb(233, 233, 241);
+    background-color: rgb(17, 17, 17);
     color: rgb(199, 198, 211);
     font-weight: 500;
     font-size: 23px !important;
@@ -2596,7 +2605,7 @@ Make WebPage Scalable for Desktops .!
     border-bottom: 2px solid rgb(112, 89, 226);
   }
   .Main-Container .Container-Eight .Input-Container .Inputs textarea {
-    width: 100%;
+    width: 90%;
     height: 150px;
     padding: 10px;
     border: none;
@@ -2610,6 +2619,7 @@ Make WebPage Scalable for Desktops .!
     margin-top: 7%;
   }
   .Main-Container .Container-Eight .Input-Container .Inputs textarea:focus {
+    width: 90%;
     border-bottom: 2px solid rgb(112, 89, 226);
   }
   .Main-Container .Container-Eight .Input-Container .row-2 input {
@@ -2728,7 +2738,7 @@ Make WebPage Scalable for Desktops .!
     display: none;
   }
   .Footer .Main-Container .Container .Content .Text p {
-    font-size: 30px;
+    font-size: 25px;
   }
   .Footer .Main-Container .Container .Content .Text hr {
     width: 93%;
